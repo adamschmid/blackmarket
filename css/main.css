@@ -19,7 +19,6 @@ major 3rd | base: 1.5em
 	body, html, #main-wrapper {
 		width: 100%;
 		height: 100%;
-		overflow: hidden;
 	}
 	html {
 		font-family: 'melbourne regular', 'helvetica neue', sans-serif;
@@ -56,12 +55,9 @@ major 3rd | base: 1.5em
 		background: hsl(191, 100%, 41%);
 	}
 
-	section.page {
-		height: 100%;
-		width: 100%;
+	.section p {
+		margin-left: 400px;
 	}
-
-
 
 
 

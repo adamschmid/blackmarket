@@ -8,13 +8,23 @@
 		<meta name="keywords" content="black market modular, colour palette, modular synthesis, Buchla, Eurorack, synths, effects, oscillator, VCA, LFO, envelope, filter, sequencer">
 		<title>Black Market Modular</title>
 		<!-- <link rel="shortcut icon" href="img/favicon.ico?v=2" type="image/x-icon"> -->
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="js/backstretch.js"></script>
 
 		<link rel="stylesheet" href="css/normalize.min.css" />
 		<link rel="stylesheet" href="css/typography.css" />
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<!-- <link rel="stylesheet" href="css/mediaqueries.css" /> -->
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="js/backstretch.js"></script>
+		<script type="text/javascript" src="js/jquery.inview.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+
+		<script type="text/javascript">
+
+		</script>
+
 	</head>
 	<body class="bg-dk-gradient">
 		<div id="main-wrapper">
@@ -22,14 +32,14 @@
 				<div id="desktop-nav-wrapper">
 					<div id="small-logo"></div>
 					<nav id="desktop-nav">
-	 					<ul>
-							<li class="led green-led"><a href="">home</a></li>
-							<li class="led"><a href="#colour-palette">colour palette</a></li>
-							<li class="led"><a href="">colours</a></li>
-							<li class="led"><a href="">cases</a></li>
-							<li class="led"><a href="">cables</a></li>
-							<li class="led"><a href="">downloads</a></li>
-							<li class="led"><a href="">company</a></li>
+	 					<ul id="menu">
+							<li class="led home-led green-led" data-menuanchor="home"><a href="#home">home</a></li>
+							<li class="led colour-palette-led" data-menuanchor="colour-palette"><a href="#colour-palette">colour palette</a></li>
+							<li class="led colours-led" data-menuanchor="colours"><a href="#colours">colours</a></li>
+							<li class="led cases-led" data-menuanchor="cases"><a href="#cases">cases</a></li>
+							<li class="led cables-led" data-menuanchor="cables"><a href="#cables">cables</a></li>
+							<li class="led downloads-led" data-menuanchor="downloads"><a href="#downloads">downloads</a></li>
+							<li class="led company-led" data-menuanchor="company"><a href="#company">company</a></li>
 							<li class="led"><a href="http://dev.shop.blackmarketmodular.com/" target="_blank">shop</a></li>
 							<li class="icon-link"><a class="fa fa-envelope-o" href="mailto:info@blackmarketmodular.com"></a></li>
 							<li class="icon-link"><a class="fa fa-facebook-official" href="https://www.facebook.com/blackmarketmodular" target="_blank"></a></li>
@@ -37,16 +47,34 @@
 					</nav>
 				</div>
 			</div>
-			<section class="page kraken-bg" id="home">
-				<!-- <img src="../img/kraken-bg.svg"> -->
-				<!-- <div id="logo"></div> -->
-			</section>
-			<section class="page" id="colour-palette">
-				<p>cp</p>
-			</section>
+			<div id="fullpage">
+				<div class="section kraken-bg" id="home-section">
+					<p>home</p>
+					<!-- <img src="../img/kraken-bg.svg"> -->
+					<!-- <div id="logo"></div> -->
+				</div>
+				<div class="section" id="colour-palette-section">
+					<p>cp</p>
+				</div>
+				<div class="section" id="colours-section">
+					<p>colours</p>
+				</div>
+				<div class="section" id="cases-section">
+					<p>cases</p>
+				</div>
+				<div class="section" id="cables-section">
+					<p>cables</p>
+				</div>
+				<div class="section" id="downloads-section">
+					<p>downloads</p>
+				</div>
+				<div class="section" id="company-section">
+					<p>company</p>
+				</div>
+			</div>
 		</div>
 		<script type="text/javascript">
-			$("#home").backstretch("img/kraken-bg-full.svg")
+			$("#home-section").backstretch("img/kraken-bg-full.svg")
 		</script>
 	</body>
 </html>
