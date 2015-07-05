@@ -61,6 +61,8 @@ html.fp-enabled,
     position: relative;
 }
 .fp-controlArrow {
+    display: none;
+    visibility: hidden;
     position: absolute;
     z-index: 4;
     top: 50%;
