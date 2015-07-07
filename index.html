@@ -7,18 +7,19 @@
 		<meta name="description" content="Modular synthesis components and accessories.">
 		<meta name="keywords" content="black market modular, colour palette, modular synthesis, Buchla, Eurorack, synths, effects, oscillator, VCA, LFO, envelope, filter, sequencer">
 		<title>Black Market Modular</title>
-		<!-- <link rel="shortcut icon" href="img/favicon.ico?v=2" type="image/x-icon"> -->
+		<link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon">
 
-		<link rel="stylesheet" href="css/normalize.min.css" />
-		<link rel="stylesheet" href="css/typography.css" />
-		<link rel="stylesheet" href="css/jquery.fullPage.css" />
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/typography.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gallery.css">
 		<!-- <link rel="stylesheet" href="css/mediaqueries.css" /> -->
 
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-		<script type="text/javascript" src="js/backstretch.js"></script>
-		<script type="text/javascript" src="js/jquery.inview.js"></script>
+		<script type="text/javascript" src="js/velocity.min.js"></script>
+		<script type="text/javascript" src="js/jquery.circular-carousel.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
 
 		<script type="text/javascript">
@@ -28,9 +29,9 @@
 	</head>
 	<body class="bg-dk-gradient">
 		<div id="main-wrapper">
+			<div id="logo"></div>
 			<div id="navigation">
 				<div id="desktop-nav-wrapper">
-					<div id="small-logo"></div>
 					<nav id="desktop-nav">
 	 					<ul id="menu">
 							<li class="led led-primary home-led green-led" data-menuanchor="home"><a href="#home">home</a></li>
@@ -48,10 +49,9 @@
 				</div>
 			</div>
 			<div id="fullpage">
-				<div class="section kraken-bg" id="home-section">
-						<p>home</p>
-					<!-- <img src="../img/kraken-bg.svg"> -->
-					<!-- <div id="logo"></div> -->
+				<div class="section" id="home-section">
+					<div class="bg-img kraken-bg"></div>
+					<h3>minneapolis, mn</h3>
 				</div>
 				<div class="section" id="colour-palette-section">
 					<div class="content">
@@ -68,7 +68,19 @@
 						</nav>
 						</div>
 						<div class="slide" id="cp-photos">
-							<p>cp 1</p>
+							<div class="">
+								<ul class="carousel">
+									<li class="cp-photo-front item active"></li>
+									<li class="cp-photo-front-angle item"></li>
+									<li class="cp-photo-back item"></li>
+									<li class="cp-photo-back-angle item"></li>
+									<li class="cp-photo-left item"></li>
+								</ul>
+								<div class="controls">
+									<a class="previous">Previous</a>
+									<a class="next">Next</a>
+								</div>
+							</div>
 						</div>
 						<div class="slide" id="cp-overview">
 							<p>cp 2</p>
@@ -101,8 +113,6 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript">
-			$("#home-section").backstretch("img/kraken-bg-full.svg")
-		</script>
+
 	</body>
 </html>

@@ -19,6 +19,12 @@ $(document).ready(function(){
 				$(".cables-led").removeClass('purple-led');
 				$(".downloads-led").removeClass('orange-led');
 				$(".company-led").removeClass('teal-led');
+				$("#logo").velocity({
+					width: "460px",
+					height: "316px",
+					left: "49.6%",
+					top: "25%",
+				}, 700);
 			}
 			if(nextIndex == 2){
 				$(".home-led").removeClass('green-led');
@@ -74,6 +80,14 @@ $(document).ready(function(){
 				$(".downloads-led").removeClass('orange-led');
 				$(".company-led").addClass('teal-led');
 			}
+			if (nextIndex == 2 || nextIndex == 3 || nextIndex == 4 || nextIndex ==5 || nextIndex == 6 || nextIndex == 7){
+				$("#logo").velocity({
+					width: "218px",
+					height: "150px",
+					left: "175px",
+					top: "32px",
+				}, 700);
+			}
 		},
 
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
@@ -116,7 +130,7 @@ $(document).ready(function(){
 		}
 	});
 
-	//colour palette sub navigation
+//colour palette sub navigation
 	$('#cp-photos-link').click(function(e){
 		e.preventDefault();
 		$.fn.fullpage.moveTo(2,0);
@@ -137,6 +151,35 @@ $(document).ready(function(){
 		e.preventDefault();
 		$.fn.fullpage.moveTo(2,4);
 	});
+
+//photo galery init
+	var options = {
+		ovalWidth: 290,
+		ovalHeight: 50,
+		offsetX: 100,
+		offsetY: 325,
+		angle: 0,
+		activeItem: 0,
+		duration: 700,
+		className: 'item'
+	}
+	var carousel = $('.carousel').CircularCarousel(options);
+
+	$('.controls .previous').click(function(e) {
+		carousel.cycleActive('previous');
+		//e.preventDefault();
+	});
+
+	$('.controls .next').click(function(e) {
+		carousel.cycleActive('next');
+		//e.preventDefault();
+	});
+
+	// $('.carousel .item').click(function(e) {
+	// 	var index = $(this).index('li');
+	// 	carousel.cycleActiveTo(index);
+	// 	e.preventDefault();
+	// });
 
 });
 
