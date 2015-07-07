@@ -4,7 +4,8 @@ $(document).ready(function(){
 	$("#fullpage").fullpage({
 		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company'],
 		menu: '#menu',
-		paddingTop: '0px',
+		paddingBottom: '10px',
+		paddingTop: '35px',
 		//slidesNavigation: false,
 		//navigation: true,
 		//navigationPosition: "right",
@@ -85,7 +86,7 @@ $(document).ready(function(){
 					width: "218px",
 					height: "150px",
 					left: "175px",
-					top: "32px",
+					top: "12px",
 				}, 700);
 			}
 		},
@@ -154,10 +155,10 @@ $(document).ready(function(){
 
 //photo galery init
 	var options = {
-		ovalWidth: 290,
-		ovalHeight: 50,
-		offsetX: 100,
-		offsetY: 325,
+		ovalWidth: 300,
+		ovalHeight: 0,
+		offsetX: 0,
+		offsetY: 150,
 		angle: 0,
 		activeItem: 0,
 		duration: 700,

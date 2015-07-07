@@ -1,11 +1,15 @@
 .carousel {
-	/*left: 50%;*/
-	position: absolute;
-	width: 1000px;
-	/*margin-left: -500px;*/
+	left: 50%;
+	position: relative;
+	width: 670px;
+	margin: 0px;
+	padding: 0px;
 	overflow: hidden;
-	height: 800px;
-	top: -100px;
+	height: 740px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	/*border: 1px solid;*/
 }
 .carousel > ul > li {
 	list-style: none;
@@ -14,7 +18,7 @@
 	display: block;
 	position: absolute;
 	width: 350px;
-	height: 800px;
+	height: 510px;
 	/*background: url('http://placehold.it/350x250') top left no-repeat;*/
 	background-size: 100%;
 	/*border: 1px solid red;*/
@@ -42,11 +46,13 @@
 }
 .controls {
 	position: absolute;
-	top: 570px;
-	left: 460px;
+	bottom: 190px;
+	left: 50%;
 	width: 150px;
 	z-index: 5000;
-	/*margin-left: -75px;*/
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 .controls a {display: block; cursor: pointer;}
 .controls .previous {float: left;}

@@ -29,7 +29,7 @@ Thanks: Addy Osmani, Marcus Haslam
     /*
        Original Source of this function: Addy Osmani's jquery.shapelib from 2010. Updated, tweaked by @samuelgbrown.
        Positions the items using margins, relative to an ellipse.
-    
+
        @params
        x: the left offset of all points on the ellipse
        y: the top offset of all points on the ellipse
@@ -41,7 +41,7 @@ Thanks: Addy Osmani, Marcus Haslam
 
       var i = 0,
           n = 0,
-          beta = -angle * (Math.PI / 180),    
+          beta = -angle * (Math.PI / 180),
           sinbeta = Math.sin(beta),
           cosbeta = Math.cos(beta),
           offsetElement = activeItem,
@@ -81,6 +81,7 @@ Thanks: Addy Osmani, Marcus Haslam
         }
 
         $items.eq(offsetElement).css('margin-top', X + 'px');
+        //$items.eq(offsetElement).css('margin-top', '0px');
         $items.eq(offsetElement).css('margin-left', Y + 'px');
 
         var itemMeta = { 'top' : $items.eq(offsetNextElement).offset().top, 'index' : offsetNextElement };
@@ -212,7 +213,7 @@ Thanks: Addy Osmani, Marcus Haslam
 
     /*
       Calculates the shorted route through the items array (forwards OR backwards)
-      
+
       @params
       array: array of carousel items
         start: route start position
@@ -232,13 +233,13 @@ Thanks: Addy Osmani, Marcus Haslam
         right++;
         index = (index === array.length-1) ? 0 : index + 1;
       }
-     
+
       index = start;
       while(index !== end){
         left++;
         index = (index === 0) ? array.length-1 : index - 1;
       }
-     
+
       return (left > right) ? { 'direction' : 1, 'steps' : right } : { 'direction' : 0, 'steps' : left };
     };
 
@@ -256,7 +257,7 @@ Thanks: Addy Osmani, Marcus Haslam
       var inSeconds = options.duration / 1000 + 's';
       $items.css('transition-duration', inSeconds);
     }, 10);
-    
+
 
     var methods = {
 
@@ -316,7 +317,7 @@ Thanks: Addy Osmani, Marcus Haslam
 
           // Add new active class, reposition items with positionItems.
           positionItems(offsetX, offsetY, angle, null);
-          
+
         }
 
       },

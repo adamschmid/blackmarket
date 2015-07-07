@@ -33,7 +33,7 @@ major 3rd | base: 1.5em
 	}
 	h2 {
 		font-size: 1.953em;
-		margin-top: 2em;
+		margin-top: 0em;
 	}
 	h3 {font-size: 1.563em;}
 	h4 {font-size: 1.25em;}
@@ -56,7 +56,8 @@ major 3rd | base: 1.5em
 	}
 	.content {
 		margin-left: 225px;
-		/*margin-top: 130px;*/
+		position: relative;
+		top: 0;
 		min-width: 620px;
 	}
 	.centerX {
@@ -65,6 +66,16 @@ major 3rd | base: 1.5em
 		-webkit-transform: translateX(-50%);
 		-moz-transform: translateX(-50%);
 		transform: translateX(-50%);
+	}
+	.bg-dk-gradient {
+	background: hsl(34, 14%, 3%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, hsl(30,14%,3%)), color-stop(45%, hsl(0,0%,20%)), color-stop(55%,hsl(0,0%,20%)), color-stop(100%,hsl(30,14%,3%)));
+	background: -webkit-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);
+	background: -moz-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%, hsl(30,14%,3%) 100%);
+	background: -ms-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);
+	background: -o-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);
+	background: linear-gradient(to bottom, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080706', endColorstr='#080706',GradientType=0 );
 	}
 
 
@@ -81,7 +92,7 @@ major 3rd | base: 1.5em
 		width: 285px;
 		height: 632px;
 		background-size: 100%;
-		margin-top: 20px;
+		/*margin-top: 20px;*/
 	}
 	#logo {
 		background: url('../img/logo.svg') no-repeat;
@@ -136,10 +147,10 @@ major 3rd | base: 1.5em
 		left: 34px;
 	}
 	.cp-features-led::after {
-		left: 32px;
+		left: 30px;
 	}
 	.cp-colours-led::after {
-		left: 26px;
+		left: 24px;
 	}
 	.cp-diy-led::after {
 		left: 6px;
@@ -259,6 +270,7 @@ major 3rd | base: 1.5em
 		margin: 0 auto;
 		border-bottom: 1px solid hsl(210, 3%, 47%);
 		padding-bottom: 5px;
+		margin-bottom: 1em;
 	}
 	.slide-nav nav > ul > li {
 		display: inline-block;
@@ -267,7 +279,6 @@ major 3rd | base: 1.5em
 	}
 
 /*---------- Home Section ----------*/
-
 
 	.kraken-bg {
 		background-image: url('../img/kraken-bg-full.svg');
@@ -288,33 +299,27 @@ major 3rd | base: 1.5em
 		right: 0;
 	}
 
-
-
-
-.bg-dk-gradient {
-	background: hsl(34, 14%, 3%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, hsl(30,14%,3%)), color-stop(45%, hsl(0,0%,20%)), color-stop(55%,hsl(0,0%,20%)), color-stop(100%,hsl(30,14%,3%)));
-	background: -webkit-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);
-	background: -moz-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%, hsl(30,14%,3%) 100%);
-	background: -ms-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);
-	background: -o-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);
-	background: linear-gradient(to bottom, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080706', endColorstr='#080706',GradientType=0 );
-}
-
-
-.cp-photo-front {
-	background: url('../img/cp-front.png') no-repeat;
-}
-.cp-photo-front-angle {
-	background: url('../img/cp-front-angle.png') no-repeat;
-}
-.cp-photo-back {
-	background: url('../img/cp-back.png') no-repeat;
-}
-.cp-photo-back-angle {
-	background: url('../img/cp-back-angle.png') no-repeat;
-}
-.cp-photo-left {
-	background: url('../img/cp-left.png') no-repeat;
-}
+/*---------- Colour Palette Section ----------*/
+	#colour-palette-section {
+		background: url('../img/kraken-bg-arm.svg') no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.carousel-wrap {
+		position: relative;
+	}
+	.cp-photo-front {
+		background: url('../img/cp-front.png') no-repeat;
+	}
+	.cp-photo-front-angle {
+		background: url('../img/cp-front-angle.png') no-repeat;
+	}
+	.cp-photo-back {
+		background: url('../img/cp-back.png') no-repeat;
+	}
+	.cp-photo-back-angle {
+		background: url('../img/cp-back-angle.png') no-repeat;
+	}
+	.cp-photo-left {
+		background: url('../img/cp-left.png') no-repeat;
+	}
