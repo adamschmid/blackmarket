@@ -1,15 +1,9 @@
 .carousel {
-	left: 50%;
-	position: relative;
-	width: 670px;
+	width: 650px;
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
 	height: 740px;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	transform: translateX(-50%);
-	/*border: 1px solid;*/
 }
 .carousel > ul > li {
 	list-style: none;
@@ -45,14 +39,9 @@
 	transition: all 0.35s ease;
 }
 .controls {
-	position: absolute;
-	bottom: 190px;
-	left: 50%;
+	top: 510px;
 	width: 150px;
 	z-index: 5000;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	transform: translateX(-50%);
 }
 .controls a {display: block; cursor: pointer;}
 .controls .previous {float: left;}

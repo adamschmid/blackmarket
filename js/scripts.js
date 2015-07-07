@@ -92,7 +92,6 @@ $(document).ready(function(){
 		},
 
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-			console.log(" nextSlideIndex:" + nextSlideIndex);
 			if (nextSlideIndex == 0){
 				$(".cp-photos-led").addClass('green-led');
 				$(".cp-overview-led").removeClass('red-led');
@@ -155,7 +154,7 @@ $(document).ready(function(){
 
 //photo galery init
 	var options = {
-		ovalWidth: 300,
+		ovalWidth: 280,
 		ovalHeight: 0,
 		offsetX: 0,
 		offsetY: 150,

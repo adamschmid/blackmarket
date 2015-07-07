@@ -13,13 +13,13 @@
 		<link rel="stylesheet" type="text/css" href="css/typography.css"/>
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		<link rel="stylesheet" type="text/css" href="css/gallery.css">
+		<link rel="stylesheet" type="text/css" href="css/carousel.css">
 		<!-- <link rel="stylesheet" href="css/mediaqueries.css" /> -->
 
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 		<script type="text/javascript" src="js/velocity.min.js"></script>
-		<script type="text/javascript" src="js/jquery.circular-carousel.js"></script>
+		<script type="text/javascript" src="js/jquery.carousel.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
 
 	</head>
@@ -65,24 +65,45 @@
 						</div>
 						<div class="slide" id="cp-photos">
 							<div class="carousel-wrap">
-								<ul class="carousel">
+								<ul class="carousel centerX">
 									<li class="cp-photo-front item active"></li>
 									<li class="cp-photo-front-angle item"></li>
 									<li class="cp-photo-back item"></li>
 									<li class="cp-photo-back-angle item"></li>
 									<li class="cp-photo-left item"></li>
 								</ul>
-								<div class="controls">
+								<div class="controls centerX">
 									<a class="previous">Previous</a>
 									<a class="next">Next</a>
 								</div>
 							</div>
 						</div>
 						<div class="slide" id="cp-overview">
-							<p>cp 2</p>
+							<div class="text-bg centerX">
+								<p>Designed to deliver the DIYRE Colour platform to Eurorack modular systems, the Colour Palette by itself consists of three high-quality VCAs with serial and parallel routing options.</p>
+								<p>Host up to three Colour or ColourCV submodules–low cost, ultra compact, DIY friendly circuits that provide a wide range of functions including saturation, filtering, delay, and many others.</p>
+							</div>
 						</div>
 						<div class="slide" id="cp-features">
-							<p>cp 3</p>
+							<div id="cp-features-wrap">
+								<div class="cp-photo-front centerX"></div>
+								<div class="cp-feature" id="cp-feature1">
+									<h4>CV BIAS and VCA CV INPUTS</h4>
+									<p>Sets the initial level for each of the three VCA’s. These levels are increased by positive (unipolar) voltage at the corresponding VCA CV Input jack, typically from an envelope generator. The VCA level may influence the effect of installed Colours or ColourCV’s.</p>
+								</div>
+								<div class="cp-feature" id="cp-feature2">
+									<h4>COLOUR CTRL and COLOUR CV INPUTS</h4>
+									<p>Allows control over specific parameters on installed ColourCV sub-modules. This control level is modified by negative or positive (bipolar) voltage at the corresponding CV input jack, typically from an LFO or Sequencer.</p>
+								</div>
+								<div class="cp-feature" id="cp-feature3">
+									<h4>VCA INPUTS and OUTPUTS</h4>
+									<p>Signal passes through a VCA channel before passing through it's installed Colour. The three Colours can be normalled in series with output 1 normalled to the VCA2 input, and output 2 normalled to the VCA3 input; or in parallel–with the VCA1 input normalled to the VCA2 and VCA3 inputs. (behavior selectable via internal switch)</p>
+								</div>
+								<div class="cp-feature" id="cp-feature4">
+									<h4>SUMMED OUTPUT</h4>
+									<p>Provides a single output with the outputs of the three VCA’s mixed (summed) together. Patching a VCA output may remove it from the SUM output (behavior selectable via internal switch)</p>
+								</div>
+							</div>
 						</div>
 						<div class="slide" id="cp-colours">
 							<p>cp 4</p>

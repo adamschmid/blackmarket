@@ -5,6 +5,7 @@ med dark grey hsl(0, 0%, 20%)
 med light grey hsl(210, 3%, 47%)
 light grey hsl(210, 3%, 87%)
 blue hsl(191, 100%, 41%)
+red hsl(347, 72%, 44%)
 
 typographic scale:
 major 3rd | base: 1.5em
@@ -24,7 +25,7 @@ major 3rd | base: 1.5em
 	body {
 		margin: 12px 12px 12px 0;
 	}
-	h1, h2, h3, h4 {
+	h1, h2, h3 {
 		text-align: center;
 	}
 	h1 {
@@ -52,7 +53,7 @@ major 3rd | base: 1.5em
 		background: hsl(191, 100%, 41%);
 	}
 	.section p {
-		margin-left: 400px;
+		/*margin-left: 400px;*/
 	}
 	.content {
 		margin-left: 225px;
@@ -61,7 +62,7 @@ major 3rd | base: 1.5em
 		min-width: 620px;
 	}
 	.centerX {
-		position: relative;
+		position: absolute;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
 		-moz-transform: translateX(-50%);
@@ -300,6 +301,7 @@ major 3rd | base: 1.5em
 	}
 
 /*---------- Colour Palette Section ----------*/
+
 	#colour-palette-section {
 		background: url('../img/kraken-bg-arm.svg') no-repeat;
 		background-position: center;
@@ -323,3 +325,51 @@ major 3rd | base: 1.5em
 	.cp-photo-left {
 		background: url('../img/cp-left.png') no-repeat;
 	}
+	.text-bg {
+		background: url('../img/text-bg.svg') no-repeat;
+		width: 670px;
+		height: 475px;
+		padding: 10px 30px;
+	}
+	#cp-features-wrap {
+		position: relative;
+		width: 800px;
+		margin: 0 auto;
+	}
+	#cp-features-wrap .cp-photo-front {
+		background-size: 100%;
+		width: 250px;
+		height: 360px;
+	}
+	.cp-feature {
+		width: 250px;
+		position: absolute;
+	}
+	#cp-feature1 {
+		top: 50px;
+	}
+	#cp-feature2 {
+		top: 100px;
+		left: 570px;
+	}
+	#cp-feature3 {
+		top: 230px;
+	}
+	#cp-feature4 {
+		top: 280px;
+		left: 570px;
+	}
+	.cp-feature > h4,
+	.cp-feature > p {
+		font-size: .7em;
+	}
+	.cp-feature > h4 {
+		color: hsl(347, 72%, 44%);
+		margin-top: 0;
+		margin-bottom: .3em;
+	}
+	.cp-feature > p {
+		margin-top: 0;
+	}
+
+ /*---------- Colour Palette Section ----------*/
