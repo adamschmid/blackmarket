@@ -21,6 +21,8 @@ major 3rd | base: 1.5em
 		font-family: 'melbourne regular', 'helvetica neue', sans-serif;
 		color: hsl(210, 3%, 87%);
 		font-size: 1.5em;
+		-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
 	}
 	body {
 		margin: 12px 12px 12px 0;
@@ -78,6 +80,64 @@ major 3rd | base: 1.5em
 	background: linear-gradient(to bottom, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080706', endColorstr='#080706',GradientType=0 );
 	}
+	.led::after {
+		animation: blink linear 2s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+		-webkit-animation: blink linear 2s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform-origin: 50% 50%;
+		-moz-animation: blink linear 2s;
+		-moz-animation-iteration-count: infinite;
+		-moz-transform-origin: 50% 50%;
+		-o-animation: blink linear 2s;
+		-o-animation-iteration-count: infinite;
+		-o-transform-origin: 50% 50%;
+		-ms-animation: blink linear 2s;
+		-ms-animation-iteration-count: infinite;
+		-ms-transform-origin: 50% 50%;
+	}
+	.led-secondary::after {
+		-webkit-animation-delay: .3s;
+		animation-delay: .5s;
+		-webkit-animation: blink linear 1.5s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform-origin: 50% 50%;
+		-moz-animation: blink linear 1.5s;
+		-moz-animation-iteration-count: infinite;
+		-moz-transform-origin: 50% 50%;
+		-o-animation: blink linear 1.5s;
+		-o-animation-iteration-count: infinite;
+		-o-transform-origin: 50% 50%;
+		-ms-animation: blink linear 1.5s;
+		-ms-animation-iteration-count: infinite;
+		-ms-transform-origin: 50% 50%;
+	}
+	@keyframes "blink" {
+		0% {opacity:1;}
+		50% {opacity:.4;}
+		100% {opacity:1;}
+	}
+	@-moz-keyframes "blink" {
+		0% {opacity:1;}
+		50% {opacity:.4;}
+		100% {opacity:1;}
+	}
+	@-webkit-keyframes "blink" {
+		0% {opacity:1;}
+		50% {opacity:.4;}
+		100% {opacity:1;}
+	}
+	@-o-keyframes blink {
+		0% {opacity:1;}
+		50% {opacity:.4;}
+		100% {opacity:1;}
+	}
+	@-ms-keyframes blink {
+		0% {opacity:1;}
+		50% {opacity:.4;}
+		100% {opacity:1;}
+	}
 
 
 /*---------- Main Navigation ----------*/
@@ -109,7 +169,7 @@ major 3rd | base: 1.5em
 		z-index: 1000;
 	}
 	nav#desktop-nav {
-		width: 123px;
+		width: 125px;
 		position: absolute;
 		left: 11.5%;
 		top: 41.5%;
@@ -126,33 +186,50 @@ major 3rd | base: 1.5em
 	.led {
 		text-shadow: 2px 2px 5px hsla(0, 0%, 0%, .5);
 	}
+	.led::before {
+		content: "";
+		position: absolute;
+		top: 8px;
+		right: -26px;
+		z-index: 1;
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		border: 1px solid hsl(0, 0%, 40%);
+		box-shadow: 1px 2px 5px hsla(0, 0%, 0%, 1);
+	}
 	.led::after {
 		content: "";
 		position: absolute;
 		width: 14px;
 		height: 14px;
 		border-radius: 50%;
-		border: 1px solid hsl(0, 0%, 40%);
 	}
 	.led-primary::after {
 		margin-left: 12px;
 		margin-top: 8px;
 	}
+	.led-secondary::before,
 	.led-secondary::after {
 		top: -20px;
 	}
+	.cp-photos-led::before,
 	.cp-photos-led::after {
 		left: 25px;
 	}
+	.cp-overview-led::before,
 	.cp-overview-led::after {
 		left: 34px;
 	}
+	.cp-features-led::before,
 	.cp-features-led::after {
 		left: 30px;
 	}
+	.cp-colours-led::before,
 	.cp-colours-led::after {
 		left: 24px;
 	}
+	.cp-diy-led::before,
 	.cp-diy-led::after {
 		left: 6px;
 	}

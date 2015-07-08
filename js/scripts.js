@@ -4,8 +4,7 @@ $(document).ready(function(){
 	$("#fullpage").fullpage({
 		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company'],
 		menu: '#menu',
-		paddingBottom: '10px',
-		paddingTop: '35px',
+		paddingTop: '0px',
 		//slidesNavigation: false,
 		//navigation: true,
 		//navigationPosition: "right",
