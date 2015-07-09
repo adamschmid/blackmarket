@@ -17,6 +17,7 @@
 		<!-- <link rel="stylesheet" href="css/mediaqueries.css" /> -->
 
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 		<script type="text/javascript" src="js/velocity.min.js"></script>
 		<script type="text/javascript" src="js/jquery.carousel.js"></script>
@@ -45,11 +46,11 @@
 				</div>
 			</div>
 			<div id="fullpage">
-				<div class="section" id="home-section">
-					<div class="bg-img kraken-bg"></div>
-					<h3>minneapolis, mn</h3>
+				<div class="section kraken-bg" id="home-section">
+					<h4 id="tagline" class="centerX">Black Market pitchfork vinyl normcore, Bushwick single-origin coffee street art VHS meditation PBR&B meh.</h4>
+					<h4 id="state">minneapolis, mn</h4>
 				</div>
-				<div class="section" id="colour-palette-section">
+				<div class="section kraken-bg-arm-1" id="colour-palette-section">
 					<div class="content">
 						<h2>colour palette</h2>
 						<div class="slide-nav" id="cp-nav">
@@ -58,11 +59,11 @@
 									<li class="led led-secondary cp-photos-led green-led"><a id="cp-photos-link">photos</a></li>
 									<li class="led led-secondary cp-overview-led"><a id="cp-overview-link">overview</a></li>
 									<li class="led led-secondary cp-features-led"><a id="cp-features-link">features</a></li>
-									<li class="led led-secondary cp-colours-led"><a id="cp-colours-link">colours</a></li>
 									<li class="led led-secondary cp-diy-led"><a id="cp-diy-link">diy</a></li>
 								</ul>
 							</nav>
 						</div>
+						<a class="cta" href="http://shop.blackmarketmodular/colour-palette/" target="_blank">order now<span class="fa fa-angle-right"></span></a>
 						<div class="slide" id="cp-photos">
 							<div class="carousel-wrap">
 								<ul class="carousel centerX">
@@ -80,8 +81,11 @@
 						</div>
 						<div class="slide" id="cp-overview">
 							<div class="text-bg centerX">
-								<p>Designed to deliver the DIYRE Colour platform to Eurorack modular systems, the Colour Palette by itself consists of three high-quality VCAs with serial and parallel routing options.</p>
-								<p>Host up to three Colour or ColourCV submodules–low cost, ultra compact, DIY friendly circuits that provide a wide range of functions including saturation, filtering, delay, and many others.</p>
+								<p>Designed to deliver the <a href="http://www.diyrecordingequipment.com/collections/colour" target="_blank">DIYRE Colour</a> platform to Eurorack modular systems, the Colour Palette by itself consists of three high-quality VCAs with serial and parallel routing options.</p>
+								<p>Host up to three Colour or ColourCV submodules – low cost, ultra compact, DIY friendly circuits that provide a wide range of functions including saturation, filtering, delay, and many others.</p>
+								<p>- Colour Palette <span>$279</span></p>
+								<p class="has-included">- Colour Palette Bundle <span>$329</span></p>
+								<p class="font_small">*includes <a href="#">Woof</a> & <a href="#">Tweet</a> colourCV's</p>
 							</div>
 						</div>
 						<div class="slide" id="cp-features">
@@ -105,28 +109,63 @@
 								</div>
 							</div>
 						</div>
-						<div class="slide" id="cp-colours">
-							<p>cp 4</p>
-						</div>
 						<div class="slide" id="cp-diy">
-							<p>cp 5</p>
+							<div class="text-bg centerX">
+								<p>Try-hard occupy leggings photo booth, tote bag stumptown Shoreditch beard migas aesthetic roof party hashtag.</p>
+								<p>Occupy leggings photo booth, tote bag stumptown Shoreditch beard migas aesthetic roof party hashtag.</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="section" id="colours-section">
-					<p>colours</p>
+				<div class="section wood-bg" id="colours-section">
+					<div class="content">
+						<h2>colours</h2>
+						<div class="slide-nav" id="colours-nav">
+							<nav>
+								<ul>
+									<li class="led led-secondary colours-bm-led green-led"><a id="colours-bm-link">black market</a></li>
+									<li class="led led-secondary colours-dtk-led"><a id="colours-dtk-link">designer's toolkit</a></li>
+									<li class="led led-secondary colours-tp-led"><a id="colours-tp-link">3rd party</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="slide" id="colours-bm">
+							<div id="pcb" class="bm-product">
+								<div id="pcb-img"></div>
+								<div>
+									<h4>Prototype PCB Kit <span>4.99</span></h4>
+									<ul>
+										<li>Includes (1) Prototyping PCB, (4) Snap-In Standoffs, and (1) 14 pin Header</li>
+										<li>Prototyping PCB includes labeled busses for ground, power, cv, and audio i/o</li>
+										<li>Compatible with the eurorack Colour Palette (*will not work with 500-Series Palette unless it is used with ColourADPTR)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="text-bg centerX">
+								<p>T2</p>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="text-bg centerX">
+								<p>T3</p>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="text-bg centerX">
+								<p>T4</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="section" id="cases-section">
-					<p>cases</p>
 				</div>
 				<div class="section" id="cables-section">
-					<p>cables</p>
 				</div>
 				<div class="section" id="downloads-section">
-					<p>downloads</p>
 				</div>
 				<div class="section" id="company-section">
-					<p>company</p>
 				</div>
 			</div>
 		</div>

@@ -4,7 +4,8 @@ $(document).ready(function(){
 	$("#fullpage").fullpage({
 		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company'],
 		menu: '#menu',
-		paddingTop: '0px',
+		paddingTop: '12px',
+		// scrollOverflow: true,
 		//slidesNavigation: false,
 		//navigation: true,
 		//navigationPosition: "right",
@@ -91,40 +92,51 @@ $(document).ready(function(){
 		},
 
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-			if (nextSlideIndex == 0){
+			if ( index == 2 && nextSlideIndex == 0 ){
 				$(".cp-photos-led").addClass('green-led');
 				$(".cp-overview-led").removeClass('red-led');
 				$(".cp-features-led").removeClass('blue-led');
-				$(".cp-colours-led").removeClass('yellow-led');
-				$(".cp-diy-led").removeClass('purple-led');
+				$(".cp-diy-led").removeClass('yellow-led');
+				console.log("1-1");
 			}
-			if (nextSlideIndex == 1){
+			if ( index == 2 && nextSlideIndex == 1 ){
 				$(".cp-photos-led").removeClass('green-led');
 				$(".cp-overview-led").addClass('red-led');
 				$(".cp-features-led").removeClass('blue-led');
-				$(".cp-colours-led").removeClass('yellow-led');
-				$(".cp-diy-led").removeClass('purple-led');
+				$(".cp-diy-led").removeClass('yellow-led');
+				console.log("1-2");
 			}
-			if (nextSlideIndex == 2){
+			if ( index == 2 && nextSlideIndex == 2 ){
 				$(".cp-photos-led").removeClass('green-led');
 				$(".cp-overview-led").removeClass('red-led');
 				$(".cp-features-led").addClass('blue-led');
-				$(".cp-colours-led").removeClass('yellow-led');
-				$(".cp-diy-led").removeClass('purple-led');
+				$(".cp-diy-led").removeClass('yellow-led');
+				console.log("1-3");
 			}
-			if (nextSlideIndex == 3){
+			if ( index == 2 && nextSlideIndex == 3 ){
 				$(".cp-photos-led").removeClass('green-led');
 				$(".cp-overview-led").removeClass('red-led');
 				$(".cp-features-led").removeClass('blue-led');
-				$(".cp-colours-led").addClass('yellow-led');
-				$(".cp-diy-led").removeClass('purple-led');
+				$(".cp-diy-led").addClass('yellow-led');
+				console.log("1-4");
 			}
-			if (nextSlideIndex == 4){
-				$(".cp-photos-led").removeClass('green-led');
-				$(".cp-overview-led").removeClass('red-led');
-				$(".cp-features-led").removeClass('blue-led');
-				$(".cp-colours-led").removeClass('yellow-led');
-				$(".cp-diy-led").addClass('purple-led');
+			if ( index == 3 && nextSlideIndex == 0 ){
+				$(".colours-bm-led").addClass('green-led');
+				$(".colours-dtk-led").removeClass('red-led');
+				$(".colours-tp-led").removeClass('blue-led');
+				console.log("2-1");
+			}
+			if ( index == 3 && nextSlideIndex == 1 ){
+				$(".colours-bm-led").removeClass('green-led');
+				$(".colours-dtk-led").addClass('red-led');
+				$(".colours-tp-led").removeClass('blue-led');
+				console.log("2-2");
+			}
+			if ( index == 3 && nextSlideIndex == 2 ){
+				$(".colours-bm-led").removeClass('green-led');
+				$(".colours-dtk-led").removeClass('red-led');
+				$(".colours-tp-led").addClass('blue-led');
+				console.log("2-3");
 			}
 		}
 	});
@@ -142,13 +154,22 @@ $(document).ready(function(){
 		e.preventDefault();
 		$.fn.fullpage.moveTo(2,2);
 	});
-	$('#cp-colours-link').click(function(e){
+	$('#cp-diy-link').click(function(e){
 		e.preventDefault();
 		$.fn.fullpage.moveTo(2,3);
 	});
-	$('#cp-diy-link').click(function(e){
+//colours sub navigation
+	$('#colours-bm-link').click(function(e){
 		e.preventDefault();
-		$.fn.fullpage.moveTo(2,4);
+		$.fn.fullpage.moveTo(3,0);
+	});
+	$('#colours-dtk-link').click(function(e){
+		e.preventDefault();
+		$.fn.fullpage.moveTo(3,1);
+	});
+	$('#colours-tp-link').click(function(e){
+		e.preventDefault();
+		$.fn.fullpage.moveTo(3,2);
 	});
 
 //photo galery init

@@ -2,8 +2,8 @@
 	width: 650px;
 	margin: 0px;
 	padding: 0px;
-	overflow: hidden;
-	height: 740px;
+	/*overflow: hidden;
+	height: 740px;*/
 }
 .carousel > ul > li {
 	list-style: none;
