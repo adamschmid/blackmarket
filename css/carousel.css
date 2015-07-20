@@ -1,5 +1,5 @@
 .carousel {
-	width: 650px;
+	width: 570px;
 	margin: 0px;
 	padding: 0px;
 	/*overflow: hidden;
@@ -11,8 +11,8 @@
 .carousel .item {
 	display: block;
 	position: absolute;
-	width: 350px;
-	height: 510px;
+	width: 290px;
+	height: 420px;
 	/*background: url('http://placehold.it/350x250') top left no-repeat;*/
 	background-size: 100%;
 	/*border: 1px solid red;*/
@@ -39,9 +39,10 @@
 	transition: all 0.35s ease;
 }
 .controls {
-	top: 510px;
+	top: 440px;
 	width: 150px;
 	z-index: 5000;
+	position: absolute;
 }
 .controls a {display: block; cursor: pointer;}
 .controls .previous {float: left;}

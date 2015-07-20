@@ -23,12 +23,12 @@ major 3rd | base: 1.5em
 	html {
 		font-family: 'melbourne regular', 'helvetica neue', sans-serif;
 		color: hsl(210, 3%, 87%);
-		font-size: 1.5em;
 		-webkit-font-smoothing: antialiased;
     	-moz-osx-font-smoothing: grayscale;
 	}
 	body {
 		margin: 12px 12px 12px 0;
+		font-size: 1.5em;
 	}
 	h1, h2, h3 {
 		text-align: center;
@@ -46,10 +46,13 @@ major 3rd | base: 1.5em
 		font-size: 1.25em;
 		font-weight: normal;
 	}
-	small, .font_small {
+	small, .font-small {
 		font-size: 0.7em;
 		margin: 0 0 0 1em;
 		color: hsl(210, 3%, 47%);
+	}
+	.italics {
+		font-style: italic;
 	}
 	.has-included {
 		margin-bottom: 0;
@@ -57,6 +60,8 @@ major 3rd | base: 1.5em
 	a {
 		color: hsl(191, 100%, 41%);
 		text-decoration: none;
+		-webkit-transition: color 0.3s, background-color 0.3s;
+		-moz-transition: color 0.3s, background-color 0.3s;
 		transition: color 0.3s, background-color 0.3s;
 	}
 	a:hover,
@@ -90,11 +95,11 @@ major 3rd | base: 1.5em
 	::selection {
 		background: hsl(191, 100%, 41%);
 	}
-	.section p {
-		/*margin-left: 400px;*/
+	#fullpage {
+		/*min-height: 640px;*/
 	}
 	.content {
-		margin-left: 225px;
+		/*margin-left: 225px;*/
 		position: relative;
 		top: 0;
 		min-width: 620px;
@@ -184,11 +189,10 @@ major 3rd | base: 1.5em
 		100% {opacity:1;}
 	}
 
-
 /*---------- Main Navigation ----------*/
 
 	#navigation {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 100;
@@ -205,7 +209,7 @@ major 3rd | base: 1.5em
 		width: 460px;
 		height: 313px;
 		background-size: 100%;
-		position: absolute;
+		position: fixed;
 		top: 25%;
 		left: 49.6%;
 		-webkit-transform: translateX(-50%);
@@ -216,7 +220,7 @@ major 3rd | base: 1.5em
 	nav#desktop-nav {
 		width: 125px;
 		position: absolute;
-		left: 11.5%;
+		left: 11.3%;
 		top: 31.5%;
 	}
 	nav > ul {
@@ -256,6 +260,7 @@ major 3rd | base: 1.5em
 	}
 	nav > ul > li > a {
 		color: hsl(210, 3%, 87%);
+		/*font-size: 24px;*/
 	}
 	nav > ul > li > a:hover,
 	nav > ul > li > a:active {
@@ -575,3 +580,104 @@ major 3rd | base: 1.5em
 		border-radius: 5px;
 		background-color: hsla(0, 0%, 0%, .4);
 	}
+
+	/*---------- designer's toolkit styles ----------*/
+
+	#tabs {
+		width: 60%;
+		max-width: 680px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#tabs > div > ul {
+		/*width: 40%;*/
+		font-size: .85em;
+	}
+	#tabs > div ul > li {
+		margin: 4px 0px;
+	}
+	#tabs > ul {
+		/*background-color: hsl(208, 100%, 97%);*/
+		background-color:hsla(209, 18%, 30%, 0.68);
+		border-radius: 5px;
+		padding: .2em;
+		margin-top: 0;
+	}
+	#tabs > ul > li {
+		display: inline-block;
+		border-radius: 3px;
+		margin: 4px 0px;
+		font-size: .8em;
+	}
+	#tabs > ul > li > a {
+		padding: 0 28px;
+	}
+	.ui-tabs-active {
+		/*background-color: hsl(191, 100%, 41%);*/
+		transition: color 0.7s, background-color 0.7s;
+		/*background-color: hsl(0, 0%, 83%);*/
+	}
+	.ui-tabs-active a {
+		color: hsl(0, 0%, 90%);
+	}
+	.ui-state-active a,
+	.ui-state-hover a {
+		outline: none;
+	}
+	#tabs-1 ul {
+		width: 100%;
+	}
+	#tabs-2 ul {
+		width: 40%;
+	}
+	#tabs-3 ol {
+		float: left;
+		margin-top: 0;
+		margin-right: 70px;
+		font-size: .8em;
+	}
+	.tab-pic {
+		position: absolute;
+	}
+	.dimensions {
+		width: 450px;
+		left: 40%;
+		top: 36%;
+	}
+	.pinout {
+		width: 450px;
+		left: 30%;
+		top: 195px;
+	}
+	#tabs-1 img,
+	#tabs-2 img,
+	#tabs-3 img,
+	#tabs-4 img,
+	#tabs-5 img {
+		max-width: 100%;
+		height: auto;
+	}
+	.tab-pic p {
+		width: 120px;
+		margin: 0 auto;
+		-webkit-transition: color 0.3s;
+		-moz-transition: color 0.3s;
+		transition: color 0.3s;
+	}
+	.tab-pic p:hover {
+		cursor: pointer;
+		color: hsl(191, 100%, 41%);
+	}
+	#toolkit-dl-btn {
+		position: absolute;
+		right: 0;
+	}
+	/*div.img-desc p {
+		font-size: .8em;
+		margin-top: 0;
+		margin-bottom: 60px;
+		margin-left: 280px;
+	}
+	div.img-desc:first-child p {
+		margin-top: -30px;
+	}*/

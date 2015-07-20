@@ -5,7 +5,9 @@ $(document).ready(function(){
 		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company'],
 		menu: '#menu',
 		paddingTop: '12px',
-		// scrollOverflow: true,
+		//scrollOverflow: true,
+		responsiveHeight: 654,
+		responsiveWidth: 768,
 		//slidesNavigation: false,
 		//navigation: true,
 		//navigationPosition: "right",
@@ -97,48 +99,42 @@ $(document).ready(function(){
 				$(".cp-overview-led").removeClass('red-led');
 				$(".cp-features-led").removeClass('blue-led');
 				$(".cp-diy-led").removeClass('yellow-led');
-				console.log("1-1");
 			}
 			if ( index == 2 && nextSlideIndex == 1 ){
 				$(".cp-photos-led").removeClass('green-led');
 				$(".cp-overview-led").addClass('red-led');
 				$(".cp-features-led").removeClass('blue-led');
 				$(".cp-diy-led").removeClass('yellow-led');
-				console.log("1-2");
 			}
 			if ( index == 2 && nextSlideIndex == 2 ){
 				$(".cp-photos-led").removeClass('green-led');
 				$(".cp-overview-led").removeClass('red-led');
 				$(".cp-features-led").addClass('blue-led');
 				$(".cp-diy-led").removeClass('yellow-led');
-				console.log("1-3");
 			}
 			if ( index == 2 && nextSlideIndex == 3 ){
 				$(".cp-photos-led").removeClass('green-led');
 				$(".cp-overview-led").removeClass('red-led');
 				$(".cp-features-led").removeClass('blue-led');
 				$(".cp-diy-led").addClass('yellow-led');
-				console.log("1-4");
 			}
 			if ( index == 3 && nextSlideIndex == 0 ){
 				$(".colours-bm-led").addClass('green-led');
 				$(".colours-dtk-led").removeClass('red-led');
 				$(".colours-tp-led").removeClass('blue-led');
-				console.log("2-1");
 			}
 			if ( index == 3 && nextSlideIndex == 1 ){
 				$(".colours-bm-led").removeClass('green-led');
 				$(".colours-dtk-led").addClass('red-led');
 				$(".colours-tp-led").removeClass('blue-led');
-				console.log("2-2");
 			}
 			if ( index == 3 && nextSlideIndex == 2 ){
 				$(".colours-bm-led").removeClass('green-led');
 				$(".colours-dtk-led").removeClass('red-led');
 				$(".colours-tp-led").addClass('blue-led');
-				console.log("2-3");
 			}
 		}
+
 	});
 
 //colour palette sub navigation
@@ -174,7 +170,7 @@ $(document).ready(function(){
 
 //photo galery init
 	var options = {
-		ovalWidth: 280,
+		ovalWidth: 250,
 		ovalHeight: 0,
 		offsetX: 0,
 		offsetY: 150,
@@ -201,7 +197,10 @@ $(document).ready(function(){
 	// 	e.preventDefault();
 	// });
 
+//designers toolkit tabbed sections
+	$( "#tabs" ).tabs({
+		show: { effect: "fadeIn", duration: 700 },
+		hide: { effect: "fadeOut", duration: 100 }
+	});
+
 });
-
-
-
