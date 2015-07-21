@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 //fullpage init
 	$("#fullpage").fullpage({
-		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company'],
+		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company', 'black-market', 'designers-toolkit', 'third-party'],
 		menu: '#menu',
 		paddingTop: '12px',
 		//scrollOverflow: true,
