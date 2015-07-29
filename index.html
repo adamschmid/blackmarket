@@ -143,7 +143,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="slide" id="designers-toolkit" data-anchor="designers-toolkit">
+						<div class="slide" id="designers-toolkit" data-anchor="dtk">
 							<div id="tabs">
 								<!-- <h1>ColourCV Designer's Toolkit</h1> -->
 								<ul>
@@ -168,14 +168,7 @@
 										<li>Control Voltage: -5V to +5V nominal (CTRL knob range)</li>
 									</ul>
 									<!-- <p>It's okay if you don't know the exact specifications of your ColourCV.</p>-->
-									<a href="" >Notes & Recommendations</a>
-									<!--<ul>
-										<li>Buffer the input and output of your circuit with <a href="http://en.wikipedia.org/wiki/Buffer_amplifier#Op-amp_implementation" target="_black">opamp buffers</a>.</li>
-										<li>To use standard Eurorack levels of +-10 Vpp nominal level: use a gain stage with a gain of 2.879 (+9.2dB) at the input to your colour. For the output to be unity, use a gain stage of 0.347 (-9.2dB) just before the output pin. This shifting is necessary for compatibility with original Colours operating at +4dBu.</li>
-										<li>Outputs can be AC or DC coupled, and should have a 100 ohm to 1k output series resistor.</li>
-										<li>The Palette for ColourCV will clip any signal levels greater than 20Vpp.</li>
-										<li>The primary power rails are +-12V. There are +-16V rails available for extra headroom and legacy Colour designs. You are limited to 38mA/Colour on the +-16V rails.</li>
-									</ul>-->
+									<p id="dtk-notes-link" class="font-small modal-open">Click here to see additional notes & recommendations:</p>
 								</div>
 								<div id="tabs-2"><!-- Dimensions -->
 									<p>Your ColourCV's PCB should be made from standard, 1/16" (1.6mm) thickness, rigid FR4. For aesthetic continuity, we recommend Ø.125" (3.2mm) beveled corners, but they are not necessary.</p>
@@ -212,7 +205,7 @@
 									</ol>
 									<div class="tab-pic pinout">
 										<img src="img/pcb-pinout.svg">
-										<p class="font-small italics">view larger image</p>
+										<p id="" class="font-small italics">view larger image</p>
 									</div>
 								</div>
 								<div id="tabs-4"><!-- Connectors -->
@@ -448,7 +441,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="slide" id="third-party" data-anchor="third-party">
+						<div class="slide" id="third-party" data-anchor="tp">
 							<div class="text-bg centerX">
 								<p>T3</p>
 							</div>
@@ -466,6 +459,16 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="overlay hide"></div>
+		<div id="dtk-notes" class="centerXY hide">
+			<ul>
+				<li>Buffer the input and output of your circuit with <a href="http://en.wikipedia.org/wiki/Buffer_amplifier#Op-amp_implementation" target="_black">opamp buffers</a>.</li>
+				<li>To use standard Eurorack levels of +-10 Vpp nominal level: use a gain stage with a gain of 2.879 (+9.2dB) at the input to your colour. For the output to be unity, use a gain stage of 0.347 (-9.2dB) just before the output pin. This shifting is necessary for compatibility with original Colours operating at +4dBu.</li>
+				<li>Outputs can be AC or DC coupled, and should have a 100 ohm to 1k output series resistor.</li>
+				<li>The Palette for ColourCV will clip any signal levels greater than 20Vpp.</li>
+				<li>The primary power rails are +-12V. There are +-16V rails available for extra headroom and legacy Colour designs. You are limited to 38mA/Colour on the +-16V rails.</li>
+			</ul>
+			<p class="close modal-close italics">close</p>
+		</div>
 	</body>
 </html>

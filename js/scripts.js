@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 //fullpage init
 	$("#fullpage").fullpage({
-		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company', 'black-market', 'designers-toolkit', 'third-party'],
+		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company', 'black-market', 'dtk', 'ttp'],
 		menu: '#menu',
 		paddingTop: '12px',
 		//scrollOverflow: true,
@@ -154,6 +154,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$.fn.fullpage.moveTo(2,3);
 	});
+
 //colours sub navigation
 	$('#colours-bm-link').click(function(e){
 		e.preventDefault();
@@ -202,5 +203,43 @@ $(document).ready(function(){
 		show: { effect: "fadeIn", duration: 700 },
 		hide: { effect: "fadeOut", duration: 100 }
 	});
+
+//overlay modal
+	$('.modal-open').click(function(){
+		$(".overlay").removeClass('hide').velocity({opacity: 1});
+	});
+	$('.modal-close').click(function(){
+		$(".overlay").velocity({
+			opacity: 0},
+			{complete: function(){$(".overlay").addClass('hide');}}
+		);
+	});
+	$(".overlay").click(function(){
+		$(".overlay").velocity({
+			opacity: 0},
+			{complete: function(){$(".overlay").addClass('hide');}}
+		);
+		$("#dtk-notes").velocity({
+			opacity: 0},
+			{complete: function(){$("#dtk-notes").addClass('hide');}}
+		);
+	});
+//designers toolkit modal
+	$('#dtk-notes-link').click(function(){
+		$("#dtk-notes").removeClass('hide').velocity({opacity: 1});
+	});
+	$(".close").click(function(){
+		$("#dtk-notes").velocity({
+			opacity: 0},
+			{complete: function(){$("#dtk-notes").addClass('hide');}}
+		);
+	});
+
+
+
+
+
+
+
 
 });
