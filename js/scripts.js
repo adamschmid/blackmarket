@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 //fullpage init
 	$("#fullpage").fullpage({
-		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company', 'black-market', 'dtk', 'ttp'],
+		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company', 'black-market', 'designers-toolkit', 'third-party'],
 		menu: '#menu',
 		paddingTop: '12px',
 		//scrollOverflow: true,
@@ -95,26 +95,26 @@ $(document).ready(function(){
 
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
 			if ( index == 2 && nextSlideIndex == 0 ){
-				$(".cp-photos-led").addClass('green-led');
-				$(".cp-overview-led").removeClass('red-led');
+				$(".cp-overview-led").addClass('green-led');
+				$(".cp-photos-led").removeClass('red-led');
 				$(".cp-features-led").removeClass('blue-led');
 				$(".cp-diy-led").removeClass('yellow-led');
 			}
 			if ( index == 2 && nextSlideIndex == 1 ){
-				$(".cp-photos-led").removeClass('green-led');
-				$(".cp-overview-led").addClass('red-led');
+				$(".cp-overview-led").removeClass('green-led');
+				$(".cp-photos-led").addClass('red-led');
 				$(".cp-features-led").removeClass('blue-led');
 				$(".cp-diy-led").removeClass('yellow-led');
 			}
 			if ( index == 2 && nextSlideIndex == 2 ){
-				$(".cp-photos-led").removeClass('green-led');
-				$(".cp-overview-led").removeClass('red-led');
+				$(".cp-overview-led").removeClass('green-led');
+				$(".cp-photos-led").removeClass('red-led');
 				$(".cp-features-led").addClass('blue-led');
 				$(".cp-diy-led").removeClass('yellow-led');
 			}
 			if ( index == 2 && nextSlideIndex == 3 ){
-				$(".cp-photos-led").removeClass('green-led');
-				$(".cp-overview-led").removeClass('red-led');
+				$(".cp-overview-led").removeClass('green-led');
+				$(".cp-photos-led").removeClass('red-led');
 				$(".cp-features-led").removeClass('blue-led');
 				$(".cp-diy-led").addClass('yellow-led');
 			}
@@ -138,11 +138,11 @@ $(document).ready(function(){
 	});
 
 //colour palette sub navigation
-	$('#cp-photos-link').click(function(e){
+	$('#cp-overview-link').click(function(e){
 		e.preventDefault();
 		$.fn.fullpage.moveTo(2,0);
 	});
-	$('#cp-overview-link').click(function(e){
+		$('#cp-photos-link').click(function(e){
 		e.preventDefault();
 		$.fn.fullpage.moveTo(2,1);
 	});

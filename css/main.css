@@ -9,6 +9,7 @@ logo grey hsl(0, 0%, 32%);
 
 blue hsl(191, 100%, 41%)
 red hsl(347, 72%, 44%)
+green hsl(116, 40%, 59%)
 
 typographic scale:
 major 3rd | base: 1.5em
@@ -582,6 +583,9 @@ major 3rd | base: 1.5em
 	}
 	.cp-feature > p {
 		margin-top: 0;
+	}
+	#cp-diy h3 {
+		color: hsl(116, 40%, 59%);
 	}
 
 /*---------- Colours Section ----------*/
