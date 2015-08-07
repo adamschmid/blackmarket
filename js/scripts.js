@@ -87,7 +87,7 @@ $(document).ready(function(){
 				$("#logo").velocity({
 					width: "218px",
 					height: "150px",
-					left: "175px",
+					left: "155px",
 					top: "12px",
 				}, 700);
 			}

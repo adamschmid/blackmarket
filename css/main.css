@@ -242,7 +242,7 @@ major 3rd | base: 1.5em
 	#navigation {
 		position: fixed;
 		top: 0;
-		left: 0;
+		left: -20px;
 		z-index: 100;
 	}
 	#desktop-nav-wrapper {
