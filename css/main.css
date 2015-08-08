@@ -94,7 +94,7 @@ major 3rd | base: 1.5em
 		/*min-height: 640px;*/
 	}
 	.content {
-		/*margin-left: 225px;*/
+		margin-left: 160px;
 		position: relative;
 		top: 0;
 		min-width: 620px;
@@ -152,14 +152,14 @@ major 3rd | base: 1.5em
 	}
 	.overlay {
 		position: absolute;
-		z-index: 10000;
+		z-index: 10;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: hsla(0, 0%, 0%, 0.65);
+		background-color: hsla(0, 0%, 0%, 0.75);
 		opacity: 0;
 	}
 	.hide {
@@ -244,13 +244,16 @@ major 3rd | base: 1.5em
 		top: 0;
 		left: -20px;
 		z-index: 100;
+		overflow: hidden;
+		height: 632px;
+		/*height: 0px;*/
 	}
 	#desktop-nav-wrapper {
 		background: url('../img/nav-bg.svg') no-repeat;
 		width: 285px;
+		/*height: 0px;*/
 		height: 632px;
 		background-size: 100%;
-		/*margin-top: 20px;*/
 	}
 	#logo {
 		background: url('../img/logo.svg') no-repeat;
@@ -269,7 +272,20 @@ major 3rd | base: 1.5em
 		width: 125px;
 		position: absolute;
 		left: 11.3%;
-		top: 31.5%;
+		top: 35%;
+	}
+	#nav-icon {
+		position: fixed;
+		left: 142px;
+		top: 164px;
+		z-index: 1000;
+	}
+	.fa-bars::after {
+		content: "\f0c9";
+		font-size: 1em;
+		width: 45px;
+		height: 45px;
+		color: hsl(0, 0%, 32%);;
 	}
 	nav > ul {
 		margin: 0;
@@ -409,7 +425,7 @@ major 3rd | base: 1.5em
 		margin: 0 auto;
 		border-bottom: 1px solid hsl(210, 3%, 47%);
 		padding-bottom: 5px;
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 	}
 	.slide-nav nav > ul > li {
 		display: inline-block;
@@ -426,7 +442,7 @@ major 3rd | base: 1.5em
 		background-image: url('../img/kraken-bg-full.svg');
 		width:  100%;
 		height: 100%;
-		background-position: center 72%;
+		background-position: 100% 72%;
 		background-repeat: no-repeat;
 	}
 	#tagline {
