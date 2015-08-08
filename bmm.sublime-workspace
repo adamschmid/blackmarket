@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
 				"co",
 				"color"
 			],
@@ -14,10 +22,6 @@
 			[
 				"mar",
 				"margin-bottom"
-			],
-			[
-				"padding",
-				"padding"
 			],
 			[
 				"t",
@@ -54,10 +58,6 @@
 			[
 				"bac",
 				"background-size"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"div",
@@ -523,18 +523,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 29047,
+				"buffer_size": 30090,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "/*\ncolor guide:\n\ndark grey hsl(34, 14%, 3%)\nmed dark grey hsl(0, 0%, 20%)\nmed light grey hsl(210, 3%, 47%)\nlight grey hsl(210, 3%, 87%)\nlogo grey hsl(0, 0%, 32%);\n\nblue hsl(191, 100%, 41%)\nred hsl(347, 72%, 44%)\ngreen hsl(116, 40%, 59%)\n\ntypographic scale:\nmajor 3rd | base: 1.5em\n*/\n\n/*---------- Globals ----------*/\n\n	body, html, #main-wrapper {\n		width: 100%;\n		height: 100%;\n	}\n	html {\n		font-family: 'melbourne regular', 'helvetica neue', sans-serif;\n		color: hsl(210, 3%, 87%);\n		-webkit-font-smoothing: antialiased;\n    	-moz-osx-font-smoothing: grayscale;\n	}\n	body {\n		margin: 12px 12px 12px 0;\n		font-size: 1.5em;\n	}\n	h1, h2, h3 {\n		text-align: center;\n	}\n	h1 {\n		margin-top: 0;\n		font-size: 2.441em;\n	}\n	h2 {\n		font-size: 1.953em;\n		margin-top: 0em;\n	}\n	h3 {font-size: 1.563em;}\n	h4 {\n		font-size: 1.25em;\n		font-weight: normal;\n	}\n	small, .font-small {\n		font-size: 0.7em;\n		margin: 0 0 0 1em;\n		color: hsl(210, 3%, 47%);\n	}\n	.italics {\n		font-style: italic;\n	}\n	.has-included {\n		margin-bottom: 0;\n	}\n	a {\n		color: hsl(191, 100%, 41%);\n		text-decoration: none;\n		-webkit-transition: color 0.3s, background-color 0.3s;\n		-moz-transition: color 0.3s, background-color 0.3s;\n		transition: color 0.3s, background-color 0.3s;\n	}\n	a:hover,\n	a:active {\n		color: hsl(198, 50%, 85%);\n	}\n	a.cta {\n		background-color: hsl(191, 100%, 41%);\n		color: hsl(198, 50%, 85%);\n		border-radius: 5px;\n		display: block;\n		padding: 5px 7px 5px 0px;\n		width:160px;\n		text-align: center;\n		/*font-weight: bold;*/\n		/*font-family: \"melbourne bold\";*/\n		position: absolute;\n		top: 7px;\n		right: 20px;\n	}\n	a.cta:hover,\n	a.cta:active {\n		background-color: hsl(0, 0%, 32%);\n	}\n	::selection {\n		background: hsl(191, 100%, 41%);\n	}\n	#fullpage {\n		/*min-height: 640px;*/\n	}\n	.content {\n		margin-left: 160px;\n		position: relative;\n		top: 0;\n		min-width: 620px;\n		height: 100%;\n	}\n	.centerXY {\n		position: absolute;\n		top: 50%;\n		left: 50%;\n		-webkit-transform: translate(-50%, -50%);\n		-moz-transform: translate(-50%, -50%);\n		transform: translate(-50%, -50%);\n	}\n	.centerX {\n		position: absolute;\n		left: 50%;\n		-webkit-transform: translateX(-50%);\n		-moz-transform: translateX(-50%);\n		transform: translateX(-50%);\n	}\n	.centerY {\n		position: absolute;\n		top: 50%;\n		-webkit-transform: translateY(-50%);\n		-moz-transform: translateY(-50%);\n		transform: translateY(-50%);\n	}\n	.fa {\n		font: normal normal normal 14px/1 FontAwesome;\n		font-size: inherit;\n		text-rendering: auto;\n		-webkit-font-smoothing: antialiased;\n		-moz-osx-font-smoothing: grayscale;\n		transform: translate(0, 0);\n	}\n	.fa-angle-right::after {\n		content: \"\\f105\";\n		position: relative;\n		top: 1px;\n		left: 13px;\n	}\n	.close {\n		text-align: right;\n		margin: 0;\n		padding: 0;\n		cursor: pointer;\n		color: hsl(210, 3%, 47%);\n		-webkit-transition: color 0.3s;\n		-moz-transition: color 0.3s;\n		transition: color 0.3s;\n	}\n	.close:active,\n	.close:hover {\n		color: hsl(191, 100%, 41%);\n	}\n	.overlay {\n		position: absolute;\n		z-index: 10;\n		top: 0;\n		right: 0;\n		bottom: 0;\n		left: 0;\n		width: 100%;\n		height: 100%;\n		background-color: hsla(0, 0%, 0%, 0.75);\n		opacity: 0;\n	}\n	.hide {\n		display: none;\n		visibility: hidden;\n	}\n\n	/**/\n	.bg-dk-gradient {\n		background: hsl(34, 14%, 3%);\n		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, hsl(30,14%,3%)), color-stop(45%, hsl(0,0%,20%)), color-stop(55%,hsl(0,0%,20%)), color-stop(100%,hsl(30,14%,3%)));\n		background: -webkit-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);\n		background: -moz-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%, hsl(30,14%,3%) 100%);\n		background: -ms-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);\n		background: -o-linear-gradient(top, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);\n		background: linear-gradient(to bottom, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);\n		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080706', endColorstr='#080706',GradientType=0 );\n	}\n	.led::after {\n		animation: blink linear 2s;\n		animation-iteration-count: infinite;\n		transform-origin: 50% 50%;\n		-webkit-animation: blink linear 2s;\n		-webkit-animation-iteration-count: infinite;\n		-webkit-transform-origin: 50% 50%;\n		-moz-animation: blink linear 2s;\n		-moz-animation-iteration-count: infinite;\n		-moz-transform-origin: 50% 50%;\n		-o-animation: blink linear 2s;\n		-o-animation-iteration-count: infinite;\n		-o-transform-origin: 50% 50%;\n		-ms-animation: blink linear 2s;\n		-ms-animation-iteration-count: infinite;\n		-ms-transform-origin: 50% 50%;\n	}\n	.led-secondary::after {\n		-webkit-animation-delay: .3s;\n		animation-delay: .5s;\n		-webkit-animation: blink linear 1.5s;\n		-webkit-animation-iteration-count: infinite;\n		-webkit-transform-origin: 50% 50%;\n		-moz-animation: blink linear 1.5s;\n		-moz-animation-iteration-count: infinite;\n		-moz-transform-origin: 50% 50%;\n		-o-animation: blink linear 1.5s;\n		-o-animation-iteration-count: infinite;\n		-o-transform-origin: 50% 50%;\n		-ms-animation: blink linear 1.5s;\n		-ms-animation-iteration-count: infinite;\n		-ms-transform-origin: 50% 50%;\n	}\n	@keyframes \"blink\" {\n		0% {opacity:1;}\n		50% {opacity:.4;}\n		100% {opacity:1;}\n	}\n	@-moz-keyframes \"blink\" {\n		0% {opacity:1;}\n		50% {opacity:.4;}\n		100% {opacity:1;}\n	}\n	@-webkit-keyframes \"blink\" {\n		0% {opacity:1;}\n		50% {opacity:.4;}\n		100% {opacity:1;}\n	}\n	@-o-keyframes blink {\n		0% {opacity:1;}\n		50% {opacity:.4;}\n		100% {opacity:1;}\n	}\n	@-ms-keyframes blink {\n		0% {opacity:1;}\n		50% {opacity:.4;}\n		100% {opacity:1;}\n	}\n\n/*---------- Main Navigation ----------*/\n\n	#navigation {\n		position: fixed;\n		top: 0;\n		left: -20px;\n		z-index: 100;\n		overflow: hidden;\n		height: 632px;\n		/*height: 0px;*/\n	}\n	#desktop-nav-wrapper {\n		background: url('../img/nav-bg.svg') no-repeat;\n		width: 285px;\n		/*height: 0px;*/\n		height: 632px;\n		background-size: 100%;\n	}\n	#logo {\n		background: url('../img/logo.svg') no-repeat;\n		width: 460px;\n		height: 313px;\n		background-size: 100%;\n		position: fixed;\n		top: 25%;\n		/*left: 49.6%;*/\n		-webkit-transform: translateX(-50%);\n		-moz-transform: translateX(-50%);\n		transform: translateX(-50%);\n		z-index: 100000;\n	}\n	nav#desktop-nav {\n		width: 125px;\n		position: absolute;\n		left: 11.3%;\n		top: 35%;\n	}\n	#nav-icon {\n		position: fixed;\n		left: 142px;\n		top: 164px;\n		z-index: 1000;\n	}\n	.fa-bars::after {\n		content: \"\\f0c9\";\n		font-size: 1em;\n		width: 45px;\n		height: 45px;\n		color: hsl(0, 0%, 32%);;\n	}\n	nav > ul {\n		margin: 0;\n		padding: 0;\n	}\n	nav > ul > li {\n		position: relative;\n		list-style: none;\n		text-align: right;\n	}\n	.led {\n		text-shadow: 2px 2px 5px hsla(0, 0%, 0%, .5);\n	}\n	.led::before {\n		content: \"\";\n		position: absolute;\n		top: 8px;\n		right: -26px;\n		z-index: 1;\n		width: 14px;\n		height: 14px;\n		border-radius: 50%;\n		border: 1px solid hsl(0, 0%, 40%);\n		box-shadow: 1px 2px 5px hsla(0, 0%, 0%, 1);\n	}\n	.led::after {\n		content: \"\";\n		position: absolute;\n		width: 14px;\n		height: 14px;\n		border-radius: 50%;\n	}\n	.led-primary::after {\n		margin-left: 12px;\n		margin-top: 8px;\n	}\n	nav > ul > li > a {\n		color: hsl(210, 3%, 87%);\n		/*font-size: 24px;*/\n	}\n	nav > ul > li > a:hover,\n	nav > ul > li > a:active {\n		color: hsl(210, 3%, 47%);\n	}\n	.fa-envelope-o::after {\n		content: \"\\f003\";\n		position: relative;\n		top: 20px;\n		left: 32px;\n	}\n	.fa-facebook-official::after {\n		content: \"\\f230\";\n		position: relative;\n		top: 26px;\n		left: 30px;\n	}\n	.icon-link > a {\n		color: hsl(0, 0%, 40%);\n	}\n\n/*---------- LED Gradients ----------*/\n\n	.green-led::after {\n		background: hsl(103,100%,55%);\n		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, hsl(0,0%,100%)), color-stop(100%, hsl(103,100%,55%)));\n		background: -webkit-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(103,100%,55%) 100%);\n		background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(103,100%,55%) 100%);\n		background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(103,100%,55%) 100%);\n		background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(103,100%,55%) 100%);\n		background: radial-gradient(ellipse at center, hsl(0,0%,100%) 10%, hsl(103,100%,55%) 100%);\n		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#5bff1a',GradientType=1 );\n	}\n	.red-led::after {\n		background: hsl(0,100%,50%);\n		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, hsl(0,0%,100%)), color-stop(100%, hsl(0,100%,50%)));\n		background: -webkit-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(0,100%,50%) 100%);\n		background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(0,100%,50%) 100%);\n		background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(0,100%,50%) 100%);\n		background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(0,100%,50%) 100%);\n		background: radial-gradient(ellipse at center,  hsl(0,0%,100%) 10%, hsl(0,100%,50%) 100%);\n		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fd0000',GradientType=1 );\n	}\n	.blue-led::after {\n		background: hsl(248,100%,58%);\n		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, hsl(0,0%,100%)), color-stop(100%, hsl(248,100%,58%)));\n		background: -webkit-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(248,100%,58%) 100%);\n		background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(248,100%,58%) 100%);\n		background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(248,100%,58%) 100%);\n		background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(248,100%,58%) 100%);\n		background: radial-gradient(ellipse at center,  hsl(0,0%,100%) 10%, hsl(248,100%,58%) 100%);\n		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#462aff',GradientType=1 );\n	}\n	.yellow-led::after {\n		background: hsl(54,100%,64%);\n		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, hsl(0,0%,100%)), color-stop(100%, hsl(54,100%,64%)));\n		background: -webkit-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(54,100%,64%) 100%);\n		background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(54,100%,64%) 100%);\n		background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(54,100%,64%) 100%);\n		background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(54,100%,64%) 100%);\n		background: radial-gradient(ellipse at center,  hsl(0,0%,100%) 10%, hsl(54,100%,64%) 100%);\n		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffee48',GradientType=1 );\n	}\n	.purple-led::after {\n		background: hsl(285,100%,42%);\n		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, hsl(0,0%,100%)), color-stop(100%, hsl(285,100%,42%)));\n		background: -webkit-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(285,100%,42%) 100%);\n		background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(285,100%,42%) 100%);\n		background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(285,100%,42%) 100%);\n		background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(285,100%,42%) 100%);\n		background: radial-gradient(ellipse at center,  hsl(0,0%,100%) 10%, hsl(285,100%,42%) 100%);\n		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a000d5',GradientType=1 );\n	}\n	.orange-led::after {\n		background: hsl(21,100%,53%);\n		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, hsl(0,0%,100%)), color-stop(100%, hsl(21,100%,53%)));\n		background: -webkit-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(21,100%,53%) 100%);\n		background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(21,100%,53%) 100%);\n		background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(21,100%,53%) 100%);\n		background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(21,100%,53%) 100%);\n		background: radial-gradient(ellipse at center,  hsl(0,0%,100%) 10%, hsl(21,100%,53%) 100%);\n		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff610c',GradientType=1 );\n	}\n	.teal-led::after {\n		background: hsl(184,100%,32%);\n		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, hsl(0,0%,100%)), color-stop(100%, hsl(184,100%,32%)));\n		background: -webkit-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(184,100%,32%) 100%);\n		background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(184,100%,32%) 100%);\n		background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(184,100%,32%) 100%);\n		background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,100%) 10%, hsl(184,100%,32%) 100%);\n		background: radial-gradient(ellipse at center,  hsl(0,0%,100%) 10%, hsl(184,100%,32%) 100%);\n		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0097a1',GradientType=1 );\n	}\n\n/*---------- Secondary Navigation ----------*/\n\n	.slide-nav {\n		margin: 0 auto;\n		border-bottom: 1px solid hsl(210, 3%, 47%);\n		padding-bottom: 5px;\n		margin-bottom: 2em;\n	}\n	.slide-nav nav > ul > li {\n		display: inline-block;\n		cursor: pointer;\n	}\n	.led-secondary::before,\n	.led-secondary::after {\n		top: -20px;\n	}\n\n/*---------- Home Section ----------*/\n\n	.kraken-bg {\n		background-image: url('../img/kraken-bg-full.svg');\n		width:  100%;\n		height: 100%;\n		background-position: 100% 72%;\n		background-repeat: no-repeat;\n	}\n	#tagline {\n		position: absolute;\n		top: 65%;\n		width: 50%;\n		text-align: center;\n	}\n	#state {\n		text-transform: uppercase;\n		position: absolute;\n		margin: 0 auto;\n		bottom: 10px;\n		color: hsl(0, 0%, 20%);\n		font-family: 'melbourne light', 'helvetica neue', sans-serif;\n		width: 200px;\n		left: 0;\n		right: 0;\n	}\n\n/*---------- Colour Palette Section ----------*/\n\n	.kraken-bg-arm-1 {\n		background: url('../img/kraken-bg-arm-1.svg') no-repeat;\n		background-position: center;\n		background-size: cover;\n	}\n	.carousel-wrap {\n		position: relative;\n	}\n	#cp-nav {\n		width: 375px;\n	}\n	#cp-nav nav > ul > li {\n		margin: 0 15px;\n	}\n	.cp-photos-led::before,\n	.cp-photos-led::after {\n		left: 25px;\n	}\n	.cp-overview-led::before,\n	.cp-overview-led::after {\n		left: 34px;\n	}\n	.cp-features-led::before,\n	.cp-features-led::after {\n		left: 30px;\n	}\n	.cp-colours-led::before,\n	.cp-colours-led::after {\n		left: 24px;\n	}\n	.cp-diy-led::before,\n	.cp-diy-led::after {\n		left: 6px;\n	}\n	.cp-photo-front {\n		background: url('../img/cp-front.png') no-repeat;\n	}\n	.cp-photo-front-angle {\n		background: url('../img/cp-front-angle.png') no-repeat;\n	}\n	.cp-photo-back {\n		background: url('../img/cp-back.png') no-repeat;\n	}\n	.cp-photo-back-angle {\n		background: url('../img/cp-back-angle.png') no-repeat;\n	}\n	.cp-photo-left {\n		background: url('../img/cp-left.png') no-repeat;\n	}\n	.text-bg {\n		background: url('../img/text-bg.svg') no-repeat;\n		width: 670px;\n		height: 475px;\n		padding: 10px 30px;\n	}\n	#cp-features-wrap {\n		position: relative;\n		width: 800px;\n		margin: 0 auto;\n	}\n	#cp-features-wrap .cp-photo-front {\n		background-size: 100%;\n		width: 250px;\n		height: 360px;\n	}\n	.cp-feature {\n		width: 250px;\n		position: absolute;\n	}\n	#cp-feature1 {\n		top: 44px;\n	}\n	#cp-feature1::after {\n		content: \"\";\n		display: block;\n		position: absolute;\n		background: url('../img/cp-feature1.svg') no-repeat;\n		width: 252px;\n		height: 58px;\n		top: -5px;\n		left: 224px;\n	}\n	#cp-feature2 {\n		top: 100px;\n		left: 570px;\n	}\n	#cp-feature2::after {\n		content: \"\";\n		display: block;\n		position: absolute;\n		background: url('../img/cp-feature2.svg') no-repeat;\n		width: 253px;\n		height: 70px;\n		top: -5px;\n		left: -261px;\n	}\n	#cp-feature3 {\n		top: 230px;\n	}\n	#cp-feature3::after {\n		content: \"\";\n		display: block;\n		position: absolute;\n		background: url('../img/cp-feature3.svg') no-repeat;\n		width: 253px;\n		height: 56px;\n		top: -5px;\n		left: 224px;\n	}\n	#cp-feature4 {\n		top: 292px;\n		left: 570px;\n	}\n	#cp-feature4::after {\n		content: \"\";\n		display: block;\n		position: absolute;\n		background: url('../img/cp-feature4.svg') no-repeat;\n		width: 81px;\n		height: 27px;\n		top: -5px;\n		left: -90px;\n	}\n	.cp-feature > h4,\n	.cp-feature > p {\n		font-size: .7em;\n	}\n	.cp-feature > h4 {\n		color: hsl(347, 72%, 44%);\n		margin-top: 0;\n		margin-bottom: .3em;\n	}\n	.cp-feature > p {\n		margin-top: 0;\n	}\n	#cp-diy h3 {\n		color: hsl(116, 40%, 59%);\n	}\n\n/*---------- Colours Section ----------*/\n\n	.wood-bg {\n		background-image: url('../img/wood-bg.jpg');\n		background-size: cover;\n		background-position: center 72%;\n		background-repeat: no-repeat;\n	}\n	#colours-nav {\n		width: 466px;\n	}\n	#colours-nav nav > ul > li {\n		margin: 0 18px;\n	}\n	.colours-bm-led::before,\n	.colours-bm-led::after {\n		left: 52px;\n	}\n	.colours-dtk-led::before,\n	.colours-dtk-led::after {\n		left: 74px;\n	}\n	.colours-tp-led::before,\n	.colours-tp-led::after {\n		left: 32px;\n	}\n	.bm-product {\n		font-size: 75%;\n		position: relative;\n	}\n	.bm-product > div {\n		/*display: inline-block;*/\n	}\n	#pcb-img {\n		background-image: url('../img/pcb-assembled.png');\n		width: 200px;\n		height: 100px;\n		background-size: 100%;\n		background-repeat: no-repeat;\n		border: 1px solid #333;\n		border-radius: 5px;\n		background-color: hsla(0, 0%, 0%, .4);\n	}\n\n	/*---------- designer's toolkit styles ----------*/\n\n	#tabs {\n		width: 60%;\n		max-width: 680px;\n		margin: 0 auto;\n		position: relative;\n	}\n	#tabs > div > ul {\n		/*width: 40%;*/\n		font-size: .85em;\n	}\n	#tabs > div ul > li {\n		margin: 4px 0px;\n	}\n	#tabs > ul {\n		/*background-color: hsl(208, 100%, 97%);*/\n		background-color:hsla(209, 18%, 30%, 0.68);\n		border-radius: 5px;\n		padding: .2em;\n		margin-top: 0;\n	}\n	#tabs > ul > li {\n		display: inline-block;\n		border-radius: 3px;\n		margin: 4px 0px;\n		font-size: .8em;\n	}\n	#tabs > ul > li > a {\n		padding: 0 28px;\n	}\n	.ui-tabs-active {\n		/*background-color: hsl(191, 100%, 41%);*/\n		transition: color 0.7s, background-color 0.7s;\n		/*background-color: hsl(0, 0%, 83%);*/\n	}\n	.ui-tabs-active a {\n		color: hsl(0, 0%, 90%);\n	}\n	.ui-state-active a,\n	.ui-state-hover a {\n		outline: none;\n	}\n	#tabs-1 ul {\n		width: 100%;\n	}\n	#tabs-2 ul {\n		width: 40%;\n	}\n	#tabs-3 ol {\n		float: left;\n		margin-top: 0;\n		margin-right: 70px;\n		font-size: .8em;\n	}\n	.tab-pic {\n		position: absolute;\n	}\n	.dimensions {\n		width: 450px;\n		left: 40%;\n		top: 36%;\n	}\n	.pinout {\n		width: 450px;\n		left: 30%;\n		top: 195px;\n	}\n	#tabs-1 img,\n	#tabs-2 img,\n	#tabs-3 img,\n	#tabs-4 img,\n	#tabs-5 img {\n		max-width: 100%;\n		height: auto;\n	}\n	.tab-pic p {\n		width: 120px;\n		margin: 0 auto;\n		-webkit-transition: color 0.3s;\n		-moz-transition: color 0.3s;\n		transition: color 0.3s;\n	}\n	.tab-pic p:hover {\n		cursor: pointer;\n		color: hsl(191, 100%, 41%);\n	}\n	#toolkit-dl-btn {\n		position: absolute;\n		right: 0;\n	}\n	/*div.img-desc p {\n		font-size: .8em;\n		margin-top: 0;\n		margin-bottom: 60px;\n		margin-left: 280px;\n	}\n	div.img-desc:first-child p {\n		margin-top: -30px;\n	}*/\n	#dtk-notes-link {\n		color: hsl(191, 100%, 41%);\n		-webkit-transition: color 0.3s;\n		-moz-transition: color 0.3s;\n		transition: color 0.3s;\n		cursor: pointer;\n		width: 360px;\n	}\n	#dtk-notes-link:active,\n	#dtk-notes-link:hover {\n		color: hsl(198, 50%, 85%);\n	}\n	#dtk-notes {\n		width: 60%;\n		background-color: hsl(0, 0%, 20%);\n		padding: 1em;\n		margin: 0;\n		border-radius: 5px;\n		z-index: 20000;\n		opacity: 0;\n	}\n	#dtk-notes ul {\n		margin: 0;\n	}",
 			"file": "css/main.css",
-			"file_size": 19808,
-			"file_write_time": 130834755360000000,
 			"settings":
 			{
-				"buffer_size": 19812,
+				"buffer_size": 20484,
 				"line_ending": "Unix"
 			}
 		},
@@ -542,7 +539,15 @@
 			"file": "js/scripts.js",
 			"settings":
 			{
-				"buffer_size": 7375,
+				"buffer_size": 6565,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/modal.js",
+			"settings":
+			{
+				"buffer_size": 3314,
 				"line_ending": "Unix"
 			}
 		}
@@ -781,6 +786,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Designer",
+			"cf",
+			"right",
+			".dtk",
+			"modal",
+			"notes",
 			"margin",
 			"t",
 			"th",
@@ -902,13 +913,7 @@
 			"<div",
 			"h3",
 			"100",
-			"offsetX",
-			"0.",
-			"side",
-			"30",
-			"href=\"#\" ",
-			".carousel-",
-			"-"
+			"offsetX"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1054,7 +1059,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1063,15 +1068,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29047,
+						"buffer_size": 30090,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1161,
-								1161
+								843,
+								843
 							]
 						],
 						"settings":
@@ -1083,27 +1088,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
 				{
 					"buffer": 1,
 					"file": "css/main.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19812,
+						"buffer_size": 20484,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5972,
-								5972
+								20173,
+								20173
 							]
 						],
 						"settings":
@@ -1115,10 +1126,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4365.0,
+						"translation.y": 15120.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1127,14 +1138,14 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7375,
+						"buffer_size": 6565,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
+								29,
 								0
 							]
 						],
@@ -1147,10 +1158,40 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3651.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/modal.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2708,
+								2708
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1242.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1173,11 +1214,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.560394889663,
 			1.0
 		],
 		"rows":

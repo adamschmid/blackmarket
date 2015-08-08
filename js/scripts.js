@@ -204,42 +204,4 @@ $(document).ready(function(){
 		hide: { effect: "fadeOut", duration: 100 }
 	});
 
-//overlay modal
-	$('.modal-open').click(function(){
-		$(".overlay").removeClass('hide').velocity({opacity: 1});
-	});
-	$('.modal-close').click(function(){
-		$(".overlay").velocity({
-			opacity: 0},
-			{complete: function(){$(".overlay").addClass('hide');}}
-		);
-	});
-	$(".overlay").click(function(){
-		$(".overlay").velocity({
-			opacity: 0},
-			{complete: function(){$(".overlay").addClass('hide');}}
-		);
-		$("#dtk-notes").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-notes").addClass('hide');}}
-		);
-	});
-//designers toolkit modal
-	$('#dtk-notes-link').click(function(){
-		$("#dtk-notes").removeClass('hide').velocity({opacity: 1});
-	});
-	$(".close").click(function(){
-		$("#dtk-notes").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-notes").addClass('hide');}}
-		);
-	});
-
-
-
-
-
-
-
-
 });

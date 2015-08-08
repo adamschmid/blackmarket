@@ -23,6 +23,7 @@
 		<script type="text/javascript" src="js/velocity.min.js"></script>
 		<script type="text/javascript" src="js/jquery.carousel.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/modal.js"></script>
 
 	</head>
 	<body class="bg-dk-gradient">
@@ -135,7 +136,8 @@
 							</nav>
 						</div>
 						<div class="slide" id="colours-bm" data-anchor="black-market">
-							<div id="pcb" class="bm-product">
+							<p>Black Market Modular has a host of ColourCV's and accessories to get you started.</p>
+							<!-- <div id="pcb" class="bm-product">
 								<div id="pcb-img"></div>
 								<div>
 									<h4>Prototype PCB Kit <span>4.99</span></h4>
@@ -145,7 +147,7 @@
 										<li>Compatible with the eurorack Colour Palette (*will not work with 500-Series Palette unless it is used with ColourADPTR)</li>
 									</ul>
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<div class="slide" id="dtk" data-anchor="designers-toolkit">
 							<div id="tabs">
@@ -186,7 +188,7 @@
 									</ul>
 									<div class="tab-pic dimensions">
 										<img src="img/pcb-dimensions.svg">
-										<p class="font-small italics">view larger image</p>
+										<p id="dtk-dimpic-link" class="font-small italics modal-open">view larger image</p>
 									</div>
 								</div>
 								<div id="tabs-3"><!-- Pinouts -->
@@ -209,18 +211,20 @@
 									</ol>
 									<div class="tab-pic pinout">
 										<img src="img/pcb-pinout.svg">
-										<p id="" class="font-small italics">view larger image</p>
+										<p id="dtk-pinout-link" class="font-small italics modal-open">view larger image</p>
 									</div>
 								</div>
 								<div id="tabs-4"><!-- Connectors -->
-									<h2>Connectors</h2>
-									<!-- <p>ColourCV’s mount to the Palette via five connectors - four mechanical and one electrical.</p>
+									<p>ColourCV’s mount to the Palette via five connectors - four mechanical and one electrical.</p>
 									<p>ColourCV’s are mechanically secured to the Palette via four nylon standoffs. These standoffs are available in 9 lengths ("A" in the connector drawing), allowing you to customize your ColourCV's mounting height from the Palette. The nylon standoffs are locking on one end and removable, press-fit on the other.</p>
-									<p>The locking ends should be inserted into the ColourCV's mounting holes so that the standoffs are permanently attached to the colour. ColourCV’s make an electrical connection to the Palette via one 14-pin connector mounted on the bottom of the ColourCV PCB. The connector's pin length ("B" in the connector drawing) has to correspond with your chosen standoff height, "A." B must be .1" longer than A.</p>
-									<img src="../img/connectors.jpg">
-									<h3>Sourcing Connectors</h3>
-									<p>If you are selling your ColourCV, you must include the mechanical and electrical connectors in your kit or assembled unit. Both the mechanical and electrical connectors are standard off-the-shelf components available worldwide.</p>
-									<h3>Mechanical Connectors</h3>
+									<div class="tab-pic connector">
+										<img src="img/pcb-connectors.svg">
+										<p id="dtk-connectors-link" class="font-small italics modal-open">view larger image</p>
+									</div>
+									<!-- <p>The locking ends should be inserted into the ColourCV's mounting holes so that the standoffs are permanently attached to the colour. ColourCV’s make an electrical connection to the Palette via one 14-pin connector mounted on the bottom of the ColourCV PCB. The connector's pin length ("B" in the connector drawing) has to correspond with your chosen standoff height, "A." B must be .1" longer than A.</p> -->
+									<!-- <h3>Sourcing Connectors</h3> -->
+									<p >If you are selling your ColourCV, you must include the mechanical and electrical connectors in your kit or assembled unit. Both the mechanical and electrical connectors are standard off-the-shelf components available worldwide. Please download the <a href="dev.blackmarketmodular.com/#colours/designers-toolkit">Designer’s Toolkit PDF</a> for information on sourcing connectors.</p>
+									<!-- <h3>Mechanical Connectors</h3>
 									<table>
 										<thead>
 											<tr>
@@ -457,14 +461,14 @@
 				<div class="section" id="cables-section">
 				</div>
 				<div class="section" id="downloads-section">
-				<a id="toolkit-dl-btn" href="../downloads/DesignersToolkit.pdf" download>ColourCV Designer's Toolkit PDF</a>
+					<a id="toolkit-dl-btn" href="../downloads/DesignersToolkit.pdf" download>ColourCV Designer's Toolkit PDF</a>
 				</div>
 				<div class="section" id="company-section">
 				</div>
 			</div>
 		</div>
 		<div class="overlay hide"></div>
-		<div id="dtk-notes" class="centerXY hide">
+		<div id="dtk-notes" class="dtk-modal centerXY hide">
 			<ul>
 				<li>Buffer the input and output of your circuit with <a href="http://en.wikipedia.org/wiki/Buffer_amplifier#Op-amp_implementation" target="_black">opamp buffers</a>.</li>
 				<li>To use standard Eurorack levels of +-10 Vpp nominal level: use a gain stage with a gain of 2.879 (+9.2dB) at the input to your colour. For the output to be unity, use a gain stage of 0.347 (-9.2dB) just before the output pin. This shifting is necessary for compatibility with original Colours operating at +4dBu.</li>
@@ -472,6 +476,24 @@
 				<li>The Palette for ColourCV will clip any signal levels greater than 20Vpp.</li>
 				<li>The primary power rails are +-12V. There are +-16V rails available for extra headroom and legacy Colour designs. You are limited to 38mA/Colour on the +-16V rails.</li>
 			</ul>
+			<div>
+				<p class="close modal-close italics">close</p>
+			</div>
+		</div>
+		<div id="dtk-dimpic" class="dtk-modal centerXY hide">
+			<div id="dtk-dimensions"></div>
+			<div>
+				<p class="close modal-close italics">close</p>
+			</div>
+		</div>
+		<div id="dtk-pinoutpic" class="dtk-modal centerXY hide">
+			<div id="dtk-pinout"></div>
+			<div>
+				<p class="close modal-close italics">close</p>
+			</div>
+		</div>
+		<div id="dtk-con-pic" class="dtk-modal centerXY hide">
+			<div id="dtk-connectors"></div>
 			<div>
 				<p class="close modal-close italics">close</p>
 			</div>
