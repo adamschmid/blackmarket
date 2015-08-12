@@ -5,13 +5,13 @@ $(document).ready(function(){
 		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables', 'downloads', 'company', 'black-market', 'designers-toolkit', 'third-party'],
 		menu: '#menu',
 		paddingTop: '12px',
-		//scrollOverflow: true,
+		scrollOverflow: true,
 		responsiveHeight: 654,
 		responsiveWidth: 768,
 		//slidesNavigation: false,
 		//navigation: true,
 		//navigationPosition: "right",
-		//scrollBar: true,
+		// scrollBar: true,
 
 		onLeave: function(index, nextIndex, direction){
 			if(nextIndex == 1){
@@ -22,11 +22,21 @@ $(document).ready(function(){
 				$(".cables-led").removeClass('purple-led');
 				$(".downloads-led").removeClass('orange-led');
 				$(".company-led").removeClass('teal-led');
-				$("#logo").velocity({
-					width: "460px",
-					height: "316px",
-					left: "49.6%",
-					top: "25%",
+				$("#logo-sm").velocity({
+					opacity: 0
+				}, 700);
+				// $("#logo").velocity({
+				// 	// width: "460px",
+				// 	// height: "316px",
+				// 	width: "460px",
+				// 	height: "316px",
+				// 	left: "49.6%",
+				// 	top: "25%",
+				// }, 700);
+			}
+			if(nextIndex > 1){
+				$("#logo-sm").velocity({
+					opacity: 1
 				}, 700);
 			}
 			if(nextIndex == 2){
@@ -85,12 +95,19 @@ $(document).ready(function(){
 			}
 			if (nextIndex == 2 || nextIndex == 3 || nextIndex == 4 || nextIndex ==5 || nextIndex == 6 || nextIndex == 7){
 				$("#logo").velocity({
-					width: "218px",
-					height: "150px",
-					left: "155px",
-					top: "12px",
+
 				}, 700);
 			}
+			// if (nextIndex == 2 || nextIndex == 3 || nextIndex == 4 || nextIndex ==5 || nextIndex == 6 || nextIndex == 7){
+			// 	$("#logo").velocity({
+			// 		// width: "218px",
+			// 		// height: "150px",
+			// 		width: "190px",
+			// 		height: "130px",
+			// 		left: "155px",
+			// 		top: "12px",
+			// 	}, 700);
+			// }
 		},
 
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
@@ -203,5 +220,6 @@ $(document).ready(function(){
 		show: { effect: "fadeIn", duration: 700 },
 		hide: { effect: "fadeOut", duration: 100 }
 	});
+
 
 });

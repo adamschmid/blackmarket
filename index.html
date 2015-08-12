@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/typography.css"/>
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/grid.css"/>
 		<link rel="stylesheet" type="text/css" href="css/carousel.css">
 		<link rel="stylesheet" type="text/css" href="css/mediaqueries.css" />
 
@@ -28,7 +29,7 @@
 	</head>
 	<body class="bg-dk-gradient">
 		<div id="main-wrapper">
-			<div id="logo"></div>
+			<div id="logo-sm"></div>
 			<!-- <div id="nav-icon"><i class="fa fa-bars"></i></div> -->
 			<div id="navigation">
 				<div id="desktop-nav-wrapper">
@@ -51,13 +52,14 @@
 			<div id="fullpage">
 				<div class="section kraken-bg" id="home-section">
 					<div class="content">
+						<div id="logo-lg"></div>
 						<h4 id="tagline" class="centerX">Black Market pitchfork vinyl normcore, Bushwick single-origin coffee street art VHS meditation PBR&B meh.</h4>
 						<h4 id="state">minneapolis, mn</h4>
 					</div>
 				</div>
 				<div class="section kraken-bg-arm-1" id="colour-palette-section">
 					<div class="content">
-						<h2>colour palette</h2>
+						<!-- <h2>colour palette</h2> -->
 						<div class="slide-nav" id="cp-nav">
 							<nav>
 								<ul>
@@ -68,7 +70,7 @@
 								</ul>
 							</nav>
 						</div>
-						<a class="cta" href="http://shop.blackmarketmodular/colour-palette/" target="_blank">order now<span class="fa fa-angle-right"></span></a>
+						<a class="cta cp-cta" href="http://shop.blackmarketmodular/colour-palette/" target="_blank">order now<span class="fa fa-angle-right"></span></a>
 						<div class="slide" id="cp-overview">
 							<div class="text-bg centerX">
 								<p>Designed to deliver the <a href="http://www.diyrecordingequipment.com/collections/colour" target="_blank">DIYRE Colour</a> platform to Eurorack modular systems, the Colour Palette by itself consists of three high-quality VCA's with serial and parallel routing options.</p>
@@ -118,14 +120,14 @@
 							<div class="text-bg centerX">
 								<h3>diy, design, and distribute</h3>
 								<p>If you're feeling creative we’ve got you covered! Since the Colour Palette is an open-source format, you can freely share and sell your ColourCV ideas!</p>
-								<p>By using our pre-made, <a href="">DIY prototyping PCB</a> and following our easy to use <a href="dev.blackmarketmodular.com/#colours/designers-toolkit">Designer’s Toolkit</a>, you can bring your creations to life.</p>
+								<p>By using our pre-made, diy<a href=""> ColourCV Prototyping Kit</a> and following our easy to use <a href="dev.blackmarketmodular.com/#colours/designers-toolkit">Designer’s Toolkit</a>, you can bring your creations to life!</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="section wood-bg" id="colours-section">
 					<div class="content">
-						<h2>colours</h2>
+						<!-- <h2>colours</h2> -->
 						<div class="slide-nav" id="colours-nav">
 							<nav>
 								<ul>
@@ -136,7 +138,42 @@
 							</nav>
 						</div>
 						<div class="slide" id="colours-bm" data-anchor="black-market">
-							<p>Black Market Modular has a host of ColourCV's and accessories to get you started.</p>
+							<div class="row">
+								<h4>Black Market Modular has a host of ColourCV's and accessories to get you started on your Colour Palette creation.</h4>
+							</div>
+							<div class="row">
+								<div class="fifty" id="c1">
+									<div class="sixty" id="woof-pic"></div>
+									<div class="forty" id="woof-desc">
+										<p>Woof</p>
+										<p class="font-small">ColourCV Low-Pass Filter</p>
+										<p>$30</p>
+										<a class="cta" href="http://shop.blackmarketmodular/woof/" target="_blank">order now<span class="fa fa-angle-right"></span></a>
+									</div>
+								</div>
+								<div class="fifty" id="c2">
+									<div class="sixty" id="tweet-pic"></div>
+									<div class="forty" id="tweet-desc">
+										<p>Tweet</p>
+										<p class="font-small">ColourCV High-Pass Filter</p>
+										<p>$30</p>
+										<a class="cta" href="http://shop.blackmarketmodular/tweet/" target="_blank">order now<span class="fa fa-angle-right"></span></a>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="fifty" id="c3">
+									<div class="sixty" id="adptr-pic"></div>
+									<div class="forty" id="adptr-desc">
+										<p>ColourADPTR</p>
+										<p class="font-small">500 Series Module Adapter</p>
+										<p>$30</p>
+										<a class="cta" href="http://shop.blackmarketmodular/colouradptr/" target="_blank">order now<span class="fa fa-angle-right"></span></a>
+									</div>
+								</div>
+								<div class="fifty" id="c4"></div>
+							</div>
+
 							<!-- <div id="pcb" class="bm-product">
 								<div id="pcb-img"></div>
 								<div>
@@ -187,8 +224,8 @@
 										<li>Mounting Hole Keep-out Clearance: &#8709;0.289 (7.4mm)</li>
 									</ul>
 									<div class="tab-pic dimensions">
-										<img src="img/pcb-dimensions.svg">
-										<p id="dtk-dimpic-link" class="font-small italics modal-open">view larger image</p>
+										<img src="img/dtk-dimensions.svg">
+										<p id="dtk-dimensions-pic-link" class="font-small italics modal-open">view larger image</p>
 									</div>
 								</div>
 								<div id="tabs-3"><!-- Pinouts -->
@@ -210,242 +247,28 @@
 										<li>12V-</li>
 									</ol>
 									<div class="tab-pic pinout">
-										<img src="img/pcb-pinout.svg">
-										<p id="dtk-pinout-link" class="font-small italics modal-open">view larger image</p>
+										<img src="img/dtk-pinouts.svg">
+										<p id="dtk-pinouts-pic-link" class="font-small italics modal-open">view larger image</p>
 									</div>
 								</div>
 								<div id="tabs-4"><!-- Connectors -->
 									<p>ColourCV’s mount to the Palette via five connectors - four mechanical and one electrical.</p>
 									<p>ColourCV’s are mechanically secured to the Palette via four nylon standoffs. These standoffs are available in 9 lengths ("A" in the connector drawing), allowing you to customize your ColourCV's mounting height from the Palette. The nylon standoffs are locking on one end and removable, press-fit on the other.</p>
 									<div class="tab-pic connector">
-										<img src="img/pcb-connectors.svg">
-										<p id="dtk-connectors-link" class="font-small italics modal-open">view larger image</p>
+										<img src="img/dtk-connectors.svg">
+										<p id="dtk-connectors-pic-link" class="font-small italics modal-open">view larger image</p>
 									</div>
 									<!-- <p>The locking ends should be inserted into the ColourCV's mounting holes so that the standoffs are permanently attached to the colour. ColourCV’s make an electrical connection to the Palette via one 14-pin connector mounted on the bottom of the ColourCV PCB. The connector's pin length ("B" in the connector drawing) has to correspond with your chosen standoff height, "A." B must be .1" longer than A.</p> -->
 									<!-- <h3>Sourcing Connectors</h3> -->
 									<p >If you are selling your ColourCV, you must include the mechanical and electrical connectors in your kit or assembled unit. Both the mechanical and electrical connectors are standard off-the-shelf components available worldwide. Please download the <a href="dev.blackmarketmodular.com/#colours/designers-toolkit">Designer’s Toolkit PDF</a> for information on sourcing connectors.</p>
-									<!-- <h3>Mechanical Connectors</h3>
-									<table>
-										<thead>
-											<tr>
-												<th>Manufacturer</th>
-												<th>Part #</th>
-												<th>Height ("A")</th>
-												<th>Datasheet</th>
-												<th>Source</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Keystone</td>
-												<td>8879</td>
-												<td>.125&quot;</td>
-												<td><a target="_blank" href="http://www.mouser.com/ds/2/215/8879-289453.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="http://octopart.com/8879-keystone-9289640">Octopart Search</a></td>
-											</tr>
-											<tr>
-												<td>Keystone</td>
-												<td>8880</td>
-												<td>.187&quot;</td>
-												<td><a target="_blank" href="http://www.mouser.com/ds/2/215/8879-289453.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="http://octopart.com/8880-keystone-10591630">Octopart Search</a></td>
-											</tr>
-											<tr>
-												<td>Keystone</td>
-												<td>8881</td>
-												<td>.25&quot;</td>
-												<td><a target="_blank" href="http://www.mouser.com/ds/2/215/8879-289453.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="http://octopart.com/8881-keystone-9289636">Octopart Search</a></td>
-											</tr>
-											<tr>
-												<td>Keystone</td>
-												<td>8882</td>
-												<td>.375&quot;</td>
-												<td><a target="_blank" href="http://www.mouser.com/ds/2/215/8879-289453.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/8882-keystone-10591108">Octopart Search</a></td>
-											</tr>
-											<tr>
-												<td>Keystone</td>
-												<td>8883</td>
-												<td>.5&quot;</td>
-												<td><a target="_blank" href="http://www.mouser.com/ds/2/215/8879-289453.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/8883-keystone-10591230">Octopart Search</a></td>
-											</tr>
-											<tr>
-												<td>Keystone</td>
-												<td>8884</td>
-												<td>.625&quot;</td>
-												<td><a target="_blank" href="http://www.mouser.com/ds/2/215/8879-289453.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/8884-keystone-10591423">Octopart Search</a></td>
-											</tr>
-											<tr>
-												<td>Keystone</td>
-												<td>8885</td>
-												<td>.75&quot;</td>
-												<td><a target="_blank" href="http://www.mouser.com/ds/2/215/8879-289453.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/8885-keystone-10591541">Octopart Search</a></td>
-											</tr>
-											<tr>
-												<td>Keystone</td>
-												<td>8886</td>
-												<td>.875&quot;</td>
-												<td><a target="_blank" href="http://www.mouser.com/ds/2/215/8879-289453.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/8886-keystone-10591177">Octopart Search</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-2-01</td>
-												<td>.125&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-2-01-richco-2207307">Octopart Search</a>, <a target="_blank" href="http://www.essentracomponents.com/sku/mspm-2-01">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-3-01</td>
-												<td>.187&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-3-01-richco-2207308">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=58371&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-4-01</td>
-												<td>.25&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-4-01-richco-2207309">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=150288&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-5-01</td>
-												<td>.313&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-5-01-richco-2207310">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=150289&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-6-01</td>
-												<td>.375&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-6-01-richco-2207311">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=53930&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-7-01</td>
-												<td>.438&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-7-01-richco-2207312">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=58372&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-8-01</td>
-												<td>.5&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-8-01-richco-2187429">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=150290&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-9-01</td>
-												<td>.563&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-9-01-richco-9151623">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=150291&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-10-01</td>
-												<td>.63&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-10-01-richco-372271">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=48899&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-12-01</td>
-												<td>.75&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-12-01-richco-372280">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=63396&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-13-01</td>
-												<td>.811&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-13-01-richco-372282">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=150292&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-											<tr>
-												<td>Richco</td>
-												<td>MSPM-14-01</td>
-												<td>.875&quot;</td>
-												<td><a target="_blank" href="http://datasheet.octopart.com/MSPM-2-01-Richco-datasheet-6465.pdf">Datasheet</a></td>
-												<td><a target="_blank" href="https://octopart.com/mspm-14-01-richco-372184">Octopart Search</a>, <a target="_blank" href="http://us.essentracomponents.com/shop/ProductDisplay?urlRequestType=Base&catalogId=10051&categoryId=73570&productId=150293&urlLangId=-1&langId=-1&top_category=&parent_category_rn=73570&storeId=10152">Essentra</a></td>
-											</tr>
-										</tbody>
-									</table>
-									<h3>Electrical Connectors</h3>
-									<table>
-										<thead>
-											<tr>
-												<th>Manufacturer</th>
-												<th>Part #</th>
-												<th>Height ("B")</th>
-												<th>Datasheet</th>
-												<th>Source</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Samtec</td>
-												<td>TSW-107-07-F-D</td>
-												<td>.23&quot;</td>
-												<td><a href="http://datasheet.octopart.com/TSW-104-07-F-D-Samtec-datasheet-11047283.pdf">Datasheet</a></td>
-												<td><a href="https://octopart.com/tsw-104-07-f-d-samtec-10569226">Octopart Search</a>, <a href="https://www.samtec.com/build-a-part/BuildPart.aspx?series=TSW&viewmodel=true">Samtec</a></td>
-											</tr>
-											<tr>
-												<td>Samtec</td>
-												<td>TSW-107-14-F-D</td>
-												<td>.32&quot;</td>
-												<td><a href="http://datasheet.octopart.com/TSW-104-07-F-D-Samtec-datasheet-11047283.pdf">Datasheet</a></td>
-												<td><a href="https://octopart.com/tsw-104-14-f-d-samtec-12610460">Octopart Search</a>, <a href="https://www.samtec.com/build-a-part/BuildPart.aspx?series=TSW&viewmodel=true">Samtec</a></td>
-											</tr>
-											<tr>
-												<td>Samtec</td>
-												<td>TSW-107-15-F-D</td>
-												<td>.52&quot;</td>
-												<td><a href="http://datasheet.octopart.com/TSW-104-07-F-D-Samtec-datasheet-11047283.pdf">Datasheet</a></td>
-												<td><a href="https://octopart.com/tsw-104-15-f-d-samtec-16561265">Octopart Search</a>, <a href="https://www.samtec.com/build-a-part/BuildPart.aspx?series=TSW&viewmodel=true">Samtec</a></td>
-											</tr>
-											<tr>
-												<td>Samtec</td>
-												<td>TSW-107-17-F-D</td>
-												<td>.62&quot;</td>
-												<td><a href="http://datasheet.octopart.com/TSW-104-07-F-D-Samtec-datasheet-11047283.pdf">Datasheet</a></td>
-												<td><a href="https://octopart.com/tsw-104-17-f-d-samtec-12567054">Octopart Search</a>, <a href="https://www.samtec.com/build-a-part/BuildPart.aspx?series=TSW&viewmodel=true">Samtec</a></td>
-											</tr>
-											<tr>
-												<td>Samtec</td>
-												<td>TSW-107-18-F-D</td>
-												<td>.72&quot;</td>
-												<td><a href="http://datasheet.octopart.com/TSW-104-07-F-D-Samtec-datasheet-11047283.pdf">Datasheet</a></td>
-												<td><a href="https://octopart.com/tsw-104-18-f-d-samtec-12549464">Octopart Search</a>, <a href="https://www.samtec.com/build-a-part/BuildPart.aspx?series=TSW&viewmodel=true">Samtec</a></td>
-											</tr>
-											<tr>
-												<td>Samtec</td>
-												<td>TSW-107-19-F-D</td>
-												<td>.82&quot;</td>
-												<td><a href="http://datasheet.octopart.com/TSW-104-07-F-D-Samtec-datasheet-11047283.pdf">Datasheet</a></td>
-												<td><a href="https://octopart.com/tsw-104-19-f-d-samtec-16573129">Octopart Search</a>, <a href="https://www.samtec.com/build-a-part/BuildPart.aspx?series=TSW&viewmodel=true">Samtec</a></td>
-											</tr>
-											<tr>
-												<td>Samtec</td>
-												<td>TSW-107-20-F-D</td>
-												<td>1.02&quot;</td>
-												<td><a href="http://datasheet.octopart.com/TSW-104-07-F-D-Samtec-datasheet-11047283.pdf">Datasheet</a></td>
-												<td><a href="https://octopart.com/tsw-104-20-f-d-samtec-12560966">Octopart Search</a>, <a href="https://www.samtec.com/build-a-part/BuildPart.aspx?series=TSW&viewmodel=true">Samtec</a></td>
-											</tr>
-										</tbody>
-									</table> -->
 								</div>
 								<div id="tabs-5"><!-- Colouring -->
-									<h2>Colouring Your ColourCV</h2>
-									<!-- <p>Your ColourCV will be identified on the front panel by an RGB LED. In order to set the colour of the LED, you must include the red, green, and blue LED current setting resistors in your ColourCV PCB. You feed one side of the resistors with V+ and return the other side to their respective pins on the 14-pin connector. See the ColourCV prototyping board below for an example. Connecting these resistors to the two pins in each box marked “R, G, B” will easily let you define your colour. Rough values should be 20k to 300k.</p>
-									<img src="../img/colouring.jpg"> -->
+									<p>Your ColourCV will be identified on the front panel by an RGB LED. In order to set the colour of the LED, you must include the red, green, and blue LED current setting resistors in your ColourCV PCB.</p>
+									<p>You feed one side of the resistors with V+ and return the other side to their respective pins on the 14-pin connector. See the ColourCV prototyping board below for an example. Connecting these resistors to the two pins in each box marked “R, G, B” will easily let you define your colour. Rough values should be 20k to 300k.</p>
+									<div class="tab-pic colouring centerX">
+										<img src="img/dtk-colouring.svg">
+										<p id="dtk-colouring-pic-link" class="font-small italics modal-open">view larger image</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -467,6 +290,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- modals begin-->
 		<div class="overlay hide"></div>
 		<div id="dtk-notes" class="dtk-modal centerXY hide">
 			<ul>
@@ -480,23 +304,30 @@
 				<p class="close modal-close italics">close</p>
 			</div>
 		</div>
-		<div id="dtk-dimpic" class="dtk-modal centerXY hide">
+		<div id="dtk-dimensions-pic" class="dtk-modal centerXY hide">
 			<div id="dtk-dimensions"></div>
 			<div>
 				<p class="close modal-close italics">close</p>
 			</div>
 		</div>
-		<div id="dtk-pinoutpic" class="dtk-modal centerXY hide">
-			<div id="dtk-pinout"></div>
+		<div id="dtk-pinouts-pic" class="dtk-modal centerXY hide">
+			<div id="dtk-pinouts"></div>
 			<div>
 				<p class="close modal-close italics">close</p>
 			</div>
 		</div>
-		<div id="dtk-con-pic" class="dtk-modal centerXY hide">
+		<div id="dtk-connectors-pic" class="dtk-modal centerXY hide">
 			<div id="dtk-connectors"></div>
 			<div>
 				<p class="close modal-close italics">close</p>
 			</div>
 		</div>
+		<div id="dtk-colouring-pic" class="dtk-modal centerXY hide">
+			<div id="dtk-colouring"></div>
+			<div>
+				<p class="close modal-close italics">close</p>
+			</div>
+		</div>
+		<!-- modals end-->
 	</body>
 </html>

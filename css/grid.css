@@ -1,0 +1,29 @@
+.third {
+	width: 32.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
+	margin-bottom: .8%;
+}
+.forty {
+	width: 39.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
+	margin-bottom: .8%;
+}
+.fifty {
+	width: 49.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
+	margin-bottom: .8%;
+	height: 200px;
+}
+.sixty {
+	width: 59.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
+	margin-bottom: .8%;
+}

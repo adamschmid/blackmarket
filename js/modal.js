@@ -12,6 +12,38 @@ $(document).ready(function(){
 		);
 	});
 
+
+/////// OPEN MODALS ///////
+
+//designers toolkit notes
+	$('#dtk-notes-link').click(function(){
+		$("#dtk-notes").removeClass('hide').velocity({opacity: 1});
+	});
+
+//designers toolkit dimensions pic
+	$('#dtk-dimensions-pic-link').click(function(){
+		$("#dtk-dimensions-pic").removeClass('hide').velocity({opacity: 1});
+	});
+
+//designers toolkit pinout pic
+	$('#dtk-pinouts-pic-link').click(function(){
+		$("#dtk-pinouts-pic").removeClass('hide').velocity({opacity: 1});
+	});
+
+//designers toolkit connectors pic
+	$('#dtk-connectors-pic-link').click(function(){
+		$("#dtk-connectors-pic").removeClass('hide').velocity({opacity: 1});
+	});
+
+//designers toolkit colouring pic
+	$('#dtk-colouring-pic-link').click(function(){
+		$("#dtk-colouring-pic").removeClass('hide').velocity({opacity: 1});
+	});
+
+
+
+/////// CLOSE MODALS /////
+
 	$("#navigation").click(function(){
 		$(".overlay").velocity({
 			opacity: 0},
@@ -21,17 +53,21 @@ $(document).ready(function(){
 			opacity: 0},
 			{complete: function(){$("#dtk-notes").addClass('hide');}}
 		);
-		$("#dtk-dimpic").velocity({
+		$("#dtk-dimensions-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-dimpic").addClass('hide');}}
+			{complete: function(){$("#dtk-dimensions-pic").addClass('hide');}}
 		);
-		$("#dtk-pinoutpic").velocity({
+		$("#dtk-pinouts-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-pinoutpic").addClass('hide');}}
+			{complete: function(){$("#dtk-pinouts-pic").addClass('hide');}}
 		);
-		$("#dtk-con-pic").velocity({
+		$("#dtk-connectors-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-con-pic").addClass('hide');}}
+			{complete: function(){$("#dtk-connectors-pic").addClass('hide');}}
+		);
+		$("#dtk-colouring-pic").velocity({
+			opacity: 0},
+			{complete: function(){$("#dtk-colouring-pic").addClass('hide');}}
 		);
 	});
 
@@ -44,21 +80,25 @@ $(document).ready(function(){
 			opacity: 0},
 			{complete: function(){$("#dtk-notes").addClass('hide');}}
 		);
-		$("#dtk-dimpic").velocity({
+		$("#dtk-dimensions-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-dimpic").addClass('hide');}}
+			{complete: function(){$("#dtk-dimensions-pic").addClass('hide');}}
 		);
-		$("#dtk-pinoutpic").velocity({
+		$("#dtk-pinouts-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-pinoutpic").addClass('hide');}}
+			{complete: function(){$("#dtk-pinouts-pic").addClass('hide');}}
 		);
-		$("#dtk-con-pic").velocity({
+		$("#dtk-connector-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-con-pic").addClass('hide');}}
+			{complete: function(){$("#dtk-connector-pic").addClass('hide');}}
 		);
-		$("#dtk-con-pic").velocity({
+		$("#dtk-connectors-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-con-pic").addClass('hide');}}
+			{complete: function(){$("#dtk-connectors-pic").addClass('hide');}}
+		);
+		$("#dtk-colouring-pic").velocity({
+			opacity: 0},
+			{complete: function(){$("#dtk-colouring-pic").addClass('hide');}}
 		);
 	});
 
@@ -71,60 +111,44 @@ $(document).ready(function(){
 			opacity: 0},
 			{complete: function(){$("#dtk-notes").addClass('hide');}}
 		);
-		$("#dtk-dimpic").velocity({
+		$("#dtk-dimensions-pic").velocity({
 			opacity: 0},
 			{complete: function(){$("#dtk-notes").addClass('hide');}}
 		);
-		$("#dtk-pinoutpic").velocity({
+		$("#dtk-pinouts-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-pinoutpic").addClass('hide');}}
+			{complete: function(){$("#dtk-pinouts-pic").addClass('hide');}}
 		);
-		$("#dtk-con-pic").velocity({
+		$("#dtk-connectors-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-con-pic").addClass('hide');}}
+			{complete: function(){$("#dtk-connectors-pic").addClass('hide');}}
+		);
+		$("#dtk-colouring-pic").velocity({
+			opacity: 0},
+			{complete: function(){$("#dtk-colouring-pic").addClass('hide');}}
 		);
 	});
 
-
-//designers toolkit notes
-	$('#dtk-notes-link').click(function(){
-		$("#dtk-notes").removeClass('hide').velocity({opacity: 1});
-	});
-
-//designers toolkit dimensions pic
-	$('#dtk-dimpic-link').click(function(){
-		$("#dtk-dimpic").removeClass('hide').velocity({opacity: 1});
-	});
-
-//designers toolkit pinout pic
-	$('#dtk-pinout-link').click(function(){
-		$("#dtk-pinoutpic").removeClass('hide').velocity({opacity: 1});
-	});
-
-//designers toolkit connectors pic
-	$('#dtk-connectors-link').click(function(){
-		$("#dtk-con-pic").removeClass('hide').velocity({opacity: 1});
-	});
-
-
-
-//modal close
 	$(".close").click(function(){
 		$("#dtk-notes").velocity({
 			opacity: 0},
 			{complete: function(){$("#dtk-notes").addClass('hide');}}
 		);
-		$("#dtk-dimpic").velocity({
+		$("#dtk-dimensions-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-dimpic").addClass('hide');}}
+			{complete: function(){$("#dtk-dimensions-pic").addClass('hide');}}
 		);
-		$("#dtk-pinoutpic").velocity({
+		$("#dtk-pinouts-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-pinoutpic").addClass('hide');}}
+			{complete: function(){$("#dtk-pinouts-pic").addClass('hide');}}
 		);
-		$("#dtk-con-pic").velocity({
+		$("#dtk-connectors-pic").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-con-pic").addClass('hide');}}
+			{complete: function(){$("#dtk-connectors-pic").addClass('hide');}}
+		);
+		$("#dtk-colouring-pic").velocity({
+			opacity: 0},
+			{complete: function(){$("#dtk-colouring-pic").addClass('hide');}}
 		);
 	});
 
