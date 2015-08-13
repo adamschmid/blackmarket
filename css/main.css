@@ -41,7 +41,7 @@ major 3rd | base: 1.5em
 	h2 {
 		font-size: 1.953em;
 		margin-top: 0em;
-		margin-bottom: 64px;
+		margin-bottom: 20px;
 	}
 	h3 {font-size: 1.563em;}
 	h4 {
@@ -96,7 +96,7 @@ major 3rd | base: 1.5em
 		top: 0;
 		min-width: 620px;
 		height: 100%;
-		padding-top: 70px;
+		/*padding-top: 70px;*/
 	}
 	.text-bg {
 		/*background: url('../img/text-bg.svg') no-repeat;*/
@@ -470,7 +470,7 @@ major 3rd | base: 1.5em
 		width: 60%;
 		margin: 0 auto;
 		position: relative;
-		bottom: 0;
+		top: 10%;
 	}
 	#logo-lg {
 		background: url('../img/logo.svg') no-repeat;
