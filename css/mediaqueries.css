@@ -3,4 +3,12 @@
 		display: none;
 		visibility: hidden;
 	}
+	.content {
+		margin-left: 0;
+	}
+	#logo-sm {
+		width: 128px;
+		height: 130px;
+		left: 23px;
+	}
 }
