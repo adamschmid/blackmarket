@@ -138,16 +138,34 @@ $(document).ready(function(){
 			if ( index == 3 && nextSlideIndex == 0 ){
 				$(".colours-bm-led").addClass('green-led');
 				$(".colours-dtk-led").removeClass('red-led');
+				$("#toolkit-dl-btn").velocity({
+					opacity: 0,
+					duration: 1400},
+						{ complete: function() {
+							$("#toolkit-dl-btn").addClass('hide');
+						}
+				});
 				$(".colours-tp-led").removeClass('blue-led');
 			}
 			if ( index == 3 && nextSlideIndex == 1 ){
 				$(".colours-bm-led").removeClass('green-led');
 				$(".colours-dtk-led").addClass('red-led');
+				$("#toolkit-dl-btn").removeClass('hide').velocity({
+					opacity: 1,
+					duration: 700
+				});
 				$(".colours-tp-led").removeClass('blue-led');
 			}
 			if ( index == 3 && nextSlideIndex == 2 ){
 				$(".colours-bm-led").removeClass('green-led');
 				$(".colours-dtk-led").removeClass('red-led');
+				$("#toolkit-dl-btn").velocity({
+					opacity: 0,
+					duration: 1400},
+						{ complete: function() {
+							$("#toolkit-dl-btn").addClass('hide');
+						}
+				});
 				$(".colours-tp-led").addClass('blue-led');
 			}
 		}

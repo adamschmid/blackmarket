@@ -98,6 +98,19 @@ major 3rd | base: 1.5em
 		height: 100%;
 		padding-top: 70px;
 	}
+	.text-bg {
+		/*background: url('../img/text-bg.svg') no-repeat;*/
+		/*width: 670px;*/
+		width: 60%;
+		height: 475px;
+		/*padding: 14px 60px;*/
+	}
+	.text-bg h3 {
+		margin-top: 0;
+	}
+	.text-bg p:first-child {
+		margin-top: 0;
+	}
 	.centerXY {
 		position: absolute;
 		top: 50%;
@@ -165,7 +178,8 @@ major 3rd | base: 1.5em
 		visibility: hidden;
 	}
 
-	/*----------  ----------*/
+/*---------- Background Gradients ----------*/
+
 	.bg-dk-gradient {
 		background: hsl(34, 14%, 3%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, hsl(30,14%,3%)), color-stop(45%, hsl(0,0%,20%)), color-stop(55%,hsl(0,0%,20%)), color-stop(100%,hsl(30,14%,3%)));
@@ -176,6 +190,9 @@ major 3rd | base: 1.5em
 		background: linear-gradient(to bottom, hsl(30,14%,3%) 0%, hsl(0,0%,20%) 45%, hsl(0,0%,20%) 55%,hsl(30,14%,3%) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080706', endColorstr='#080706',GradientType=0 );
 	}
+
+/*---------- Animations ----------*/
+
 	.led::after {
 		animation: blink linear 2s;
 		animation-iteration-count: infinite;
@@ -270,8 +287,8 @@ major 3rd | base: 1.5em
 		width: 125px;
 		position: absolute;
 		left: 11.3%;
-		/*top: 30%;*/
-		top: 35%;
+		top: 28%;
+		/*top: 35%;*/
 	}
 	#nav-icon {
 		position: fixed;
@@ -425,7 +442,7 @@ major 3rd | base: 1.5em
 		margin: 0 auto;
 		/*border-bottom: 1px solid hsl(210, 3%, 47%);*/
 		padding-bottom: 5px;
-		margin-bottom: 2em;
+		margin-bottom: 6%;
 		text-align: center;
 	}
 	.slide-nav nav > ul > li {
@@ -448,32 +465,32 @@ major 3rd | base: 1.5em
 		background-position: 50% 78%;
 		background-repeat: no-repeat;
 	}
+	#intro {
+		text-align: center;
+		width: 60%;
+		margin: 0 auto;
+		position: relative;
+		bottom: 0;
+	}
 	#logo-lg {
 		background: url('../img/logo.svg') no-repeat;
 		width: 460px;
 		height: 313px;
 		background-size: 100%;
 		position: relative;
-		top: 15%;
 		z-index: 100000;
 		margin: 0 auto;
 	}
 	#tagline {
-		position: absolute;
-		top: 65%;
-		width: 50%;
-		text-align: center;
+		/*width: 50%;*/
+
 	}
 	#state {
-		text-transform: uppercase;
-		position: absolute;
-		margin: 0 auto;
-		bottom: 10px;
-		color: hsl(0, 0%, 20%);
 		font-family: 'melbourne light', 'helvetica neue', sans-serif;
-		width: 200px;
-		left: 0;
-		right: 0;
+		color: hsl(0, 0%, 20%);
+		text-transform: uppercase;
+		margin: 0 auto;
+		/*width: 200px;*/
 	}
 
 /*---------- Colour Palette Section ----------*/
@@ -491,6 +508,10 @@ major 3rd | base: 1.5em
 	}
 	#cp-nav nav > ul > li {
 		margin: 0 15px;
+	}
+	#cp-prices {
+		padding-left: 5%;
+		padding-top: 20px;
 	}
 	.cp-photos-led::before,
 	.cp-photos-led::after {
@@ -523,12 +544,11 @@ major 3rd | base: 1.5em
 	}
 	#cp-illustration {
 		background: url('../img/cp-illustration.png') no-repeat;
-		width: 170px;
-		height: 220px;
-		/* border: 1px solid; */
+		width: 220px;
+		height: 240px;
 		position: relative;
 		top: -140px;
-		left: 330px;
+		left: 300px;
 		background-size: 100%;
 	}
 	.cp-photo-front {
@@ -545,12 +565,6 @@ major 3rd | base: 1.5em
 	}
 	.cp-photo-left {
 		background: url('../img/cp-left.png') no-repeat;
-	}
-	.text-bg {
-		background: url('../img/text-bg.svg') no-repeat;
-		width: 670px;
-		height: 475px;
-		padding: 14px 60px;
 	}
 	#cp-features-wrap {
 		position: relative;
@@ -731,9 +745,10 @@ major 3rd | base: 1.5em
 
 		#tabs {
 			width: 80%;
-			/*max-width: 680px;*/
+			max-width: 800px;
 			margin: 0 auto;
 			position: relative;
+			padding-left: 5%;
 		}
 		#tabs > div > ul {
 			/*width: 40%;*/
@@ -834,7 +849,17 @@ major 3rd | base: 1.5em
 		}
 		#toolkit-dl-btn {
 			position: absolute;
-			right: 0;
+			right: 20px;
+			padding: 0px 7px 5px 0px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.fa-download::after {
+			content: "\f019";
+			position: relative;
+			top: 1px;
+			left: 13px;
+			color: hsl(210, 3%, 47%);
 		}
 		#dtk-notes-link {
 			color: hsl(191, 100%, 41%);
