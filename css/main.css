@@ -477,13 +477,13 @@ major 3rd | base: 1.5em
 		width: 460px;
 		height: 313px;
 		background-size: 100%;
-		position: relative;
+		/*position: relative;*/
 		z-index: 100000;
-		margin: 0 auto;
+		/*margin: 0 auto;*/
+		margin: 0 auto 30% auto;
 	}
 	#tagline {
 		/*width: 50%;*/
-
 	}
 	#state {
 		font-family: 'melbourne light', 'helvetica neue', sans-serif;
@@ -511,7 +511,7 @@ major 3rd | base: 1.5em
 	}
 	#cp-prices {
 		padding-left: 5%;
-		padding-top: 20px;
+		/*padding-top: 20px;*/
 	}
 	.cp-photos-led::before,
 	.cp-photos-led::after {
@@ -650,6 +650,10 @@ major 3rd | base: 1.5em
 		/*color: hsl(116, 40%, 59%);*/
 		color: hsl(210, 3%, 47%);
 	}
+	/*#cp-diy > div > div > div > p*/
+	#cp-diy .third > p {
+		text-align: center;
+	}
 
 /*---------- Colours Section ----------*/
 
@@ -698,8 +702,9 @@ major 3rd | base: 1.5em
 	/*---------- bmm colours styles ----------*/
 
 		#colours-bm h4 {
-			margin: 0 auto 1.5em auto;
-			text-align: center;
+			/*margin: 0 auto 1.5em auto;*/
+			margin: 0 0 1.5em 0;
+			/*text-align: center;*/
 			width: 90%;
 		}
 		#colours-bm p {
@@ -714,6 +719,9 @@ major 3rd | base: 1.5em
 			margin: 0 auto;
 			padding-left: 5%;
 		}
+		.bmm-item {
+			height: 200px;
+		}
 		.row .sixty {
 			padding-left: 3%;
 		}
@@ -721,17 +729,17 @@ major 3rd | base: 1.5em
 			margin-left: 10%;
 		}
 		#woof-pic {
-			background: url('../img/bmm-woof.png') no-repeat;
+			background: url('../img/bmm-woof-front.png') no-repeat;
 			background-size: 100%;
 			height: 100%;
 		}
 		#tweet-pic {
-			background: url('../img/bmm-tweet.png') no-repeat;
+			background: url('../img/bmm-tweet-front.png') no-repeat;
 			background-size: 100%;
 			height: 100%;
 		}
 		#adptr-pic {
-			background: url('../img/bmm-adptr.png') no-repeat;
+			background: url('../img/bmm-adptr-front.png') no-repeat;
 			background-size: 100%;
 			height: 100%;
 		}
@@ -821,7 +829,7 @@ major 3rd | base: 1.5em
 			left: 380px;
 		}
 		.colouring {
-			width: 450px;
+			width: 320px;
 			top: 290px;
 		}
 		#tabs-1 img,
@@ -831,6 +839,11 @@ major 3rd | base: 1.5em
 		#tabs-5 img {
 			max-width: 100%;
 			height: auto;
+			display: block;
+			margin: auto;
+		}
+		#tabs-4 img {
+			/*padding: 0 20px;*/
 		}
 		#tabs-4 > p:nth-child(2) {
 			width: 360px;
@@ -907,7 +920,8 @@ major 3rd | base: 1.5em
 	.dtk-modal {
 		width: 60%;
 		margin-left: 75px;
-		background-color: hsl(0, 0%, 20%);
+		background-color: hsl(150, 1%, 93%);
+		color: hsl(210, 3%, 47%);
 		padding: 1em;
 		border-radius: 5px;
 		z-index: 20000;

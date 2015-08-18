@@ -205,7 +205,7 @@ $(document).ready(function(){
 	});
 
 //photo galery init
-	var options = {
+	var cpOptions = {
 		ovalWidth: 250,
 		ovalHeight: 0,
 		offsetX: 0,
@@ -215,7 +215,7 @@ $(document).ready(function(){
 		duration: 700,
 		className: 'item'
 	}
-	var carousel = $('.carousel').CircularCarousel(options);
+	var carousel = $('#cp-carousel').CircularCarousel(cpOptions);
 
 	$('.controls .previous').click(function(e) {
 		carousel.cycleActive('previous');
