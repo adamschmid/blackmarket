@@ -469,8 +469,8 @@ major 3rd | base: 1.5em
 		text-align: center;
 		width: 60%;
 		margin: 0 auto;
-		position: relative;
-		top: 10%;
+		position: absolute;
+		bottom: 1%;
 	}
 	#logo-lg {
 		background: url('../img/logo.svg') no-repeat;
@@ -792,18 +792,19 @@ major 3rd | base: 1.5em
 		#tabs-1 ul {
 			width: 100%;
 		}
-		#tabs-2 ul {
+		/*#tabs-2 ul {
 			width: 40%;
-		}
+		}*/
 		#tabs-3 ol {
-			float: right;
-			margin-top: 0;
-			margin-right: 70px;
-			font-size: .8em;
+			/*float: right;*/
+			margin: 0 70px 0 10%;
+			/*margin-top: 0;
+			margin-right: 70px;*/
+			font-size: .68em;
 			/*left: 30%;*/
 		}
 		.tab-pic {
-			position: absolute;
+			/*position: absolute;*/
 		}
 		.dimensions {
 			width: 450px;
@@ -850,6 +851,7 @@ major 3rd | base: 1.5em
 		#toolkit-dl-btn {
 			position: absolute;
 			right: 20px;
+			top: 22px;
 			padding: 0px 7px 5px 0px;
 			opacity: 0;
 			z-index: 1;

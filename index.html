@@ -11,6 +11,7 @@
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/typography.css"/>
+		<link rel="stylesheet" type="text/css" href="css/clearfix.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/grid.css"/>
@@ -52,7 +53,7 @@
 			<div id="fullpage">
 				<div class="section kraken-bg" id="home-section">
 					<div class="content">
-						<div id="intro">
+						<div id="intro" class="centerX">
 							<div id="logo-lg"></div>
 							<h4 id="tagline" class="">Black Market pitchfork vinyl normcore, Bushwick single-origin coffee street art VHS meditation PBR&B meh.</h4>
 							<h4 id="state">minneapolis, mn</h4>
@@ -213,7 +214,7 @@
 								</div>
 								<div id="tabs-2"><!-- Dimensions -->
 									<p>Your ColourCV's PCB should be made from standard, 1/16" (1.6mm) thickness, rigid FR4. For aesthetic continuity, we recommend Ø.125" (3.2mm) beveled corners, but they are not necessary.</p>
-									<ul>
+									<ul class="forty">
 										<li>Width: 3" (76.2mm)</li>
 										<li>Height: 1.4" (35.6mm)</li>
 										<li>Clearance Below PCB: 0.1” (2.54mm) minimum</li>
@@ -221,44 +222,50 @@
 										<li>Mounting Hole Size: &#8709;.125" (3.2mm)</li>
 										<li>Mounting Hole Keep-out Clearance: &#8709;0.289 (7.4mm)</li>
 									</ul>
-									<div class="tab-pic dimensions">
+									<div class="tab-pic sixty dimensions">
 										<img src="img/dtk-dimensions.svg">
 										<p id="dtk-dimensions-pic-link" class="font-small italics modal-open">view larger image</p>
 									</div>
 								</div>
 								<div id="tabs-3"><!-- Pinouts -->
 									<p>ColourCV mates with the eurorack Colour Palette via a 14 pin connector. *NOTE original studio Colours will connect directly to a studio Colour Palette, however ColourCV boards must use the optional <a href="">ColourADPTR</a> adaptor board to mate with the studio Colour Palette. </p>
-									<ol type="1">
-										<li>Audio In</li>
-										<li>Ground</li>
-										<li>Audio Out</li>
-										<li>Red LED</li>
-										<li>Green LED</li>
-										<li>Blue LED</li>
-										<li>16V+</li>
-										<li>16V-</li>
-										<li>CTRL A</li>
-										<li>CTRL B</li>
-										<li>CTRL C</li>
-										<li>CTRL D</li>
-										<li>12V+</li>
-										<li>12V-</li>
-									</ol>
-									<div class="tab-pic pinout">
+									<div class="tab-pic pinout sixty">
 										<img src="img/dtk-pinouts.svg">
 										<p id="dtk-pinouts-pic-link" class="font-small italics modal-open">view larger image</p>
+									</div>
+									<div class="forty">
+										<ol type="1">
+											<li>Audio In</li>
+											<li>Ground</li>
+											<li>Audio Out</li>
+											<li>Red LED</li>
+											<li>Green LED</li>
+											<li>Blue LED</li>
+											<li>16V+</li>
+											<li>16V-</li>
+											<li>CTRL A</li>
+											<li>CTRL B</li>
+											<li>CTRL C</li>
+											<li>CTRL D</li>
+											<li>12V+</li>
+											<li>12V-</li>
+										</ol>
 									</div>
 								</div>
 								<div id="tabs-4"><!-- Connectors -->
 									<p>ColourCV’s mount to the Palette via five connectors - four mechanical and one electrical.</p>
-									<p>ColourCV’s are mechanically secured to the Palette via four nylon standoffs. These standoffs are available in 9 lengths ("A" in the connector drawing), allowing you to customize your ColourCV's mounting height from the Palette. The nylon standoffs are locking on one end and removable, press-fit on the other.</p>
-									<div class="tab-pic connector">
+									<div class="fifty">
+										<p>ColourCV’s are mechanically secured to the Palette via four nylon standoffs. These standoffs are available in 9 lengths ("A" in the connector drawing), allowing you to customize your ColourCV's mounting height from the Palette. The nylon standoffs are locking on one end and removable, press-fit on the other.</p>
+									</div>
+									<div class="tab-pic fifty connector">
 										<img src="img/dtk-connectors.svg">
 										<p id="dtk-connectors-pic-link" class="font-small italics modal-open">view larger image</p>
 									</div>
 									<!-- <p>The locking ends should be inserted into the ColourCV's mounting holes so that the standoffs are permanently attached to the colour. ColourCV’s make an electrical connection to the Palette via one 14-pin connector mounted on the bottom of the ColourCV PCB. The connector's pin length ("B" in the connector drawing) has to correspond with your chosen standoff height, "A." B must be .1" longer than A.</p> -->
 									<!-- <h3>Sourcing Connectors</h3> -->
-									<p >If you are selling your ColourCV, you must include the mechanical and electrical connectors in your kit or assembled unit. Both the mechanical and electrical connectors are standard off-the-shelf components available worldwide. Please download the <a href="dev.blackmarketmodular.com/#colours/designers-toolkit">Designer’s Toolkit PDF</a> for information on sourcing connectors.</p>
+									<div class="cf">
+										<p>If you are selling your ColourCV, you must include the mechanical and electrical connectors in your kit or assembled unit. Both the mechanical and electrical connectors are standard off-the-shelf components available worldwide. Please download the <a href="dev.blackmarketmodular.com/#colours/designers-toolkit">Designer’s Toolkit PDF</a> for information on sourcing connectors.</p>
+									</div>
 								</div>
 								<div id="tabs-5"><!-- Colouring -->
 									<p>Your ColourCV will be identified on the front panel by an RGB LED. In order to set the colour of the LED, you must include the red, green, and blue LED current setting resistors in your ColourCV PCB.</p>
