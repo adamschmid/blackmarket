@@ -25,23 +25,25 @@ $(document).ready(function(){
 				$(".downloads-led").removeClass('orange-led');
 				$(".dealers-led").removeClass('orange-led');
 				$(".company-led").removeClass('teal-led');
-				$("#logo-sm").velocity({
-					opacity: 0
+				$("#logo-lg").velocity({
+					opacity: 1
 				}, 700);
+				$("#logo-sm").velocity({
+					opacity: 0,
+					duration: 700 }, {
+						complete: function() {
+							$("#logo-sm").addClass('hide');
+						}
+				});
 				$("#logo-clip").velocity({
 					opacity: 0
 				}, 700);
-				// $("#logo").velocity({
-				// 	// width: "460px",
-				// 	// height: "316px",
-				// 	width: "460px",
-				// 	height: "316px",
-				// 	left: "49.6%",
-				// 	top: "25%",
-				// }, 700);
 			}
 			if(nextIndex > 1){
-				$("#logo-sm").velocity({
+				$("#logo-lg").velocity({
+					opacity: 0
+				}, 700);
+				$("#logo-sm").removeClass("hide").velocity({
 					opacity: 1
 				}, 700);
 				$("#logo-clip").velocity({
@@ -108,21 +110,6 @@ $(document).ready(function(){
 				$(".dealers-led").removeClass('orange-led');
 				$(".company-led").addClass('teal-led');
 			}
-			if (nextIndex == 2 || nextIndex == 3 || nextIndex == 4 || nextIndex ==5 || nextIndex == 6 || nextIndex == 7){
-				$("#logo").velocity({
-
-				}, 700);
-			}
-			// if (nextIndex == 2 || nextIndex == 3 || nextIndex == 4 || nextIndex ==5 || nextIndex == 6 || nextIndex == 7){
-			// 	$("#logo").velocity({
-			// 		// width: "218px",
-			// 		// height: "150px",
-			// 		width: "190px",
-			// 		height: "130px",
-			// 		left: "155px",
-			// 		top: "12px",
-			// 	}, 700);
-			// }
 		},
 
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
