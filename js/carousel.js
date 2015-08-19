@@ -46,9 +46,32 @@ $(document).ready(function(){
 		//e.preventDefault();
 	});
 
+//cables photo galery init
+	var cablesOptions = {
+		ovalWidth: 250,
+		ovalHeight: 0,
+		offsetX: 0,
+		offsetY: 90,
+		angle: 0,
+		activeItem: 0,
+		duration: 700,
+		className: 'item'
+	}
+	var carousel3 = $('#cables-carousel').CircularCarousel3(cablesOptions);
+
+	$('.controls .cables-previous').click(function(e) {
+		carousel3.cycleActive('previous');
+		//e.preventDefault();
+	});
+
+	$('.controls .cables-next').click(function(e) {
+		carousel3.cycleActive('next');
+		//e.preventDefault();
+	});
 	// $('.carousel .item').click(function(e) {
 	// 	var index = $(this).index('li');
 	// 	carousel.cycleActiveTo(index);
 	// 	e.preventDefault();
 	// });
+
 });

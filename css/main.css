@@ -97,7 +97,7 @@ major 3rd | base: 1.5em
 		/*padding-top: 70px;*/
 	}
 	.row {
-		width: 85%;
+		width: 75%;
 		margin: 0 auto;
 		padding-left: 5%;
 	}
@@ -185,6 +185,18 @@ major 3rd | base: 1.5em
 	.hide {
 		display: none;
 		visibility: hidden;
+	}
+	#logo-clip {
+		position: fixed;
+		right: 0;
+		top: 0;
+		height: 100%;
+		width: 127px;
+		background: url('../img/logo-clip.svg') no-repeat;
+		background-position: center center;
+		background-size: 100%;
+		opacity: 0;
+		/*z-index: 1;*/
 	}
 
 /*---------- Background Gradients ----------*/
@@ -359,13 +371,13 @@ major 3rd | base: 1.5em
 	.fa-envelope-o::after {
 		content: "\f003";
 		position: relative;
-		top: 20px;
+		top: 30px;
 		left: 32px;
 	}
 	.fa-facebook-official::after {
 		content: "\f230";
 		position: relative;
-		top: 26px;
+		top: 40px;
 		left: 30px;
 	}
 	.icon-link > a {
@@ -656,12 +668,30 @@ major 3rd | base: 1.5em
 		margin-top: 0;
 	}
 	#cp-diy h3 {
-		/*color: hsl(116, 40%, 59%);*/
 		color: hsl(210, 3%, 47%);
 	}
-	/*#cp-diy > div > div > div > p*/
+	.diy-icon {
+		height: 120px;
+		margin-top: 40px;
+	}
+	#diy-icon {
+		background: url('../img/diy-icon.svg') no-repeat;
+		background-size: 50%;
+		background-position: center;
+	}
+	#design-icon {
+		background: url('../img/design-icon.svg') no-repeat;
+		background-size: 50%;
+		background-position: center;
+	}
+	#distribute-icon {
+		background: url('../img/distribute-icon.svg') no-repeat;
+		background-size: 50%;
+		background-position: center;
+	}
 	#cp-diy .third > p {
 		text-align: center;
+		font-weight: bold;
 	}
 
 /*---------- Colours Section ----------*/
@@ -724,7 +754,7 @@ major 3rd | base: 1.5em
 			margin-bottom: 0px;
 		}
 		.bmm-item {
-			height: 150px;
+			height: 160px;
 		}
 		.row .sixty > p > span{
 			margin-left: 10%;
@@ -916,6 +946,11 @@ major 3rd | base: 1.5em
 
 /*---------- Cases Section ----------*/
 
+	.kraken-bg-arm-2 {
+		background: url('../img/kraken-bg-arm-2.svg') no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
 	#cases-nav {
 		width: 300px;
 	}
@@ -948,6 +983,11 @@ major 3rd | base: 1.5em
 
 /*---------- Cables Section ----------*/
 
+	.kraken-bg-face {
+		background: url('../img/kraken-bg-face.svg') no-repeat;
+		/*background-position: center;*/
+		background-size: cover;
+	}
 	#cables-nav {
 		width: 300px;
 	}
@@ -961,6 +1001,15 @@ major 3rd | base: 1.5em
 	.cables-photos-led::before,
 	.cables-photos-led::after {
 		left: 24px;
+	}
+	.cables-1 {
+		background: url('../img/cables-1.png') no-repeat;
+	}
+	.cables-2 {
+		background: url('../img/cables-2.png') no-repeat;
+	}
+	.cables-3 {
+		background: url('../img/cables-3.png') no-repeat;
 	}
 
 

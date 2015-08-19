@@ -28,6 +28,9 @@ $(document).ready(function(){
 				$("#logo-sm").velocity({
 					opacity: 0
 				}, 700);
+				$("#logo-clip").velocity({
+					opacity: 0
+				}, 700);
 				// $("#logo").velocity({
 				// 	// width: "460px",
 				// 	// height: "316px",
@@ -40,6 +43,9 @@ $(document).ready(function(){
 			if(nextIndex > 1){
 				$("#logo-sm").velocity({
 					opacity: 1
+				}, 700);
+				$("#logo-clip").velocity({
+					opacity: .5
 				}, 700);
 			}
 			if(nextIndex == 2){
@@ -179,11 +185,19 @@ $(document).ready(function(){
 			}
 			if ( index == 4 && nextSlideIndex == 0 ){
 				$(".cases-overview-led").addClass('green-led');
-				$(".cases-photos-led").removeClass('red-led');
+				$(".cases-photos-led").removeClass('blue-led');
 			}
 			if ( index == 4 && nextSlideIndex == 1 ){
 				$(".cases-overview-led").removeClass('green-led');
-				$(".cases-photos-led").addClass('red-led');
+				$(".cases-photos-led").addClass('blue-led');
+			}
+			if ( index == 5 && nextSlideIndex == 0 ){
+				$(".cables-overview-led").addClass('teal-led');
+				$(".cables-photos-led").removeClass('purple-led');
+			}
+			if ( index == 5 && nextSlideIndex == 1 ){
+				$(".cables-overview-led").removeClass('teal-led');
+				$(".cables-photos-led").addClass('purple-led');
 			}
 		}
 
