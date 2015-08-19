@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 //fullpage init
 	$("#fullpage").fullpage({
-		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables','shop'],
+		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables','dealers'],
 		menu: '#menu',
 		paddingTop: '12px',
 		// s
@@ -23,7 +23,7 @@ $(document).ready(function(){
 				$(".cases-led").removeClass('yellow-led');
 				$(".cables-led").removeClass('purple-led');
 				$(".downloads-led").removeClass('orange-led');
-				$(".shop-led").removeClass('orange-led');
+				$(".dealers-led").removeClass('orange-led');
 				$(".company-led").removeClass('teal-led');
 				$("#logo-sm").velocity({
 					opacity: 0
@@ -55,7 +55,7 @@ $(document).ready(function(){
 				$(".cases-led").removeClass('yellow-led');
 				$(".cables-led").removeClass('purple-led');
 				$(".downloads-led").removeClass('orange-led');
-				$(".shop-led").removeClass('orange-led');
+				$(".dealers-led").removeClass('orange-led');
 				$(".company-led").removeClass('teal-led');
 			}
 			if(nextIndex == 3){
@@ -65,7 +65,7 @@ $(document).ready(function(){
 				$(".cases-led").removeClass('yellow-led');
 				$(".cables-led").removeClass('purple-led');
 				$(".downloads-led").removeClass('orange-led');
-				$(".shop-led").removeClass('orange-led');
+				$(".dealers-led").removeClass('orange-led');
 				$(".company-led").removeClass('teal-led');
 			}
 			if(nextIndex == 4){
@@ -75,7 +75,7 @@ $(document).ready(function(){
 				$(".cases-led").addClass('yellow-led');
 				$(".cables-led").removeClass('purple-led');
 				$(".downloads-led").removeClass('orange-led');
-				$(".shop-led").removeClass('orange-led');
+				$(".dealers-led").removeClass('orange-led');
 				$(".company-led").removeClass('teal-led');
 			}
 			if(nextIndex == 5){
@@ -85,7 +85,7 @@ $(document).ready(function(){
 				$(".cases-led").removeClass('yellow-led');
 				$(".cables-led").addClass('purple-led');
 				$(".downloads-led").removeClass('orange-led');
-				$(".shop-led").removeClass('orange-led');
+				$(".dealers-led").removeClass('orange-led');
 				$(".company-led").removeClass('teal-led');
 			}
 			if(nextIndex == 6){
@@ -95,7 +95,7 @@ $(document).ready(function(){
 				$(".cases-led").removeClass('yellow-led');
 				$(".cables-led").removeClass('purple-led');
 				$(".downloads-led").addClass('orange-led');
-				$(".shop-led").addClass('orange-led');
+				$(".dealers-led").addClass('orange-led');
 				$(".company-led").removeClass('teal-led');
 			}
 			if(nextIndex == 7){
@@ -105,7 +105,7 @@ $(document).ready(function(){
 				$(".cases-led").removeClass('yellow-led');
 				$(".cables-led").removeClass('purple-led');
 				$(".downloads-led").removeClass('orange-led');
-				$(".shop-led").removeClass('orange-led');
+				$(".dealers-led").removeClass('orange-led');
 				$(".company-led").addClass('teal-led');
 			}
 			if (nextIndex == 2 || nextIndex == 3 || nextIndex == 4 || nextIndex ==5 || nextIndex == 6 || nextIndex == 7){
