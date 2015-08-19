@@ -944,6 +944,44 @@ major 3rd | base: 1.5em
 			height: 330px;
 		}
 
+	/*---------- 3rd party styles ----------*/
+		#logo-diyre {
+			background: url('../img/logo-diyre.svg') no-repeat;
+			background-size: 80%;
+			background-position: center;
+		}
+		#logo-wmd {
+			background: url('../img/logo-wmd.svg') no-repeat;
+			background-size: 80%;
+			background-position: center;
+		}
+		#logo-louderthanliftoff {
+			background: url('../img/logo-louderthanliftoff.svg') no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+		#logo-tb {
+			background: url('../img/logo-tb.svg') no-repeat;
+			background-size: 95%;
+			background-position: center;
+		}
+		#logo-eisen {
+			background: url('../img/logo-eisen.svg') no-repeat;
+			background-size: 95%;
+			background-position: center;
+		}
+		.vend-logo {
+			height: 110px;
+		}
+		.vend-logo a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.vend-logo a:hover {
+			background-color: hsla(0, 0%, 80%, 0.2);
+		}
+
 /*---------- Cases Section ----------*/
 
 	.kraken-bg-arm-2 {
@@ -1012,6 +1050,10 @@ major 3rd | base: 1.5em
 		background: url('../img/cables-3.png') no-repeat;
 	}
 
+
+#shop-section > div > div > div > h2 {
+	margin-top: 165px;
+}
 
 /*---------- Modals ----------*/
 
