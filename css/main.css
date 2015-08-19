@@ -89,14 +89,23 @@ major 3rd | base: 1.5em
 		/*min-height: 640px;*/
 	}
 	.content {
-		/*margin-left: 160px;*/
-		/*margin-left: 185px;*/
 		margin-left: 10%;
 		position: relative;
 		top: 0;
-		min-width: 620px;
+		/*min-width: 620px;*/
 		height: 100%;
 		/*padding-top: 70px;*/
+	}
+	.row {
+		width: 85%;
+		margin: 0 auto;
+		padding-left: 5%;
+	}
+	.row > p:first-child {
+		margin-top: 0;
+	}
+	.row .sixty {
+		padding-left: 3%;
 	}
 	.text-bg {
 		/*background: url('../img/text-bg.svg') no-repeat;*/
@@ -470,7 +479,7 @@ major 3rd | base: 1.5em
 		width: 60%;
 		margin: 0 auto;
 		position: absolute;
-		bottom: 1%;
+		bottom: 0;
 	}
 	#logo-lg {
 		background: url('../img/logo.svg') no-repeat;
@@ -510,8 +519,8 @@ major 3rd | base: 1.5em
 		margin: 0 15px;
 	}
 	#cp-prices {
-		padding-left: 5%;
-		/*padding-top: 20px;*/
+		padding-left: 15%;
+		padding-top: 5px;
 	}
 	.cp-photos-led::before,
 	.cp-photos-led::after {
@@ -547,8 +556,8 @@ major 3rd | base: 1.5em
 		width: 220px;
 		height: 240px;
 		position: relative;
-		top: -140px;
-		left: 300px;
+		top: -170px;
+		left: 370px;
 		background-size: 100%;
 	}
 	.cp-photo-front {
@@ -701,7 +710,7 @@ major 3rd | base: 1.5em
 
 	/*---------- bmm colours styles ----------*/
 
-		#colours-bm h4 {
+		#colours-bm .row > p {
 			/*margin: 0 auto 1.5em auto;*/
 			margin: 0 0 1.5em 0;
 			/*text-align: center;*/
@@ -711,19 +720,11 @@ major 3rd | base: 1.5em
 			margin-top: 0;
 			margin-bottom: 15px;
 		}
-		#colours-bm p:first-child {
+		#colours-bm .row .fifty p:first-child {
 			margin-bottom: 0px;
 		}
-		.row {
-			width: 85%;
-			margin: 0 auto;
-			padding-left: 5%;
-		}
 		.bmm-item {
-			height: 200px;
-		}
-		.row .sixty {
-			padding-left: 3%;
+			height: 150px;
 		}
 		.row .sixty > p > span{
 			margin-left: 10%;
@@ -913,9 +914,57 @@ major 3rd | base: 1.5em
 			height: 330px;
 		}
 
+/*---------- Cases Section ----------*/
+
+	#cases-nav {
+		width: 300px;
+	}
+	#cases-nav nav > ul > li {
+		margin: 0 18px;
+	}
+	.cases-overview-led::before,
+	.cases-overview-led::after {
+		left: 34px;
+	}
+	.cases-photos-led::before,
+	.cases-photos-led::after {
+		left: 24px;
+	}
+	.cases-all {
+		background: url('../img/cases-all.png') no-repeat;
+	}
+	.cases-6u-open-side {
+		background: url('../img/cases-6u-open-side.png') no-repeat;
+	}
+	.cases-6u-closed-side {
+		background: url('../img/cases-6u-closed-side.png') no-repeat;
+	}
+	.cases-6u-open {
+		background: url('../img/cases-6u-open.png') no-repeat;
+	}
+	.cases-3u-open-side {
+		background: url('../img/cases-3u-open-side.png') no-repeat;
+	}
+
+/*---------- Cables Section ----------*/
+
+	#cables-nav {
+		width: 300px;
+	}
+	#cables-nav nav > ul > li {
+		margin: 0 18px;
+	}
+	.cables-overview-led::before,
+	.cables-overview-led::after {
+		left: 34px;
+	}
+	.cables-photos-led::before,
+	.cables-photos-led::after {
+		left: 24px;
+	}
 
 
-
+/*---------- Modals ----------*/
 
 	.dtk-modal {
 		width: 60%;

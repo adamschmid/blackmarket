@@ -11,7 +11,7 @@ Thanks: Addy Osmani, Marcus Haslam
     Construct, do first draw.
   */
 
-  $.fn.CircularCarousel = function (options) {
+  $.fn.CircularCarousel1 = function (options) {
 
     var $ele = $(this),
         ovalWidth = options.ovalWidth,
