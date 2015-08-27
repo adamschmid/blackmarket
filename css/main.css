@@ -677,22 +677,22 @@ major 3rd | base: 1.5em
 		color: hsl(210, 3%, 47%);
 	}
 	.diy-icon {
-		height: 140px;
+		height: 150px;
 		margin-top: 0px;
 	}
 	#diy-icon {
 		background: url('../img/diy-icon.svg') no-repeat;
-		background-size: 50%;
+		/*background-size: 50%;*/
 		background-position: center;
 	}
 	#design-icon {
 		background: url('../img/design-icon.svg') no-repeat;
-		background-size: 50%;
+		/*background-size: 50%;*/
 		background-position: center;
 	}
 	#distribute-icon {
 		background: url('../img/distribute-icon.svg') no-repeat;
-		background-size: 50%;
+		/*background-size: 50%;*/
 		background-position: center;
 	}
 	#cp-diy .third > p {
@@ -1086,3 +1086,14 @@ major 3rd | base: 1.5em
 	.dtk-modal li {
 		margin: 10px 0;
 	}
+
+/*	#wave {
+	background: url('../img/bmm-wave.png') no-repeat;
+	position: absolute;
+	width: 240px;
+	height: 232px;
+	top: 410px;
+	right: 380px;
+	opacity: .3;
+	background-size: 100%;
+	}*/
