@@ -1057,16 +1057,41 @@ major 3rd | base: 1.5em
 		background: url('../img/cables-3.png') no-repeat;
 	}
 
+/*------------ Dealers Section ----------*/
 
-#dealers-section > div > div > div > h2 {
-	margin-top: 165px;
-}
-#dealers-section h4 {
-	margin-bottom: 0;
-}
-#dealers-section ul {
-	margin-top: 10px;
-}
+	#dealers-section > div > div > div > h2 {
+		margin-top: 115px;
+	}
+	#dealers-section h4 {
+		margin-bottom: 0;
+	}
+	#dealers-section ul {
+		margin-top: 10px;
+	}
+	#north-america {
+		background: url('../img/map-na.svg') no-repeat;
+		background-position: center;
+		background-size: contain;
+		min-height: 358px;
+	}
+	#europe {
+		background: url('../img/map-eu.svg') no-repeat;
+		background-position: center;
+		background-size: contain;
+		min-height: 358px;
+	}
+	#north-america img,
+	#europe img {
+		position: absolute;
+		top: 190px;
+		z-index: -1;
+	}
+	#north-america img {
+		left: 120px;
+	}
+	#europe img {
+		left: 420px;
+	}
 
 /*---------- Modals ----------*/
 

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"ht",
+				"html"
+			],
+			[
+				"font",
+				"font-size-adjust"
+			],
+			[
 				"mari",
 				"margin-top"
 			],
@@ -114,10 +122,6 @@
 			[
 				"web",
 				"-webkit-animation-delay"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"trans",
@@ -510,10 +514,6 @@
 			[
 				"set",
 				"setValues"
-			],
-			[
-				"ic",
-				"icon_btn"
 			]
 		]
 	},
@@ -578,6 +578,7 @@
 	},
 	"file_history":
 	[
+		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#6/style.css",
 		"/Users/adam/Documents/localdev/blackmarket/js/carousel.js",
 		"/Users/adam/Documents/localdev/blackmarket/js/modal.js",
 		"/Users/adam/Documents/localdev/blackmarket/js/scripts.js",
@@ -704,8 +705,7 @@
 		"/Users/adam/Desktop/fullPage.js-master/examples/callbacks.html",
 		"/Users/adam/Documents/localdev/blackmarket/js/transit.min.js",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#2/index.html",
-		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#1/index-2.html",
-		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#0/index-hw.html"
+		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#1/index-2.html"
 	],
 	"find":
 	{
