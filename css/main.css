@@ -145,6 +145,7 @@ major 3rd | base: 1.5em
 	.fa {
 		font: normal normal normal 14px/1 FontAwesome;
 		font-size: inherit;
+		display: inline-block;
 		text-rendering: auto;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -1098,8 +1099,10 @@ major 3rd | base: 1.5em
 	.dtk-modal {
 		width: 60%;
 		margin-left: 75px;
-		background-color: hsl(150, 1%, 93%);
-		color: hsl(210, 3%, 47%);
+		/*background-color: hsl(150, 1%, 93%);*/
+		background-color: hsl(150, 1%, 26%);
+		color: hsl(210, 3%, 61%);
+		/*color: hsl(210, 3%, 47%);*/
 		padding: 1em;
 		border-radius: 5px;
 		z-index: 20000;
