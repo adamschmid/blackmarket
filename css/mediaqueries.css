@@ -12,3 +12,8 @@
 		left: 23px;
 	}
 }
+@media screen and (max-height: 600px) {
+	.section {
+		min-height: 680px !important;
+	}
+}
