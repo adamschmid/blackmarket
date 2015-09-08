@@ -5,12 +5,6 @@ $(document).ready(function(){
 	$('.modal-open').click(function(){
 		$(".overlay").removeClass('hide').velocity({opacity: 1});
 	});
-	$('.modal-close').click(function(){
-		$(".overlay").velocity({
-			opacity: 0},
-			{complete: function(){$(".overlay").addClass('hide');}}
-		);
-	});
 
 
 /////// OPEN MODALS ///////
@@ -40,11 +34,31 @@ $(document).ready(function(){
 		$("#dtk-colouring-pic").removeClass('hide').velocity({opacity: 1});
 	});
 
+//woof modal pics
+	$('#woof-pic-link').click(function(){
+		$("#woof-modal-pics").removeClass('hide').velocity({opacity: 1});
+	});
+
+//tweet modal pics
+	$('#tweet-pic-link').click(function(){
+		$("#tweet-modal-pics").removeClass('hide').velocity({opacity: 1});
+	});
+
+//adptr modal pics
+	$('#adptr-pic-link').click(function(){
+		$("#adptr-modal-pics").removeClass('hide').velocity({opacity: 1});
+	});
+
+//pcb modal pics
+	$('#pcb-pic-link').click(function(){
+		$("#pcb-modal-pics").removeClass('hide').velocity({opacity: 1});
+	});
 
 
 /////// CLOSE MODALS /////
 
-	$("#navigation").click(function(){
+//close with UI click events
+	$("#navigation, #logo, .overlay, .close").click(function(){
 		$(".overlay").velocity({
 			opacity: 0},
 			{complete: function(){$(".overlay").addClass('hide');}}
@@ -69,88 +83,68 @@ $(document).ready(function(){
 			opacity: 0},
 			{complete: function(){$("#dtk-colouring-pic").addClass('hide');}}
 		);
-	});
-
-	$("#logo").click(function(){
-		$(".overlay").velocity({
+		$("#woof-modal-pics").velocity({
 			opacity: 0},
-			{complete: function(){$(".overlay").addClass('hide');}}
+			{complete: function(){$("#woof-modal-pics").addClass('hide');}}
 		);
-		$("#dtk-notes").velocity({
+		$("#tweet-modal-pics").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-notes").addClass('hide');}}
+			{complete: function(){$("#tweet-modal-pics").addClass('hide');}}
 		);
-		$("#dtk-dimensions-pic").velocity({
+		$("#adptr-modal-pics").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-dimensions-pic").addClass('hide');}}
+			{complete: function(){$("#adptr-modal-pics").addClass('hide');}}
 		);
-		$("#dtk-pinouts-pic").velocity({
+		$("#pcb-modal-pics").velocity({
 			opacity: 0},
-			{complete: function(){$("#dtk-pinouts-pic").addClass('hide');}}
-		);
-		$("#dtk-connector-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-connector-pic").addClass('hide');}}
-		);
-		$("#dtk-connectors-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-connectors-pic").addClass('hide');}}
-		);
-		$("#dtk-colouring-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-colouring-pic").addClass('hide');}}
+			{complete: function(){$("#pcb-modal-pics").addClass('hide');}}
 		);
 	});
 
-	$(".overlay").click(function(){
-		$(".overlay").velocity({
-			opacity: 0},
-			{complete: function(){$(".overlay").addClass('hide');}}
-		);
-		$("#dtk-notes").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-notes").addClass('hide');}}
-		);
-		$("#dtk-dimensions-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-notes").addClass('hide');}}
-		);
-		$("#dtk-pinouts-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-pinouts-pic").addClass('hide');}}
-		);
-		$("#dtk-connectors-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-connectors-pic").addClass('hide');}}
-		);
-		$("#dtk-colouring-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-colouring-pic").addClass('hide');}}
-		);
-	});
-
-	$(".close").click(function(){
-		$("#dtk-notes").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-notes").addClass('hide');}}
-		);
-		$("#dtk-dimensions-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-dimensions-pic").addClass('hide');}}
-		);
-		$("#dtk-pinouts-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-pinouts-pic").addClass('hide');}}
-		);
-		$("#dtk-connectors-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-connectors-pic").addClass('hide');}}
-		);
-		$("#dtk-colouring-pic").velocity({
-			opacity: 0},
-			{complete: function(){$("#dtk-colouring-pic").addClass('hide');}}
-		);
-	});
-
-
+//close with escape key
+	document.onkeydown = function(evt) {
+		evt = evt || window.event;
+		if (evt.keyCode == 27) {
+			$(".overlay").velocity({
+				opacity: 0},
+				{complete: function(){$(".overlay").addClass('hide');}}
+			);
+			$("#dtk-notes").velocity({
+				opacity: 0},
+				{complete: function(){$("#dtk-notes").addClass('hide');}}
+			);
+			$("#dtk-dimensions-pic").velocity({
+				opacity: 0},
+				{complete: function(){$("#dtk-dimensions-pic").addClass('hide');}}
+			);
+			$("#dtk-pinouts-pic").velocity({
+				opacity: 0},
+				{complete: function(){$("#dtk-pinouts-pic").addClass('hide');}}
+			);
+			$("#dtk-connectors-pic").velocity({
+				opacity: 0},
+				{complete: function(){$("#dtk-connectors-pic").addClass('hide');}}
+			);
+			$("#dtk-colouring-pic").velocity({
+				opacity: 0},
+				{complete: function(){$("#dtk-colouring-pic").addClass('hide');}}
+			);
+			$("#woof-modal-pics").velocity({
+				opacity: 0},
+				{complete: function(){$("#woof-modal-pics").addClass('hide');}}
+			);
+			$("#tweet-modal-pics").velocity({
+				opacity: 0},
+				{complete: function(){$("#tweet-modal-pics").addClass('hide');}}
+			);
+			$("#adptr-modal-pics").velocity({
+				opacity: 0},
+				{complete: function(){$("#adptr-modal-pics").addClass('hide');}}
+			);
+			$("#pcb-modal-pics").velocity({
+				opacity: 0},
+				{complete: function(){$("#pcb-modal-pics").addClass('hide');}}
+			);
+		}
+	};
 });

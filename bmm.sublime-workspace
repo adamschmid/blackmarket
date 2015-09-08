@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"mo",
+				"modal-open"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"c",
+				"contain"
+			],
+			[
+				"my",
+				"myObject"
+			],
+			[
 				"ht",
 				"html"
 			],
@@ -46,10 +66,6 @@
 			[
 				"re",
 				"removeClass"
-			],
-			[
-				"c",
-				"cp-nav"
 			],
 			[
 				"p",
@@ -214,10 +230,6 @@
 			[
 				"kraken",
 				"kraken-bg-arm"
-			],
-			[
-				"marg",
-				"margin-left"
 			],
 			[
 				"min",
@@ -502,18 +514,6 @@
 			[
 				"hex",
 				"hex2rgb"
-			],
-			[
-				"strok",
-				"strokeColor"
-			],
-			[
-				"rec",
-				"recMode"
-			],
-			[
-				"set",
-				"setValues"
 			]
 		]
 	},
@@ -578,6 +578,19 @@
 	},
 	"file_history":
 	[
+		"/Users/adam/Desktop/font-awesome-4.4.0/css/font-awesome.css",
+		"/Users/adam/Documents/localdev/blackmarket/css/typography.css",
+		"/Users/adam/Desktop/tiles.html",
+		"/Users/adam/Desktop/rotating-spheres.html",
+		"/Users/adam/Documents/Foxtone/Website Backups/Academic/academic bu 16-9-14/wp-content/plugins/cimy-user-extra-fields/securimage/words/words.txt",
+		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#0/style.css",
+		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#1/index.html",
+		"/Users/adam/Desktop/words to learn",
+		"/Users/adam/Desktop/optimized_contents/css/style.css",
+		"/Users/adam/Desktop/untitled.html",
+		"/Users/adam/Desktop/Song List",
+		"/Users/adam/Desktop/mdl/material.js",
+		"/Users/adam/Dropbox/Art Institute/00 General/agencies",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#6/style.css",
 		"/Users/adam/Documents/localdev/blackmarket/js/carousel.js",
 		"/Users/adam/Documents/localdev/blackmarket/js/modal.js",
@@ -592,7 +605,6 @@
 		"/Users/adam/Documents/localdev/blackmarket/data-anchors",
 		"/Users/adam/Documents/localdev/blackmarket/distribution",
 		"/Users/adam/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#0/style.css",
 		"/Users/adam/Desktop/FullscreenOverlayStyles/js/demo1.js",
 		"/Users/adam/Documents/localdev/blackmarket/connectors.html",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#19/index.php",
@@ -615,7 +627,6 @@
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#2/submit_rsvp.php",
 		"/Volumes/MI/Clips/Day 4 - Studio/untitled folder/027_0472_01/027_0472_01M01.XML",
 		"/Users/adam/Documents/Foxtone/untitled folder/id_rsa.txt",
-		"/Users/adam/Documents/localdev/blackmarket/css/typography.css",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#6/scripts.js",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#5/style.css",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#9/config.php",
@@ -644,7 +655,6 @@
 		"/Users/adam/Documents/localdev/anb/css/clearfix.min.css",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#6/wp-config.php",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#7/wp-config.php",
-		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#1/index.html",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#3/.htaccess",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#2/.htaccess",
 		"/Users/adam/Downloads/php.ini",
@@ -695,17 +705,7 @@
 		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/demo/css/gallery.css",
 		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/demo/css/style.css",
 		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/jquery.circular-carousel.css",
-		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/jquery.circular-carousel.js",
-		"/Users/adam/Desktop/Swiper-master/demos/18-effect-coverflow.html",
-		"/Users/adam/Desktop/Swiper-master/demos/27-jquery.html",
-		"/Users/adam/Desktop/jQuery-Waterwheel-Carousel/index.html",
-		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/demo/css/foundation.min.css",
-		"/Users/adam/Documents/localdev/blackmarket/js/backstretch.js",
-		"/Users/adam/Desktop/fullPage.js-master/examples/methods.html",
-		"/Users/adam/Desktop/fullPage.js-master/examples/callbacks.html",
-		"/Users/adam/Documents/localdev/blackmarket/js/transit.min.js",
-		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#2/index.html",
-		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#1/index-2.html"
+		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/jquery.circular-carousel.js"
 	],
 	"find":
 	{
@@ -745,6 +745,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"section",
+			"fa",
+			"?v=4.4.0",
+			"where",
+			"0",
 			"delears",
 			"dev.",
 			"</li>",
@@ -867,12 +872,7 @@
 			"200",
 			".f",
 			"ail",
-			"'s",
-			"1",
-			"centerX",
-			"	}",
-			" .",
-			"30px"
+			"'s"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1032,11 +1032,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.559564887153,
 			1.0
 		],
 		"rows":
@@ -1057,7 +1064,7 @@
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 104.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":

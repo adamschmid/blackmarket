@@ -49,7 +49,7 @@ major 3rd | base: 1.5em
 		font-weight: normal;
 	}
 	small, .font-small {
-		font-size: 0.7em !important;
+		font-size: 0.7em;
 		color: hsl(210, 3%, 47%);
 	}
 	.italics {
@@ -158,7 +158,6 @@ major 3rd | base: 1.5em
 		text-align: right;
 		margin: 0;
 		padding: 0;
-		cursor: pointer;
 		color: hsl(210, 3%, 47%);
 		-webkit-transition: color 0.3s;
 		-moz-transition: color 0.3s;
@@ -166,6 +165,7 @@ major 3rd | base: 1.5em
 	}
 	.close:active,
 	.close:hover {
+		cursor: pointer;
 		color: hsl(191, 100%, 41%);
 	}
 	.overlay {
@@ -732,16 +732,6 @@ major 3rd | base: 1.5em
 	.bm-product > div {
 		/*display: inline-block;*/
 	}
-	#pcb-img {
-		background-image: url('../img/pcb-assembled.png');
-		width: 200px;
-		height: 100px;
-		background-size: 100%;
-		background-repeat: no-repeat;
-		border: 1px solid #333;
-		border-radius: 5px;
-		background-color: hsla(0, 0%, 0%, .4);
-	}
 
 	/*---------- bmm colours styles ----------*/
 
@@ -772,18 +762,26 @@ major 3rd | base: 1.5em
 		}
 		#tweet-pic {
 			background: url('../img/bmm-tweet-front.png') no-repeat;
-			background-size: 100%;
-			height: 100%;
+			background-size: cover;
+			background-position: center;
+			padding-top: 56.25%;
 		}
 		#adptr-pic {
 			background: url('../img/bmm-adptr-front.png') no-repeat;
-			background-size: 100%;
-			height: 100%;
+			background-size: cover;
+			background-position: center;
+			padding-top: 56.25%;
 		}
 		#pcb-pic {
 			background: url('../img/bmm-pcb.png') no-repeat;
-			background-size: 100%;
-			height: 100%;
+			background-size: cover;
+			background-position: center;
+			padding-top: 56.25%;
+		}
+		.bmm-item p.modal-open {
+			font-size: .65em;
+			width: 105px;
+			margin-top: 3px !important;
 		}
 
 	/*---------- designer's toolkit styles ----------*/
@@ -796,14 +794,12 @@ major 3rd | base: 1.5em
 			padding-left: 5%;
 		}
 		#tabs > div > ul {
-			/*width: 40%;*/
 			font-size: .85em;
 		}
 		#tabs > div ul > li {
 			margin: 4px 0px;
 		}
 		#tabs > ul {
-			/*background-color: hsl(208, 100%, 97%);*/
 			background-color:hsla(209, 18%, 30%, 0.68);
 			box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.7);
 			border-radius: 5px;
@@ -820,9 +816,7 @@ major 3rd | base: 1.5em
 			padding: 0 28px;
 		}
 		.ui-tabs-active {
-			/*background-color: hsl(191, 100%, 41%);*/
 			transition: color 0.7s, background-color 0.7s;
-			/*background-color: hsl(0, 0%, 83%);*/
 		}
 		.ui-tabs-active a {
 			color: hsl(0, 0%, 90%);
@@ -832,24 +826,18 @@ major 3rd | base: 1.5em
 			outline: none;
 		}
 		#tabs p {
-			font-size: .9em;
+			/*font-size: .9em;*/
+		}
+		#tabs-4 > div.cf > div:nth-child(1) > p {
+			margin-top: 0;
+			margin-bottom: 0;
 		}
 		#tabs-1 ul {
 			width: 100%;
 		}
-		/*#tabs-2 ul {
-			width: 40%;
-		}*/
 		#tabs-3 ol {
-			/*float: right;*/
 			margin: 0 70px 0 10%;
-			/*margin-top: 0;
-			margin-right: 70px;*/
 			font-size: .68em;
-			/*left: 30%;*/
-		}
-		.tab-pic {
-			/*position: absolute;*/
 		}
 		.dimensions {
 			width: 450px;
@@ -908,38 +896,25 @@ major 3rd | base: 1.5em
 			-moz-transition: color 0.3s;
 			transition: color 0.3s;
 			cursor: pointer;
-			width: 360px;
+			width: auto;
 		}
 		#dtk-notes-link:active,
 		#dtk-notes-link:hover {
 			color: hsl(198, 50%, 85%);
 		}
-		#dtk-dimensions {
-			background: url(../img/dtk-dimensions.svg) no-repeat;
-			width: 100%;
+		#pcb-img {
+			background-image: url('../img/pcb-assembled.png');
+			width: 200px;
+			height: 100px;
 			background-size: 100%;
-			height: 380px;
-		}
-		#dtk-pinouts {
-			background: url(../img/dtk-pinouts.svg) no-repeat;
-			width: 100%;
-			background-size: 100%;
-			height: 310px;
-		}
-		#dtk-connectors {
-			background: url(../img/dtk-connectors.svg) no-repeat;
-			width: 100%;
-			background-size: 100%;
-			height: 330px;
-		}
-		#dtk-colouring {
-			background: url(../img/dtk-colouring.svg) no-repeat;
-			width: 100%;
-			background-size: 100%;
-			height: 330px;
+			background-repeat: no-repeat;
+			border: 1px solid #333;
+			border-radius: 5px;
+			background-color: hsla(0, 0%, 0%, .4);
 		}
 
 	/*---------- 3rd party styles ----------*/
+
 		#logo-diyre {
 			background: url('../img/logo-diyre.svg') no-repeat;
 			background-size: 80%;
@@ -1083,23 +1058,28 @@ major 3rd | base: 1.5em
 
 /*---------- Modals ----------*/
 
-	.dtk-modal {
+	.modal {
 		width: 60%;
 		margin-left: 75px;
-		/*background-color: hsl(150, 1%, 93%);*/
 		background-color: hsl(150, 1%, 26%);
 		color: hsl(210, 3%, 61%);
-		/*color: hsl(210, 3%, 47%);*/
 		padding: 1em;
 		border-radius: 5px;
 		z-index: 20000;
 		opacity: 0;
 	}
-	.dtk-modal ul {
+	.modal ul {
 		margin: 0;
 	}
-	.dtk-modal li {
+	.modal li {
 		margin: 10px 0;
+	}
+	.modal h4 {
+		margin-top: 0;
+		margin-bottom: .5em;
+	}
+	.modal h4 span {
+		color: hsl(210, 3%, 87%);
 	}
 	p.modal-open {
 		width: 120px;
@@ -1111,6 +1091,44 @@ major 3rd | base: 1.5em
 	p.modal-open:hover {
 		cursor: pointer;
 		color: hsl(191, 100%, 41%);
+	}
+	#dtk-dimensions {
+		background: url(../img/dtk-dimensions.svg) no-repeat;
+		width: 100%;
+		background-size: 100%;
+		height: 380px;
+	}
+	#dtk-pinouts {
+		background: url(../img/dtk-pinouts.svg) no-repeat;
+		width: 100%;
+		background-size: 100%;
+		height: 310px;
+	}
+	#dtk-connectors {
+		background: url(../img/dtk-connectors.svg) no-repeat;
+		width: 100%;
+		background-size: 100%;
+		height: 330px;
+	}
+	#dtk-colouring {
+		background: url(../img/dtk-colouring.svg) no-repeat;
+		width: 100%;
+		background-size: 100%;
+		height: 330px;
+	}
+	#woof-front-modal-pic,
+	#woof-back-modal-pic,
+	#tweet-front-modal-pic,
+	#tweet-back-modal-pic,
+	#adptr-front-modal-pic,
+	#adptr-back-modal-pic,
+	#pcb-modal-pic,
+	#pcb-kit-modal-pic {
+		display: block;
+		margin: 0 auto;
+		height: auto;
+		width: 60%;
+		max-width: 100%;
 	}
 
 /*	#wave {

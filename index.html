@@ -168,42 +168,47 @@
 							<div class="row">
 								<div class="fifty bmm-item">
 									<div class="forty">
-										<div class="" id="woof-pic"></div>
+										<div id="woof-pic"></div>
 										<p id="woof-pic-link" class="font-small italics modal-open">view larger image</p>
 									</div>
 									<div class="sixty" id="woof-desc">
 										<p>Woof<span>$39</span></p>
 										<p class="font-small">ColourCV Low-Pass Filter</p>
-										<!-- <a class="cta" href="http://shop.blackmarketmodular/woof/" target="_blank">order now<span class="fa fa-angle-right"></span></a> -->
 										<a class="cta" href="http://blackmarketmodular.com/#dealers">order now<span class="fa fa-angle-right"></span></a>
 									</div>
 								</div>
 								<div class="fifty bmm-item">
-									<div class="forty" id="tweet-pic"></div>
+									<div class="forty" >
+										<div id="tweet-pic"></div>
+										<p id="tweet-pic-link" class="font-small italics modal-open">view larger image</p>
+									</div>
 									<div class="sixty" id="tweet-desc">
 										<p>Tweet<span>$39</span></p>
 										<p class="font-small">ColourCV High-Pass Filter</p>
-										<!-- <a class="cta" href="http://shop.blackmarketmodular/tweet/" target="_blank">order now<span class="fa fa-angle-right"></span></a> -->
 										<a class="cta" href="http://blackmarketmodular.com/#dealers">order now<span class="fa fa-angle-right"></span></a>
 									</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="fifty bmm-item">
-									<div class="forty" id="adptr-pic"></div>
+									<div class="forty">
+										<div id="adptr-pic"></div>
+										<p id="adptr-pic-link" class="font-small italics modal-open">view larger image</p>
+									</div>
 									<div class="sixty" id="adptr-desc">
 										<p>ColourADPTR<span>$29</span></p>
 										<p class="font-small">500 Series Module Adapter</p>
-										<!-- <a class="cta" href="http://shop.blackmarketmodular/colouradptr/" target="_blank">order now<span class="fa fa-angle-right"></span></a> -->
 										<a class="cta" href="http://blackmarketmodular.com/#dealers">order now<span class="fa fa-angle-right"></span></a>
 									</div>
 								</div>
 								<div class="fifty bmm-item">
-									<div class="forty" id="pcb-pic"></div>
+									<div class="forty">
+										<div id="pcb-pic"></div>
+										<p id="pcb-pic-link" class="font-small italics modal-open">view larger image</p>
+									</div>
 									<div class="sixty" id="pcb-desc">
 										<p>Prototype PCB Kit<span>$4.99</span></p>
 										<p class="font-small">Create your own ColourCV</p>
-										<!-- <a class="cta" href="http://shop.blackmarketmodular/colouradptr/" target="_blank">order now<span class="fa fa-angle-right"></span></a> -->
 										<a class="cta" href="http://blackmarketmodular.com/#dealers">order now<span class="fa fa-angle-right"></span></a>
 									</div>
 								</div>
@@ -439,7 +444,7 @@
 		</div>
 		<!-- modals begin-->
 		<div class="overlay hide"></div>
-		<div id="dtk-notes" class="dtk-modal centerXY hide">
+		<div id="dtk-notes" class="modal centerXY hide">
 			<ul>
 				<li>Buffer the input and output of your circuit with <a href="http://en.wikipedia.org/wiki/Buffer_amplifier#Op-amp_implementation" target="_black">opamp buffers</a>.</li>
 				<li>To use standard Eurorack levels of +-10 Vpp nominal level: use a gain stage with a gain of 2.879 (+9.2dB) at the input to your colour. For the output to be unity, use a gain stage of 0.347 (-9.2dB) just before the output pin. This shifting is necessary for compatibility with original Colours operating at +4dBu.</li>
@@ -451,26 +456,62 @@
 				<p class="close modal-close italics">close</p>
 			</div>
 		</div>
-		<div id="dtk-dimensions-pic" class="dtk-modal centerXY hide">
+		<div id="dtk-dimensions-pic" class="modal centerXY hide">
+			<h4>ColourCV Dimensions</h4>
 			<div id="dtk-dimensions"></div>
 			<div>
 				<p class="close modal-close italics">close</p>
 			</div>
 		</div>
-		<div id="dtk-pinouts-pic" class="dtk-modal centerXY hide">
+		<div id="dtk-pinouts-pic" class="modal centerXY hide">
+			<h4>ColourCV Pinouts</h4>
 			<div id="dtk-pinouts"></div>
 			<div>
 				<p class="close modal-close italics">close</p>
 			</div>
 		</div>
-		<div id="dtk-connectors-pic" class="dtk-modal centerXY hide">
+		<div id="dtk-connectors-pic" class="modal centerXY hide">
+			<h4>ColourCV Connectors</h4>
 			<div id="dtk-connectors"></div>
 			<div>
 				<p class="close modal-close italics">close</p>
 			</div>
 		</div>
-		<div id="dtk-colouring-pic" class="dtk-modal centerXY hide">
+		<div id="dtk-colouring-pic" class="modal centerXY hide">
+			<h4>ColourCV Colouring</h4>
 			<div id="dtk-colouring"></div>
+			<div>
+				<p class="close modal-close italics">close</p>
+			</div>
+		</div>
+		<div id="woof-modal-pics" class="modal centerXY hide">
+			<h4><span>Woof</span> - Low-Pass Filter</h4>
+				<img id="woof-front-modal-pic" src="img/bmm-woof-front.png">
+				<img id="woof-back-modal-pic" src="img/bmm-woof-back.png">
+			<div>
+				<p class="close modal-close italics">close</p>
+			</div>
+		</div>
+		<div id="tweet-modal-pics" class="modal centerXY hide">
+			<h4><span>Tweet</span> - High-Pass Filter</h4>
+				<img id="tweet-front-modal-pic" src="img/bmm-tweet-front.png">
+				<img id="tweet-back-modal-pic" src="img/bmm-tweet-back.png">
+			<div>
+				<p class="close modal-close italics">close</p>
+			</div>
+		</div>
+		<div id="adptr-modal-pics" class="modal centerXY hide">
+			<h4><span>ColourADPTR</span> - 500 series module adapter</h4>
+				<img id="adptr-front-modal-pic" src="img/bmm-adptr-front.png">
+				<img id="adptr-back-modal-pic" src="img/bmm-adptr-back.png">
+			<div>
+				<p class="close modal-close italics">close</p>
+			</div>
+		</div>
+		<div id="pcb-modal-pics" class="modal centerXY hide">
+			<h4><span>Prototype PCB Kit</span> - Create your own ColourCV</h4>
+				<img id="pcb-modal-pic" src="img/bmm-pcb.png">
+				<img id="pcb-kit-modal-pic" src="img/bmm-pcb-kit.png">
 			<div>
 				<p class="close modal-close italics">close</p>
 			</div>
