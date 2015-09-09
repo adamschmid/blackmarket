@@ -1,4 +1,4 @@
-/*
+
 color guide:
 
 dark grey hsl(34, 14%, 3%)
@@ -92,6 +92,7 @@ major 3rd | base: 1.5em
 		/*min-width: 620px;*/
 		height: 100%;
 		/*padding-top: 70px;*/
+
 	}
 	.row {
 		width: 75%;
@@ -169,8 +170,8 @@ major 3rd | base: 1.5em
 		color: hsl(191, 100%, 41%);
 	}
 	.overlay {
-		position: absolute;
-		z-index: 10;
+		position: fixed;
+		/*z-index: 1;*/
 		top: 0;
 		right: 0;
 		bottom: 0;
@@ -277,7 +278,7 @@ major 3rd | base: 1.5em
 		position: fixed;
 		top: 0;
 		left: -20px;
-		z-index: 100;
+		z-index: 1;
 		overflow: hidden;
 		height: 632px;
 		/*height: 0px;*/
@@ -299,8 +300,8 @@ major 3rd | base: 1.5em
 		height: 130px;
 		left: 60px;
 		top: 12px;
+		z-index: 2;
 		opacity: 0;
-		z-index: 100000;
 	}
 	#home-link {
 		display: block;
@@ -314,12 +315,12 @@ major 3rd | base: 1.5em
 		top: 28%;
 		/*top: 35%;*/
 	}
-	#nav-icon {
+/*	#nav-icon {
 		position: fixed;
 		left: 142px;
 		top: 164px;
 		z-index: 1000;
-	}
+	}*/
 	.fa-bars::after {
 		content: "\f0c9";
 		font-size: 1em;
@@ -344,7 +345,7 @@ major 3rd | base: 1.5em
 		position: absolute;
 		top: 8px;
 		right: -26px;
-		z-index: 1;
+		/*z-index: 1;*/
 		width: 14px;
 		height: 14px;
 		border-radius: 50%;
@@ -485,7 +486,6 @@ major 3rd | base: 1.5em
 		background-image: url('../img/kraken-bg-full.svg');
 		width:  100%;
 		height: 100%;
-		/*background-position: 50% 50%;*/
 		background-position: 50% 78%;
 		background-repeat: no-repeat;
 	}
@@ -501,9 +501,7 @@ major 3rd | base: 1.5em
 		width: 460px;
 		height: 313px;
 		background-size: 100%;
-		/*position: relative;*/
-		z-index: 100000;
-		/*margin: 0 auto;*/
+		/*z-index: 100000;*/
 		margin: 0 auto 30% auto;
 		opacity: 1;
 	}
@@ -515,7 +513,6 @@ major 3rd | base: 1.5em
 		color: hsl(0, 0%, 20%);
 		text-transform: uppercase;
 		margin: 0 auto;
-		/*width: 200px;*/
 	}
 
 /*---------- Colour Palette Section ----------*/
@@ -881,7 +878,7 @@ major 3rd | base: 1.5em
 			top: 22px;
 			padding: 0px 7px 5px 0px;
 			opacity: 0;
-			z-index: 1;
+			/*z-index: 1;*/
 		}
 		.fa-download::after {
 			content: "\f019";
@@ -1057,7 +1054,11 @@ major 3rd | base: 1.5em
 	}*/
 
 /*---------- Modals ----------*/
+/*#fullpage {
+	position: relative;
+	z-index: initial;
 
+}*/
 	.modal {
 		width: 60%;
 		margin-left: 75px;
@@ -1065,7 +1066,8 @@ major 3rd | base: 1.5em
 		color: hsl(210, 3%, 61%);
 		padding: 1em;
 		border-radius: 5px;
-		z-index: 20000;
+		z-index: 1;
+		position: fixed;
 		opacity: 0;
 	}
 	.modal ul {
@@ -1140,4 +1142,4 @@ major 3rd | base: 1.5em
 	right: 380px;
 	opacity: .3;
 	background-size: 100%;
-	}*/
+	}

@@ -10,6 +10,10 @@ $(document).ready(function(){
 		// s
 		responsiveHeight: 600,
 		responsiveWidth: 768,
+		// css3: false,
+		// easing: 'easeInOutCubic',
+		// fixedElements: '#logo-sm, #navigation, .modal',
+		fixedElements: '.modal',
 		//slidesNavigation: false,
 		//navigation: true,
 		//navigationPosition: "right",
