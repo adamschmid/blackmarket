@@ -4,16 +4,48 @@
 		"selected_items":
 		[
 			[
+				"i",
+				"initial"
+			],
+			[
+				"r",
+				"relative"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"woof",
+				"woof-modal-pics"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"bmm",
+				"bmm-item"
+			],
+			[
 				"mo",
 				"modal-open"
 			],
 			[
 				"marg",
 				"margin"
-			],
-			[
-				"i",
-				"inline-block"
 			],
 			[
 				"c",
@@ -42,14 +74,6 @@
 			[
 				"bac",
 				"background-color"
-			],
-			[
-				"fo",
-				"font-synthesis"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"text-",
@@ -92,10 +116,6 @@
 				"width"
 			],
 			[
-				"mar",
-				"margin-bottom"
-			],
-			[
 				"t",
 				"thead"
 			],
@@ -126,10 +146,6 @@
 			[
 				"div",
 				"div	Tag"
-			],
-			[
-				"max",
-				"max-width"
 			],
 			[
 				"hsl",
@@ -174,10 +190,6 @@
 			[
 				"ra",
 				"raleway"
-			],
-			[
-				"r",
-				"rammetto"
 			],
 			[
 				"tras",
@@ -250,10 +262,6 @@
 			[
 				"bor",
 				"border-collapse"
-			],
-			[
-				"d",
-				"disc"
 			],
 			[
 				"lis",
@@ -506,14 +514,6 @@
 			[
 				"str",
 				"strokeOpacity"
-			],
-			[
-				"stroke",
-				"strokeColor"
-			],
-			[
-				"hex",
-				"hex2rgb"
 			]
 		]
 	},
@@ -578,6 +578,11 @@
 	},
 	"file_history":
 	[
+		"/Users/adam/Documents/localdev/blackmarket/css/jquery.fullPage.css",
+		"/Users/adam/Documents/localdev/blackmarket/js/jquery.fullPage.min.js",
+		"/Users/adam/Documents/localdev/blackmarket/js/jquery.fullPage.js",
+		"/Users/adam/Documents/localdev/blackmarket/css/normalize.min.css",
+		"/Users/adam/Documents/localdev/blackmarket/js/scripts.js",
 		"/Users/adam/Desktop/font-awesome-4.4.0/css/font-awesome.css",
 		"/Users/adam/Documents/localdev/blackmarket/css/typography.css",
 		"/Users/adam/Desktop/tiles.html",
@@ -594,7 +599,6 @@
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#6/style.css",
 		"/Users/adam/Documents/localdev/blackmarket/js/carousel.js",
 		"/Users/adam/Documents/localdev/blackmarket/js/modal.js",
-		"/Users/adam/Documents/localdev/blackmarket/js/scripts.js",
 		"/Users/adam/Documents/localdev/blackmarket/css/mediaqueries.css",
 		"/Users/adam/Documents/localdev/blackmarket/css/carousel.css",
 		"/Users/adam/Documents/localdev/blackmarket/css/grid.css",
@@ -682,7 +686,6 @@
 		"/Users/adam/Desktop/guests.sql",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#2/guests.txt",
 		"/Users/adam/Desktop/kieffer creds",
-		"/Users/adam/Documents/localdev/blackmarket/css/jquery.fullPage.css",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#5/wp-config.php",
 		"/Users/adam/Library/Caches/com.binarynights.ForkLift2/#4/index.html",
 		"/Users/adam/Dropbox/Documents/Resumes/UI:UX Job description",
@@ -702,10 +705,7 @@
 		"/Users/adam/Documents/localdev/blackmarket/css/gallery.css",
 		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/demo/index.html",
 		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/demo/js/script.js",
-		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/demo/css/gallery.css",
-		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/demo/css/style.css",
-		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/jquery.circular-carousel.css",
-		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/jquery.circular-carousel.js"
+		"/Users/adam/Desktop/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel/demo/css/gallery.css"
 	],
 	"find":
 	{
@@ -745,6 +745,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<img",
+			"css3",
+			"z-in",
+			"centerXY",
+			" |",
+			"<h4>",
+			"-pic",
+			"pic\"",
+			"pic",
+			"woof",
+			"Woof",
+			"woof",
+			"Woof",
+			"woof",
+			"dtk-modal",
+			"dtk",
+			"p>",
+			"p",
+			"front",
+			"\"></",
+			"class=\"centerX\"",
+			"></div>",
+			"330px",
+			"$(\".overlay\").velocity({\n			opacity: 0},\n			{complete: function(){$(\".overlay\").addClass('hide');}}\n		);",
+			"$(\"#dtk-connector-pic\").velocity({\n			opacity: 0},\n			{complete: function(){$(\"#dtk-connector-pic\").addClass('hide');}}\n		);",
+			"background-size: 100%;\n			height: 100%;",
+			"forty",
+			"class=\"forty\"",
 			"section",
 			"fa",
 			"?v=4.4.0",
@@ -844,35 +872,7 @@
 			"modal",
 			"notes",
 			"margin",
-			"t",
-			"th",
-			"h",
-			"overla",
-			"td",
-			"</td>\"",
-			"</td>",
-			"$",
-			"white_wine",
-			"ww",
-			"lb",
-			"dark_beer",
-			"wquery",
-			"td",
-			"45",
-			"overflow-y",
-			"row",
-			"200px",
-			"7",
-			"-7",
-			"-50",
-			"-7",
-			"-",
-			");\n",
-			"transform: rotateZ(-72deg);",
-			"200",
-			".f",
-			"ail",
-			"'s"
+			"t"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1043,7 +1043,7 @@
 		"cols":
 		[
 			0.0,
-			0.559564887153,
+			0.5,
 			1.0
 		],
 		"rows":
