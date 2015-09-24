@@ -1,4 +1,4 @@
-
+/*
 color guide:
 
 dark grey hsl(34, 14%, 3%)
@@ -82,6 +82,10 @@ major 3rd | base: 1.5em
 		/*background-color: hsl(0, 0%, 32%);*/
 		color: hsl(198, 50%, 85%);
 	}
+	.at {
+		font-family: tahoma;
+		font-size: 80%;
+	}
 	::selection {
 		background: hsl(191, 100%, 41%);
 	}
@@ -92,7 +96,6 @@ major 3rd | base: 1.5em
 		/*min-width: 620px;*/
 		height: 100%;
 		/*padding-top: 70px;*/
-
 	}
 	.row {
 		width: 75%;
@@ -140,10 +143,10 @@ major 3rd | base: 1.5em
 		-moz-transform: translateY(-50%);
 		transform: translateY(-50%);
 	}
-	.fa {
+	.fa::before,
+	.fa::after {
 		font: normal normal normal 14px/1 FontAwesome;
 		font-size: inherit;
-		display: inline-block;
 		text-rendering: auto;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -1019,8 +1022,8 @@ major 3rd | base: 1.5em
 
 /*------------ Dealers Section ----------*/
 
-	#dealers-section > div > div > div > h2 {
-		margin-top: 115px;
+	#dealers-section > div > div > h2 {
+		margin-bottom: 75px;
 	}
 	#dealers-section h4 {
 		margin-bottom: 0;
@@ -1039,26 +1042,25 @@ major 3rd | base: 1.5em
 		background-position: center;
 		background-size: contain;
 		min-height: 358px;
-	}/*
-	#north-america img,
-	#europe img {
-		position: absolute;
-		top: 190px;
-		z-index: -1;
 	}
-	#north-america img {
-		left: 120px;
+	#europe > h4,
+	#europe > p {
+		margin-bottom: .6em;
 	}
-	#europe img {
-		left: 420px;
-	}*/
+	#europe > a > span::after {
+		position: static;
+		font-size: .8em;
+		color: hsl(0, 0%, 40%);
+	}
+	#europe span::after {
+		margin-right: 10px;
+	}
+	#europe p {
+		margin-top: 2.3em;
+	}
 
 /*---------- Modals ----------*/
-/*#fullpage {
-	position: relative;
-	z-index: initial;
 
-}*/
 	.modal {
 		width: 60%;
 		margin-left: 75px;
@@ -1133,13 +1135,3 @@ major 3rd | base: 1.5em
 		max-width: 100%;
 	}
 
-/*	#wave {
-	background: url('../img/bmm-wave.png') no-repeat;
-	position: absolute;
-	width: 240px;
-	height: 232px;
-	top: 410px;
-	right: 380px;
-	opacity: .3;
-	background-size: 100%;
-	}
