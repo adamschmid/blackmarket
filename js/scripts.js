@@ -5,19 +5,15 @@ $(document).ready(function(){
 //fullpage init
 	$("#fullpage").fullpage({
 		anchors: ['home', 'colour-palette', 'colours', 'cases', 'cables','dealers'],
-		menu: '#menu',
+		menu: '.menu',
 		paddingTop: '12px',
-		// s
 		responsiveHeight: 600,
-		responsiveWidth: 768,
-		// css3: false,
-		// easing: 'easeInOutCubic',
-		// fixedElements: '#logo-sm, #navigation, .modal',
-		fixedElements: '.modal',
-		//slidesNavigation: false,
-		//navigation: true,
-		//navigationPosition: "right",
-		// scrollBar: true,
+		responsiveWidth: 886,
+		fixedElements: '#logo-sm, #mobile-nav-header, #mobile-nav-link, #mobile-nav, .modal',
+		// autoScrolling: true,
+		//fitToSection: false,
+		//scrollOverflow: true,
+		scrollBar: true,
 
 		onLeave: function(index, nextIndex, direction){
 			if(nextIndex == 1){
@@ -29,16 +25,16 @@ $(document).ready(function(){
 				$(".downloads-led").removeClass('orange-led');
 				$(".dealers-led").removeClass('orange-led');
 				$(".company-led").removeClass('teal-led');
-				$("#logo-lg").velocity({
-					opacity: 1
-				}, 700);
-				$("#logo-sm").velocity({
-					opacity: 0,
-					duration: 700 }, {
-						complete: function() {
-							$("#logo-sm").addClass('hide');
-						}
-				});
+				// $("#logo-lg").velocity({
+				// 	opacity: 1
+				// }, 700);
+				// $("#logo-sm").velocity({
+				// 	opacity: 0,
+				// 	duration: 700 }, {
+				// 		complete: function() {
+				// 			$("#logo-sm").addClass('hide');
+				// 		}
+				// });
 				$("#logo-clip").velocity({
 					opacity: 0
 				}, 700);
@@ -48,6 +44,9 @@ $(document).ready(function(){
 					opacity: 0
 				}, 700);
 				$("#logo-sm").removeClass("hide").velocity({
+					opacity: 1
+				}, 700);
+				$("#mobile-nav-link").removeClass("hide").velocity({
 					opacity: 1
 				}, 700);
 				$("#logo-clip").velocity({
@@ -117,6 +116,8 @@ $(document).ready(function(){
 		},
 
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+			//console.log(nextSlideIndex);
+
 			if ( index == 2 && nextSlideIndex == 0 ){
 				$(".cp-overview-led").addClass('green-led');
 				$(".cp-photos-led").removeClass('red-led');
@@ -253,5 +254,40 @@ $(document).ready(function(){
 		hide: { effect: "fadeOut", duration: 100 }
 	});
 
+//mobile nav
+	$('#mobile-nav-link').click(function(){
+		$("#mobile-nav").removeClass('hide').velocity({right: 0},{duration: 750, easing: "easeOutQuint"});
+	});
+	$("#mobile-nav-close, .mobile-nav-link > a").click(function(){
+		$("#mobile-nav").velocity({
+			right: "100%",
+			opacity: 1 },
+			{
+				duration: 300,
+				easing: "easeIn"
+			},
+			{complete: function(){$("#mobile-nav").addClass('hide');}
+		});
+	});
 
+	$(window).resize(function () {
+		var w = $(window).width();
+		if (w < 769) {
+			$("body").removeClass("bg-dk-gradient");
+			$("#colour-palette-section, #cases-section, #cables-section, #dealers-section").addClass("bg-dk-gradient");
+		}
+		else {
+			$("body").addClass("bg-dk-gradient");
+			$("#colour-palette-section, #cases-section, #cables-section, #dealers-section").removeClass("bg-dk-gradient");
+		}
+	});
+	var w = $(window).width();
+	if (w < 769) {
+		$("body").removeClass("bg-dk-gradient");
+		$("#colour-palette-section, #cases-section, #cables-section, #dealers-section").addClass("bg-dk-gradient");
+	}
+	else {
+		$("body").addClass("bg-dk-gradient");
+		$("#colour-palette-section, #cases-section, #cables-section, #dealers-section").removeClass("bg-dk-gradient");
+	}
 });

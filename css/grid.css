@@ -1,36 +1,89 @@
+.ten {
+	width: 9.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
+}
 .twenty {
 	width: 19.2%;
 	float: left;
 	margin-left: .4%;
 	margin-right: .4%;
-	margin-bottom: .8%;
+}
+.thirty {
+	width: 29.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
 }
 .third {
 	width: 32.2%;
 	float: left;
 	margin-left: .4%;
 	margin-right: .4%;
-	margin-bottom: .8%;
 }
 .forty {
 	width: 39.2%;
 	float: left;
 	margin-left: .4%;
 	margin-right: .4%;
-	margin-bottom: .8%;
+}
+.fourth {
+	width: 24.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
 }
 .fifty {
 	width: 49.2%;
 	float: left;
 	margin-left: .4%;
 	margin-right: .4%;
-	margin-bottom: .8%;
-	/*height: 200px;*/
 }
 .sixty {
 	width: 59.2%;
 	float: left;
 	margin-left: .4%;
 	margin-right: .4%;
-	margin-bottom: .8%;
+}
+.sixth {
+	width: 65.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
+}
+.seventy {
+	width: 69.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
+}
+.eighty {
+	width: 79.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
+}
+.ninety {
+	width: 89.2%;
+	float: left;
+	margin-left: .4%;
+	margin-right: .4%;
+}
+@media screen and (max-width: 768px) {
+/*	.ten,
+	.twenty,
+	.thirty,
+	.third,
+	.forty,
+	.fourth,
+	.fifty,
+	.sixty,
+	.sixth,
+	.seventy,
+	.eighty,
+	.ninety {
+		float: none;
+		width: 100%;
+	}*/
 }

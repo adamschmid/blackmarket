@@ -1,19 +1,138 @@
-@media screen and (max-width: 768px) {
-	#logo, #desktop-nav-wrapper {
+@media screen and (max-width: 1180px) {
+	#cp-features-wrap {
+		width: auto;
+		margin: initial;
+	}
+	.cp-feature {
+		position: static;
+		width: 100%;
+	}
+	#cp-feature1::after,
+	#cp-feature2::after,
+	#cp-feature3::after,
+	#cp-feature4::after,
+	#cp-features-wrap .cp-photo-front {
 		display: none;
 		visibility: hidden;
 	}
-	.content {
-		margin-left: 0;
+	.cp-feature > h4, .cp-feature > p {
+		font-size: .8em;
 	}
-	#logo-sm {
-		width: 128px;
-		height: 130px;
-		left: 23px;
+@media screen and (max-width: 1000px) {
+	#cp-illustration {
+		margin-left: 5%;
 	}
 }
-@media screen and (max-height: 600px) {
-	.section {
-		min-height: 680px !important;
+@media screen and (max-width: 960px) {
+	#intro {
+		font-size: 90%;
 	}
+}
+@media screen and (max-width: 885px) {
+	#fullpage {
+		padding-top: 2em;
+	}
+	.fp-section,
+	#home-section .fp-tableCell,
+	#dtk > div,
+	#cases-pics > div,
+	#cases-ov > div,
+	#cables-pics > div,
+	#cables-ov > div {
+		height: auto !important;
+	}
+	.fp-tableCell {
+		display: block;
+	}
+	.content {
+		padding: 0 2em;
+	}
+	#logo,
+	#desktop-nav-wrapper,
+	#logo-clip {
+		display: none;
+		visibility: hidden;
+	}
+	#mobile-nav-header,
+	#mobile-nav-link {
+		display: block;
+		visibility: visible;
+	}
+	#logo-sm {
+		width: 110px;
+		height: 75px;
+		left: 7px;
+	}
+	.content {
+		margin-left: 0;
+		padding-top: 100px;
+	}
+	.row, #tabs {
+		width: 100%;
+		/*padding-right: 5%;*/
+	}
+	.hero-bg {
+		background-position: calc(50% - 2em);
+	}
+	#intro {
+		margin-top: 0;
+	}
+	#cp-illustration {
+		margin-left: 10%;
+	}
+	#cp-diy .third {
+		float: left;
+		width: 32.2%;
+	}
+	.kraken-bg {
+		background-position: 54% 78%;
+	}
+	.bmm-item {
+		height: auto;
+	}
+	.bmm-item:first-child {
+		margin-bottom: 2em;
+	}
+	.bmm-item.fifty {
+		float: none;
+		width: 99.2%;
+	}
+	.bmm-item > .forty,
+	.bmm-item > .sixty {
+		width: 49.2%;
+	}
+	#toolkit-dl-btn {
+		top: 128px;
+	}
+	a.cp-cta {
+		margin-top: 110px;
+	}
+	.modal {
+		margin-left: 0;
+		width: 90%;
+	}
+	.fp-controlArrow {
+		display: block;
+		visibility: visible;
+	}
+	.ui-tabs-panel .forty,
+	.ui-tabs-panel .fifty,
+	.ui-tabs-panel .sixty {
+		width: 100%;
+	}
+}
+@media screen and (max-height: 670px) {
+	#fullpage {
+		/*padding-top: 2em;*/
+	}
+	.fp-section,
+	#home-section .fp-tableCell {
+		height: auto !important;
+	}
+	.fp-tableCell {
+		display: block;
+	}
+}
+@media screen and (max-height: 625px) {
+
 }
